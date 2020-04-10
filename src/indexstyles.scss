@@ -1,0 +1,171 @@
+$designGreen:rgb(211, 247, 53);
+$altDesignGreen : rgb(53, 247, 53);
+.none{
+    display: none;
+}
+.current{
+    display:block;
+}
+button{
+    cursor: pointer;
+}
+.changeCurrentColor{
+    border: 3px solid $altDesignGreen;
+    box-shadow: 1px 0.2px 0.3px $altDesignGreen;
+    border-radius: 20%;
+    color: $altDesignGreen;
+    background-color: transparent;
+}
+div#overallWrapper{
+    width: 55vw;
+    margin: 0 auto;
+}
+span.joke{
+    color: $designGreen;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+div.container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    div.detailsContainer{
+        padding: 0px 2.5rem;
+        // border: 2px solid red;
+        h2{
+            font-size: 2.4rem;
+            letter-spacing: 1px;
+            font-weight: 100;
+            //border: 2px solid red;
+        }
+    }
+    div.img-container{
+        //border: 2px solid red;
+        width:26rem;
+    }
+    
+}
+@media screen and (max-width:600px){
+    div#overallWrapper{
+        width: 94vw;
+    }
+    div.container {
+        flex-direction: column;
+        div.detailsContainer{
+            padding: 0 1rem;
+            // border: 2px solid red;
+            h2{
+                font-size: 2rem;
+                line-height: 3rem;
+                //border: 2px solid red;
+            }
+            p{
+                margin-top:-2rem;
+            }
+        }
+        div.img-container{
+            //border: 2px solid red;
+            width:100%;
+        }
+        
+    }
+    img{
+        width: 70%;
+        height: 20rem;
+    }
+    div.floatingInterests{
+        //border:2px solid red;
+        a{
+           // padding:0.4em 1em;
+            font-weight: 100;
+            margin-bottom: 1px;
+        }   
+    }
+    div.instantPage-loader{
+        // border: 2px solid red;
+         div.floatingBtn{
+             //border: 2px solid yellow;
+             width: 90%;
+             margin: auto;
+             button{
+                 padding: 0.3em 2em;
+                 margin: 0.2em;
+             }
+         }
+     }
+}
+
+//MOBILE CSS ENDS HERE
+
+
+
+
+div.floatingInterests{
+    //border:2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-height: 22rem;
+    a{
+       // padding:0.4em 1em;
+        text-decoration: none;
+        font-size: 1.2em ;
+        font-weight: 300;
+        margin-bottom: -2px;
+    }   
+}
+div.instantPage-loader{
+   // border: 2px solid red;
+    padding: 2rem 1rem 0px 1rem;
+    letter-spacing: 0.08em;
+    div.floatingBtn{
+        //border: 2px solid yellow;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        button{
+            padding: 0.3em 2em;
+        }
+    }
+}
+img{
+    border-radius: 50%;
+    width: 19rem;
+    height: 19rem;
+    border:1px solid $designGreen;
+    background-color: $designGreen;
+}
+
+.fltBtn{
+    border: 3px solid $designGreen;
+    box-shadow: 1px 0.2px 0.3px $designGreen;
+    border-radius: 20%;
+    background-color: transparent;
+    font-weight: 650;
+    cursor: pointer;
+    color:$designGreen
+    //text-shadow:1px 1px 1.1px rgb(31, 120, 172);
+}
+.details{
+    font-weight:415;
+    font-Size:1.5rem;
+    line-height:2rem;
+    font-family:sans-serif;
+    //border: `2px solid red;
+    margin-top:-9px;
+}
+.grey{
+    color:#888888;
+}
+.butterGrey{
+    color: #333333;
+}
+.line-height24{
+    line-height: 24px;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-size: 24px;
+  }

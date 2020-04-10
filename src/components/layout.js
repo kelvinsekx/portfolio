@@ -29,15 +29,16 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
+
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <aside>
+            Kelvinsekx.codes is built, maintained and written by Ukuejubola
+            Kelvin together with all the agape <span id="love">&#10084;</span> there is in the world.
+          </aside>
+         
         </footer>
       </div>
     </>

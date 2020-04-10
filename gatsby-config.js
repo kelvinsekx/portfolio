@@ -1,10 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `<kelvinsekx-codes/>`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto Mono`,
+            subsets: [`latin`],
+          },
+          {
+            family: `Roboto`,
+            variants: [`400`, `700`]
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,3 +48,4 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
