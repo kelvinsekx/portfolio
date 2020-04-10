@@ -32,7 +32,7 @@ function IndexPage() {
               className="img-wrapper"
               style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}
             >
-              <img src={`../../static/img.JPG`} alt="Kelvin Ukuejubola Images" />
+              <img src={`../../public/static/img.JPG`} alt="Kelvin Ukuejubola Images" />
             </div>
           </div>
         </div>
