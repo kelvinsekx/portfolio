@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 
+import Image from "../components/image";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -32,7 +33,8 @@ function IndexPage() {
               className="img-wrapper"
               style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}
             >
-              <img src={`../../public/static/img.JPG`} alt="Kelvin Ukuejubola Images" />
+              <Image
+               alt="Kelvin Ukuejubola Images" />
             </div>
           </div>
         </div>
@@ -198,7 +200,7 @@ function IndexPage() {
               <span className="joke">
                 Do you know that tall children are not taller than their
                 parents? Well, if you don't know, now you know at least. If you
-                still don't believe, then you would have been taller then the
+                still don't believe, then you would have been taller than the
                 tallest tree in your home town
               </span>
               . lol
