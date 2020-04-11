@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `<kelvinsekx-codes/>`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Ukuejubola Kelvin is a software engineer in Lagos-Ibadan, Nigeria. He is currently serving his country as a corp member. He open for awesome people to work with`,
+    author: `kelvinsekx`,
   },
   plugins: [
     {
