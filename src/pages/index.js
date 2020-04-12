@@ -6,6 +6,14 @@ import SEO from "../components/seo"
 
 //imports styled component
 import "../indexstyles.scss"
+//font awesomeness
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelopeOpenText, faNewspaper, faBriefcase } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faCheckSquare, faCoffee)
+
 
 function IndexPage() {
   let color = "red"
@@ -45,45 +53,58 @@ function IndexPage() {
             style={{
               color: color,
               borderBottom: borderBottom,
+              fontSize: `1.8rem`
             }}
           >
-            twitter
+           <FontAwesomeIcon icon={['fab', 'twitter']} />
           </a>
           <a
             href="https://www.kelvinsekx.codes/"
             style={{
               color: `purple`,
               borderBottom: `1px solid purple`,
+              fontSize: `1.8rem`
             }}
           >
-            articles
+            <FontAwesomeIcon icon={faNewspaper} />
           </a>
           <a
             href="https://www.github.com/kelvinsekx"
             style={{
               color: "purple",
               borderBottom: `1px solid purple`,
+              fontSize: `1.8rem`
             }}
           >
-            github
+            <FontAwesomeIcon icon={['fab', 'github']} />
           </a>
           <a
             href="https://www.linkedin.com/in/kelvin-ukuejubola-oritsetimeyin-b38858174"
-            style={{ color: `green`, borderBottom: `1px solid green` }}
+            style={{ 
+              color: `green`, 
+              borderBottom: `1px solid green`,
+              fontSize: `1.8rem`}}
           >
-            linkedin
+            <FontAwesomeIcon icon={['fab', 'linkedin']} />
           </a>
           <a
             href="https://kelvinsekx@gmail.com/"
-            style={{ color: `pink`, borderBottom: `1px solid pink` }}
+            style={{ 
+              color: `pink`, 
+              borderBottom: `1px solid pink`,
+            fontSize: `1.8rem`}}
           >
-            email
+            <FontAwesomeIcon icon={faEnvelopeOpenText} />
           </a>
           <a
             href="https://www.kelvinsekx.codes/"
-            style={{ color: `pink`, borderBottom: `1px solid pink` }}
+            style={{ 
+              color: `pink`,
+             borderBottom: `1px solid pink`,
+             fontSize:`1.8rem`
+             }}
           >
-            projects
+            <FontAwesomeIcon icon={faBriefcase}/>
           </a>
           <a
             href="https://www.kelvinsekx.codes/"
