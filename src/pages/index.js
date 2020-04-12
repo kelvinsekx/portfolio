@@ -17,7 +17,7 @@ library.add(fab, faCheckSquare, faCoffee)
 
 function IndexPage() {
   let color = "red"
-  let borderBottom = `1px solid ${color}`
+  let borderBottom = `1px solid red`
   //This handles short
   const [showShort, setShowShort] = useState(true)
   //this handles mission
@@ -56,8 +56,12 @@ function IndexPage() {
               fontSize: `1.8rem`
             }}
           >
-           <FontAwesomeIcon icon={['fab', 'twitter']} />
+           <FontAwesomeIcon 
+           icon={['fab', 'twitter']} 
+           />
           </a>
+
+
           <a
             href="https://www.kelvinsekx.codes/"
             style={{
@@ -66,7 +70,9 @@ function IndexPage() {
               fontSize: `1.8rem`
             }}
           >
-            <FontAwesomeIcon icon={faNewspaper} />
+            <FontAwesomeIcon 
+            icon={faNewspaper} 
+           />
           </a>
           <a
             href="https://www.github.com/kelvinsekx"
@@ -76,7 +82,8 @@ function IndexPage() {
               fontSize: `1.8rem`
             }}
           >
-            <FontAwesomeIcon icon={['fab', 'github']} />
+            <FontAwesomeIcon 
+            icon={['fab', 'github']} />
           </a>
           <a
             href="https://www.linkedin.com/in/kelvin-ukuejubola-oritsetimeyin-b38858174"
@@ -85,7 +92,8 @@ function IndexPage() {
               borderBottom: `1px solid green`,
               fontSize: `1.8rem`}}
           >
-            <FontAwesomeIcon icon={['fab', 'linkedin']} />
+            <FontAwesomeIcon 
+            icon={['fab', 'linkedin']}/>
           </a>
           <a
             href="https://kelvinsekx@gmail.com/"
@@ -94,7 +102,8 @@ function IndexPage() {
               borderBottom: `1px solid pink`,
             fontSize: `1.8rem`}}
           >
-            <FontAwesomeIcon icon={faEnvelopeOpenText} />
+            <FontAwesomeIcon 
+            icon={faEnvelopeOpenText}/>
           </a>
           <a
             href="https://www.kelvinsekx.codes/"
@@ -104,7 +113,8 @@ function IndexPage() {
              fontSize:`1.8rem`
              }}
           >
-            <FontAwesomeIcon icon={faBriefcase}/>
+            <FontAwesomeIcon 
+            icon={faBriefcase}/>
           </a>
           <a
             href="https://www.kelvinsekx.codes/"
