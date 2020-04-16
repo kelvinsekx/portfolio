@@ -1,23 +1,17 @@
 import React, { useState } from "react"
 
-import Image from "../components/image";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+//Components that makes up the page
+import HeaderSummary from "../components/headerSum"
+import ImageContainer from "../components/imageContainer"
+import FloatingIcon from "../components/interestBtn"
+import FloatingBtn from "../components/floatingBtn"
 //imports styled component
 import "../indexstyles.scss"
-//font awesomeness
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelopeOpenText, faNewspaper, faBriefcase } from '@fortawesome/free-solid-svg-icons'
-library.add(fab, faCheckSquare, faCoffee)
-
 
 function IndexPage() {
-  let color = "red"
-  let borderBottom = `1px solid red`
   //This handles short
   const [showShort, setShowShort] = useState(true)
   //this handles mission
@@ -25,143 +19,55 @@ function IndexPage() {
   //this handle long
   const [showLong, setShowLong] = useState(false)
 
+  const changeMission=()=>{
+    setShowMission(true)
+    //set long statement to disappear
+    setShowLong(false)
+    //set short statement to disappear
+    setShowShort(false)
+  }
+  const changeShort=()=> {
+    setShowShort(true)
+    //make long statement disappear
+    setShowLong(false)
+    //make mission statement disappear likewise
+    setShowMission(false)
+  }
+  const changeLong=()=>{
+    setShowLong(true)
+    //make the short disappear
+    setShowShort(false)
+    //make the mission also disappear
+    setShowMission(false)
+  }
+
   return (
     <Layout>
       <SEO title="Home" />
       <div id="overallWrapper">
         <div className="container">
-          <div className="detailsContainer">
-            <h2>Ukuejubola Kelvin</h2>
-            <p className="details grey">
-              Software Engineer and Web Expert inside Life
-            </p>
-          </div>
-          <div className="img-container">
-            <div
-              className="img-wrapper"
-              style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}
-            >
-              <Image
-               alt="Kelvin Ukuejubola Images" />
-            </div>
-          </div>
+          <HeaderSummary />
+          <ImageContainer />
         </div>
-
-        <div className="floatingInterests">
-          <a
-            href="https://www.twitter.com/utdkelvin"
-            style={{
-              color: color,
-              borderBottom: borderBottom,
-              fontSize: `1.8rem`
-            }}
-          >
-           <FontAwesomeIcon 
-           icon={['fab', 'twitter']} 
-           />
-          </a>
-
-
-          <a
-            href="https://www.kelvinsekx.codes/"
-            style={{
-              color: `purple`,
-              borderBottom: `1px solid purple`,
-              fontSize: `1.8rem`
-            }}
-          >
-            <FontAwesomeIcon 
-            icon={faNewspaper} 
-           />
-          </a>
-          <a
-            href="https://www.github.com/kelvinsekx"
-            style={{
-              color: "purple",
-              borderBottom: `1px solid purple`,
-              fontSize: `1.8rem`
-            }}
-          >
-            <FontAwesomeIcon 
-            icon={['fab', 'github']} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/kelvin-ukuejubola-oritsetimeyin-b38858174"
-            style={{ 
-              color: `green`, 
-              borderBottom: `1px solid green`,
-              fontSize: `1.8rem`}}
-          >
-            <FontAwesomeIcon 
-            icon={['fab', 'linkedin']}/>
-          </a>
-          <a
-            href="https://kelvinsekx@gmail.com/"
-            style={{ 
-              color: `pink`, 
-              borderBottom: `1px solid pink`,
-            fontSize: `1.8rem`}}
-          >
-            <FontAwesomeIcon 
-            icon={faEnvelopeOpenText}/>
-          </a>
-          <a
-            href="https://www.kelvinsekx.codes/"
-            style={{ 
-              color: `pink`,
-             borderBottom: `1px solid pink`,
-             fontSize:`1.8rem`
-             }}
-          >
-            <FontAwesomeIcon 
-            icon={faBriefcase}/>
-          </a>
-          <a
-            href="https://www.kelvinsekx.codes/"
-            style={{ color: `green`, borderBottom: `1px solid green` }}
-          >
-            interviews and speakers
-          </a>
-        </div>
+        <FloatingIcon />
 
         <div className="instantPage-loader">
           <div className="floatingBtn">
-            <button
-              className={showMission ? "changeCurrentColor" : "fltBtn"}
-              onClick={() => {
-                setShowMission(true)
-                //set long statement to disappear
-                setShowLong(false)
-                //set short statement to disappear
-                setShowShort(false)
-              }}
-            >
-              MY-MISSION
-            </button>
-            <button
-              className={showShort ? "changeCurrentColor" : "fltBtn"}
-              onClick={() => {
-                setShowShort(true)
-                //make long statement disappear
-                setShowLong(false)
-                //make mission statement disappear likewise
-                setShowMission(false)
-              }}
-            >
-              SHORT
-            </button>
-            <button
-              className={showLong ? "changeCurrentColor" : "fltBtn"}
-              onClick={() => {
-                setShowLong(true)
-                //make the short disappear
-                setShowShort(false)
-                //make the mission also disappear
-                setShowMission(false)
-              }}
-            >
-              LONG
-            </button>
+            <FloatingBtn
+              class={showMission ? "changeCurrentColor" : "fltBtn"}
+              name="my-mission"
+              changeSomething={changeMission}
+            />
+            <FloatingBtn
+              class={showShort ? "changeCurrentColor" : "fltBtn"}
+              name="short"
+              changeSomething={changeShort}
+            />
+            <FloatingBtn
+              class={showLong ? "changeCurrentColor" : "fltBtn"}
+              name="long"
+              changeSomething={changeLong}
+            />
           </div>
           <div
             id="short"

@@ -1,22 +1,21 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Toggle from './toggle'
 
-const Header = ({ siteTitle }) => (
+const Header = (props) => (
   <header
     style={{
       marginBottom: `0.25rem`,
-      border: `0.6px solid #888`
+      border: `0.6px solid #888`,
+      display:`flex`,
+      justifyContent: `space-between`
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `0.8rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+    <div>
+      <h1 style={{
+        fontSize:`1.5rem`,
+         }}>
         <Link
           to="/"
           style={{
@@ -24,9 +23,12 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          {props.siteTitle}
         </Link>
       </h1>
+    </div>
+    <div>
+      <Toggle theme={props.theme} toggleTheme={props.toggleTheme}/>
     </div>
   </header>
 )

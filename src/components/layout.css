@@ -1,24 +1,4 @@
-html {
-  font-family: 'Roboto', sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-*{
-  outline:none;
-}
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-  color: #333333;
-  font-weight: 200;
-  background-color: #fff;
-}
-*::before, *::after{
-  margin: 0;
-  padding: 0;
-}
+
 
 
 @media only screen and (max-width: 480px) {
