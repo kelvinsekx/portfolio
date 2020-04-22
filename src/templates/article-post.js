@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import {WrapperContainer, FooterDiv} from "../pages/articles.styled"
+import {WrapperContainer, FooterDiv} from "../components/articles.styled"
 import Layout from "../components/layout"
 
 export default ({ data }) => {

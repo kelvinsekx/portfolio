@@ -1,7 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
-import {WrapperContainer, StyledH3, StyledLink, StyledParagraph, MakeH3} from "./articles.styled"
+import {WrapperContainer, StyledH3, StyledLink, StyledParagraph, MakeH3} from "../components/articles.styled"
 
 //import other components here
 import BIO from "../components/articlesComponent/bio"
