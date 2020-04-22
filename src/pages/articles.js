@@ -22,15 +22,14 @@ const ArticlesPage = ({ data }) => (
       </h4>
 
       {data.allMarkdownRemark.edges.map(({ node }) => (
+         <Link style={{textDecoration:"none"}} to={node.fields.slug}>
           <StyledLink key={node.id}>
-            <Link style={{textDecoration:"none"}} to={node.fields.slug}>
-            
             <StyledH3>
               <MakeH3>{node.frontmatter.title}</MakeH3> <span>— {node.frontmatter.date}</span>
             </StyledH3>
-            </Link>
             <StyledParagraph>{node.excerpt}</StyledParagraph>
           </StyledLink>
+          </Link>
       ))}
     </main>
     <div>
