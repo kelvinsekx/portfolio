@@ -3,6 +3,12 @@ module.exports = {
     title: `<kelvinsekx-codes/>`,
     description: `Ukuejubola Kelvin, software engineer in Lagos-Ibadan.currently serving as a corp member in Gawu Babangida,Niger state. He is open for awesome people to work with`,
     author: `kelvinsekx`,
+    articles:{
+      articles: "Article and Blog",
+      shortnote: " Welcome love, I write about my works and findings on React js, Node.js, Web payment and all other emerging and contemporary web technologies I fall in love with",
+      description: "Written by Kelvin Ukuejubola who lives in Nigeria building awesome things for awesome people.",
+      twitter:"utdkelvin"
+    }
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -30,6 +36,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

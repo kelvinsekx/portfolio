@@ -29,7 +29,7 @@ export default function interestBtn() {
         </a>
 
         <a
-          href="https://www.kelvinsekx.codes/"
+          href="/articles"
           style={{
             color: `purple`,
             borderBottom: `1px solid purple`,
