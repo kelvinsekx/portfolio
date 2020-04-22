@@ -28,7 +28,7 @@ Also to peace of Gawu who is the meekest of them all.
 FINALLY, ERIC AND JOSHUA you are the BEST.
 
 
-THANK YOU SO MUCH FOR READING THIS FAR. I have something for you to check out --ellie goulding army-- that was the song I was litsening to when I made this post. I hope you find the joy in the song just like I did.
+THANK YOU SO MUCH FOR READING this far. I have something for you to check out --ellie goulding army-- that was the song I was litsening to when I made this post. I hope you find the joy in the song just like I did.
 
 
 Here's a video to the song. Just like my friend jideScata will say ENJOY!!!!
