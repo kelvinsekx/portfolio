@@ -1,15 +1,9 @@
 import React from "react"
-//font awesomeness
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { fab } from "@fortawesome/free-brands-svg-icons"
-import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons"
-import {
-  faEnvelopeOpenText,
-  faNewspaper,
-  faBriefcase,
-} from "@fortawesome/free-solid-svg-icons"
-library.add(fab, faCheckSquare, faCoffee)
+import  Twitter  from "./icon/twitter.svg"
+import  Gmail  from "./icon/gmail.svg"
+import  Cater  from "./icon/cat.svg"
+import  Linkedin  from "./icon/linkedin.svg"
+import { SVG } from "./toggle.styled"
 
 export default function interestBtn() {
   let color = "red"
@@ -22,61 +16,42 @@ export default function interestBtn() {
           style={{
             color: color,
             borderBottom: borderBottom,
-            fontSize: `1.8rem`,
           }}
         >
-          <FontAwesomeIcon icon={["fab", "twitter"]} />
+          <SVG><Twitter /></SVG>
         </a>
 
         <a
           href="/articles"
           style={{
-            color: `purple`,
             borderBottom: `1px solid purple`,
-            fontSize: `1.8rem`,
           }}
         >
-          <FontAwesomeIcon icon={faNewspaper} />
+          Articles
         </a>
         <a
           href="https://www.github.com/kelvinsekx"
           style={{
-            color: "purple",
             borderBottom: `1px solid purple`,
-            fontSize: `1.8rem`,
           }}
         >
-          <FontAwesomeIcon icon={["fab", "github"]} />
+          <SVG><Cater /></SVG>
         </a>
         <a
           href="https://www.linkedin.com/in/kelvin-ukuejubola-oritsetimeyin-b38858174"
           style={{
-            color: `green`,
             borderBottom: `1px solid green`,
-            fontSize: `1.8rem`,
           }}
         >
-          <FontAwesomeIcon icon={["fab", "linkedin"]} />
+          <SVG><Linkedin /></SVG>
         </a>
         <a
           href="https://kelvinsekx@gmail.com/"
           style={{
-            color: `pink`,
-            borderBottom: `1px solid pink`,
-            fontSize: `1.8rem`,
+            borderBottom: `1px solid green`,
           }}
         >
-          <FontAwesomeIcon icon={faEnvelopeOpenText} />
-        </a>
-        <a
-          href="https://www.kelvinsekx.codes/"
-          style={{
-            color: `pink`,
-            borderBottom: `1px solid pink`,
-            fontSize: `1.8rem`,
-          }}
-        >
-          <FontAwesomeIcon icon={faBriefcase} />
+          <SVG><Gmail /></SVG>
         </a>
         <a
           href="https://www.kelvinsekx.codes/"

@@ -35,3 +35,8 @@ export const FooterDiv = styled.a`
  justify-content: flex-end;
  color:violet;
 `
+
+export const Smalled = styled.small`
+ font-size:1rem;
+ color: #555555;
+`

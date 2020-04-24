@@ -20,4 +20,8 @@ export const GlobalStyles = createGlobalStyle`
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   }
+
+  a{
+    color: ${({ theme }) => theme.linkText};
+  }
 `
