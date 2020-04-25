@@ -1,4 +1,4 @@
-$designGreen:rgb(211, 247, 53);
+$designGreen:rgb(232, 235, 53);
 $altDesignGreen : rgb(53, 247, 53);
 .none{
     display: none;
@@ -108,7 +108,7 @@ div.floatingInterests{
         text-decoration: none;
         font-size: 1.2em ;
         font-weight: 300;
-        margin-bottom: -2px;
+        margin-bottom: -1px;
         margin: 0.04em 0.4em;
     }   
 }
@@ -125,6 +125,7 @@ div.instantPage-loader{
         justify-content: space-around;
         button{
             padding: 0.3em 2em;
+            font-size:1rem;
         }
     }
 }

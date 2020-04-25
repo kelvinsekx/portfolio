@@ -9,6 +9,7 @@ const Header = (props) => (
       marginBottom: `0.25rem`,
       border: `0.6px solid #888`,
       display:`flex`,
+      alignItems:`center`,
       justifyContent: `space-between`
     }}
   >
@@ -19,7 +20,7 @@ const Header = (props) => (
         <Link
           to="/"
           style={{
-            color: `rgb(211, 247, 53)`,
+            color: `rgb(232, 235, 53)`,
             textDecoration: `none`,
           }}
         >

@@ -3,6 +3,7 @@ import  Twitter  from "./icon/twitter.svg"
 import  Gmail  from "./icon/gmail.svg"
 import  Cater  from "./icon/cat.svg"
 import  Linkedin  from "./icon/linkedin.svg"
+import Book from "./icon/book.svg"
 import { SVG } from "./toggle.styled"
 
 export default function interestBtn() {
@@ -27,7 +28,7 @@ export default function interestBtn() {
             borderBottom: `1px solid purple`,
           }}
         >
-          Articles
+          <SVG><Book /></SVG>
         </a>
         <a
           href="https://www.github.com/kelvinsekx"

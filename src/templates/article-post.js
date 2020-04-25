@@ -19,7 +19,7 @@ export default ({ data }) => {
         </Link>
         <h1>{post.frontmatter.title}</h1>
         <Smalled>
-          Published {post.frontmatter.date} ----- {post.timeToRead} {post.timeToRead == 1 ? "minute": "minutes"} read
+          Published {post.frontmatter.date} ----- {post.timeToRead} {post.timeToRead === 1 ? "minute": "minutes"} read
         </Smalled>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
         <FooterDiv
