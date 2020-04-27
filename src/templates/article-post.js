@@ -23,7 +23,7 @@ export default ({ data }) => {
         </Smalled>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
         <FooterDiv
-          href={`https://github.com/kelvinsekx/gatsbyblog/blob/master/src/content/${post.fields.slug.replace(
+          href={`https://github.com/kelvinsekx/gatsbyblog/blob/master/src/content${post.fields.slug.replace(
             /.$/,
             "."
           )}md`}
