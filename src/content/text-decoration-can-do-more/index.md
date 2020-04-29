@@ -37,7 +37,7 @@ Me: ): Who works with the hands anyways.
 **What if I interview you : little quick questions I try and answer myself**
 </span>
 
-implement a Math.pow() like function. Give your function an interesting name, let it have two parameter(or arguments), so that
+Implement a Math.pow() like function. Give your function an interesting name, let it have two parameter(or arguments), so that
 
 ```javascript
 {
@@ -46,6 +46,7 @@ implement a Math.pow() like function. Give your function an interesting name, le
 ```
 
 
-
+#### Closing Note:
+ Hope you laughed, thanks for reading. Remember to be you, a great individual. 
 
 
