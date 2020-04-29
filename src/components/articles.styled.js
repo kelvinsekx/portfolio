@@ -30,7 +30,7 @@ font-size:1.5rem
 `
 
 export const FooterDiv = styled.a`
- margin-top: 1rem;
+ margin-top: 2rem;
  display:flex;
  justify-content: flex-end;
  color:violet;

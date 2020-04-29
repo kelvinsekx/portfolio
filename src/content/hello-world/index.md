@@ -33,4 +33,4 @@ THANK YOU SO MUCH FOR READING this far. I have something for you to check out --
 
 Here's a video to the song. Just like my friend jideScata will say ENJOY!!!!
 
-<iframe width="300" height="315" src="https://www.youtube.com/embed/jTTNWpag6fI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="200" height="200" src="https://www.youtube.com/embed/jTTNWpag6fI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

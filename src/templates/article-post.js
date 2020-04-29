@@ -5,8 +5,11 @@ import Layout from "../components/layout"
 import BackIcon from "../components/icon/back.svg"
 //import SunIcon  from './icon/sun.svg';
 
-export default ({ data }) => {
+const blogTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
+  const {next,previous} = pageContext
+  console.log(next)
+  console.log(previous)
   return (
     <Layout>
       <WrapperContainer>
@@ -22,6 +25,35 @@ export default ({ data }) => {
           Published {post.frontmatter.date} ----- {post.timeToRead} {post.timeToRead === 1 ? "minute": "minutes"} read
         </Smalled>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+        <nav>
+        <ul
+          style={{
+            display: `flex`,
+            flexWrap: `wrap`,
+            justifyContent: `space-between`,
+            listStyle: `none`,
+            padding: 0,
+          }}
+        >
+          <li>
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                ← {previous.frontmatter.title}
+              </Link>
+              
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Link>
+              
+            )}
+          </li>
+        </ul>
+      </nav>
+        
         <FooterDiv
           href={`https://github.com/kelvinsekx/gatsbyblog/blob/master/src/content${post.fields.slug.replace(
             /.$/,
@@ -35,8 +67,10 @@ export default ({ data }) => {
   )
 }
 
+export default blogTemplate
+
 export const query = graphql`
-  query($slug: String!) {
+  query BlogPostByBlog($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       timeToRead
