@@ -10,7 +10,7 @@ My articles are not aimed at complete beginners. I am very sad I couldnot make n
 
 Leaving that aside, I write with you and me in mind, I love what I do and I write this articles with love. If you love me like I love you, say hi when you can on any of the platform just on the <a href="/">Home Page</a>
 
-Also,this articles will be availble once everyweek. I am working on a good plan for newsletter I am sorry I have to make you think to remember. This inconvenience would definitely not last.
+Also,this articles will be available once everyweek. I am working on a good plan for newsletter I am sorry I have to make you think to remember. This inconvenience would definitely not last.
 
 On a closing note, I love criticisms, I love cooperation just like I love competitions, so if you get to see any issue on my writings please send a message and I will resolve it as fast as I can. 
 
