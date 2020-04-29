@@ -55,10 +55,7 @@ const blogTemplate = ({ data, pageContext }) => {
       </nav>
         
         <FooterDiv
-          href={`https://github.com/kelvinsekx/gatsbyblog/blob/master/src/content${post.fields.slug.replace(
-            /.$/,
-            "."
-          )}md`}
+          href={`https://github.com/kelvinsekx/gatsbyblog/blob/master/src/content${post.fields.slug}index.md`}
         >
           Edit on Github
         </FooterDiv>
