@@ -5,8 +5,8 @@ import {
   WrapperContainer,
   StyledH3,
   StyledLink,
+  StyledSmall,
   StyledParagraph,
-  MakeH3,
 } from "../components/articles.styled"
 
 //import other components here
@@ -30,13 +30,18 @@ const ArticlesPage = ({ data }) => (
 
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <StyledLink key={node.id}>
-            <Link style={{ textDecoration: "none" }} to={node.fields.slug}>
+            
               <StyledH3>
-                <MakeH3>{node.frontmatter.title}</MakeH3>{" "}
-                <span>— {node.frontmatter.date}</span>
+              <Link 
+              style={{ 
+                textDecoration: "none" }} to={node.fields.slug}>
+                {node.frontmatter.title}
+                </Link>
               </StyledH3>
-            </Link>
-            <StyledParagraph>{node.excerpt}<Link style={{ textDecoration: "none" }} to={node.fields.slug}>read details &#187;</Link></StyledParagraph>
+            
+            <StyledSmall>Kelvinsekx on {node.frontmatter.date}</StyledSmall>
+            <StyledParagraph>{node.excerpt}</StyledParagraph>
+            <div><Link style={{ textDecoration: "none" }} to={node.fields.slug}>read details &#187;</Link></div>
           </StyledLink>
         ))}
       </main>
@@ -61,13 +66,13 @@ export const query = graphql`
         node {
           id
           frontmatter {
-            date
+            date(formatString: "ddd, MMMM DD,YYYY")
             title
           }
           fields {
             slug
           }
-          excerpt(truncate: false)
+          excerpt(pruneLength: 260,truncate: false)
         }
       }
       totalCount

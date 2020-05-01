@@ -10,6 +10,8 @@ import { GlobalStyles } from "./global"
 import Header from "./header"
 import "./layout.css"
 
+
+
 const Layout = ({ children }) => {
   const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;

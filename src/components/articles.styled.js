@@ -13,20 +13,21 @@ export const WrapperContainer = styled.div`
 
 export const StyledLink = styled.div`
  color: inherit;
+ width:60vw;
+  margin-top:2rem;
 `
 
-export const StyledH3 = styled.div`
-  color: #72ff29;
-  font-weight: bold;
+export const StyledH3 = styled.h2`
+  font-size: 2.5rem;
+  font-weight: 700;
 `
 
 export const StyledParagraph=styled.p`
- margin: none;
- margin-top:-5px;
+  font-size: 1.1em;
+  font-weight: 50;
 `
-
-export const MakeH3 = styled.span`
-font-size:1.5rem
+export const StyledSmall=styled.small`
+ margin-top: 1.2em;
 `
 
 export const FooterDiv = styled.a`
