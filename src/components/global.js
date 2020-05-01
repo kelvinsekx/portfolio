@@ -15,13 +15,18 @@ export const GlobalStyles = createGlobalStyle`
   -moz-osx-font-smoothing: grayscale;
    color: ${({ theme }) => theme.text};
    background: ${({ theme }) => theme.body};
-  font-weight: 200;
+  font-weight: ${({ theme }) => theme.weight};
   font-family: 'Roboto', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   }
 
-  a{
+
+  .to{
+    color: ${({ theme }) => theme.text};
+  }
+
+  .link{
     color: ${({ theme }) => theme.linkText};
   }
 `

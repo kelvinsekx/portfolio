@@ -14,19 +14,19 @@ const Header = (props) => (
     }}
   >
     <div>
-      <h1 style={{
+      <span style={{
         fontSize:`1.5rem`,
          }}>
         <Link
           to="/"
           style={{
-            color: `rgb(232, 235, 53)`,
+            color: `rgb(111, 23, 122)`,
             textDecoration: `none`,
           }}
         >
           {props.siteTitle}
         </Link>
-      </h1>
+      </span>
     </div>
     <div>
       <Toggle theme={props.theme} toggleTheme={props.toggleTheme}/>

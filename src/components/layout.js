@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
             <aside>
               Kelvinsekx.codes is built, maintained and written by Ukuejubola
               Kelvin together with all the agape <span id="love">&#10084;</span>{" "}
-              there is in the world. <br/> Icons from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+              there is in the world. <br/> Icons from <a className="link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
             </aside>
           </footer>
         </div>

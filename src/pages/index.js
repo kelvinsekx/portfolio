@@ -8,6 +8,7 @@ import HeaderSummary from "../components/headerSum"
 import ImageContainer from "../components/imageContainer"
 import FloatingIcon from "../components/interestBtn"
 import FloatingBtn from "../components/floatingBtn"
+import Anchor from "../components/link"
 //imports styled component
 import "../indexstyles.scss"
 
@@ -104,7 +105,7 @@ function IndexPage() {
               Oritsetimeyin is an Educator, developer and Economist. He is a
               graduate of Economics and Education (B.sc[Ed]) from the
               prestigiuos{" "}
-              <a href="https://www.ui.edu.ng">University of Ibadan</a>. He is a
+              <Anchor href="https://www.ui.edu.ng">University of Ibadan</Anchor>. He is a
               Nigerian and African. He takes pride in those.
             </p>
             <p>

@@ -17,7 +17,7 @@ footer{
 }
 
 #love{
-  color: #ee1515;
+  color: rgb(77, 14, 85);
   width:5em;
   animation-name: size;
   animation-duration: 3s;

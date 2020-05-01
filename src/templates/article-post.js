@@ -15,6 +15,7 @@ const blogTemplate = ({ data, pageContext }) => {
       <WrapperContainer>
         <Link
           to="/articles"
+          className="link"
           style={{ display: "inline-flex", alignItems: "center" }}
         >
           <BackIcon style={{ height: "auto", width: "2.5rem" }} /> BACK TO
@@ -37,7 +38,7 @@ const blogTemplate = ({ data, pageContext }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link className="link" to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
               
@@ -45,7 +46,7 @@ const blogTemplate = ({ data, pageContext }) => {
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link className="link" to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
               

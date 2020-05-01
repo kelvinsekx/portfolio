@@ -33,15 +33,14 @@ const ArticlesPage = ({ data }) => (
             
               <StyledH3>
               <Link 
-              style={{ 
-                textDecoration: "none" }} to={node.fields.slug}>
+              className="to" to={node.fields.slug}>
                 {node.frontmatter.title}
                 </Link>
               </StyledH3>
             
             <StyledSmall>Kelvinsekx on {node.frontmatter.date}</StyledSmall>
             <StyledParagraph>{node.excerpt}</StyledParagraph>
-            <div><Link style={{ textDecoration: "none" }} to={node.fields.slug}>read details &#187;</Link></div>
+            <div><Link className="link" to={node.fields.slug}>read details &#187;</Link></div>
           </StyledLink>
         ))}
       </main>
