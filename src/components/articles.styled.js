@@ -15,11 +15,17 @@ export const StyledLink = styled.div`
  color: inherit;
  width:60vw;
   margin-top:2rem;
+  @media (max-width: 768px) {
+    width:80vw;
+  }
 `
 
 export const StyledH3 = styled.h2`
   font-size: 2.5rem;
   font-weight: 700;
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `
 
 export const StyledParagraph=styled.p`
