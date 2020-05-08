@@ -19,7 +19,7 @@ But goodnews, the exponentiation operator similar to python is standardized in J
 
 ** The Exponentiation **
 
- The exponentiation returns the multiplication of the number ont the left by the number of times of the number on the right. 
+ The exponentiation returns the multiplication of the number on the left by the number of times of the number on the right. 
 
 ```javascript
 {
