@@ -14,7 +14,7 @@ Before now, to make an exponent as simple as 2 raise to 2 would require the use 
 ```
 
 For me, this is unnecessary long compare to that of python (**).
-E
+
 But goodnews, the exponentiation operator similar to python is standardized in JavaScript with support for all browsers except IE(Internet Explorer).
 
 ** The Exponentiation **
