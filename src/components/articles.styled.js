@@ -40,7 +40,6 @@ export const FooterDiv = styled.a`
  margin-top: 2rem;
  display:flex;
  justify-content: flex-end;
- color:violet;
 `
 
 export const Smalled = styled.small`

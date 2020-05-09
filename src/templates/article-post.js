@@ -38,24 +38,29 @@ const blogTemplate = ({ data, pageContext }) => {
         >
           <li>
             {previous && (
+              <nav>
+                <div>previous</div>
               <Link className="link" to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
-              
+              </nav>
             )}
           </li>
           <li>
             {next && (
+              <nav>
+                <div>next</div>
               <Link className="link" to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
-              
+              </nav>
             )}
           </li>
         </ul>
       </nav>
         
         <FooterDiv
+          className="to"
           href={`https://github.com/kelvinsekx/gatsbyblog/blob/master/src/content${post.fields.slug}index.md`}
         >
           Edit on Github
