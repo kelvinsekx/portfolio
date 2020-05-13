@@ -13,6 +13,7 @@ export default function interestBtn() {
     <>
       <div className="floatingInterests">
         <a
+        className="floatingInt"
           href="https://www.twitter.com/utdkelvin"
           style={{
             color: color,
@@ -23,6 +24,7 @@ export default function interestBtn() {
         </a>
 
         <a
+        className="floatingInt"
           href="/articles"
           style={{
             borderBottom: `1px solid purple`,
@@ -31,6 +33,7 @@ export default function interestBtn() {
           <SVG><Book /></SVG>
         </a>
         <a
+        className="floatingInt"
           href="https://www.github.com/kelvinsekx"
           style={{
             borderBottom: `1px solid purple`,
@@ -39,6 +42,7 @@ export default function interestBtn() {
           <SVG><Cater /></SVG>
         </a>
         <a
+        className="floatingInt"
           href="https://www.linkedin.com/in/kelvin-ukuejubola-oritsetimeyin-b38858174"
           style={{
             borderBottom: `1px solid green`,
@@ -47,6 +51,7 @@ export default function interestBtn() {
           <SVG><Linkedin /></SVG>
         </a>
         <a
+          className="floatingInt"
           href="https://kelvinsekx@gmail.com/"
           style={{
             borderBottom: `1px solid green`,
@@ -55,6 +60,7 @@ export default function interestBtn() {
           <SVG><Gmail /></SVG>
         </a>
         <a
+        className="floatingInt"
           href="https://www.kelvinsekx.codes/"
           style={{ color: `green`, borderBottom: `1px solid green` }}
         >

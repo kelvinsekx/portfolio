@@ -50,22 +50,22 @@ function IndexPage() {
           <HeaderSummary />
           <ImageContainer />
         </div>
-        <FloatingIcon />
+        <FloatingIcon/>
 
         <div className="instantPage-loader">
           <div className="floatingBtn">
             <FloatingBtn
-              class={showMission ? "changeCurrentColor" : "fltBtn"}
+              className={showMission ? "changeCurrentColor" : "fltBtn"}
               name="my-mission"
               changeSomething={changeMission}
             />
             <FloatingBtn
-              class={showShort ? "changeCurrentColor" : "fltBtn"}
+              className={showShort ? "changeCurrentColor" : "fltBtn"}
               name="short"
               changeSomething={changeShort}
             />
             <FloatingBtn
-              class={showLong ? "changeCurrentColor" : "fltBtn"}
+              className={showLong ? "changeCurrentColor" : "fltBtn"}
               name="long"
               changeSomething={changeLong}
             />

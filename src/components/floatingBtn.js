@@ -4,7 +4,7 @@ export default function floatingBtn(props) {
     return (
         <>
             <button
-                className={props.class}
+                className={props.className}
                 onClick={props.changeSomething}
             >
               {props.name}

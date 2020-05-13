@@ -29,4 +29,8 @@ export const GlobalStyles = createGlobalStyle`
   .link{
     color: ${({ theme }) => theme.linkText};
   }
+
+  .floatingInt{
+    background-color: ${({theme})=> theme.floatingIntBG};
+  }
 `
