@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import { WrapperContainer, FooterDiv, Smalled } from "../components/articles.styled"
+import { WrapperContainer, FooterDiv, Smalled, NAV } from "../components/articles.styled"
 import Layout from "../components/layout"
 import BackIcon from "../components/icon/back.svg"
 //import SunIcon  from './icon/sun.svg';
@@ -26,8 +26,8 @@ const blogTemplate = ({ data, pageContext }) => {
           Published {post.frontmatter.date} ----- {post.timeToRead} {post.timeToRead === 1 ? "minute": "minutes"} read
         </Smalled>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
-        <nav>
-        <ul
+        
+        <NAV
           style={{
             display: `flex`,
             flexWrap: `wrap`,
@@ -36,28 +36,27 @@ const blogTemplate = ({ data, pageContext }) => {
             padding: 0,
           }}
         >
-          <li>
+          <div  style={{width: '42%', alignItem: "left"}}>
             {previous && (
-              <nav>
-                <div>previous</div>
+              <div>
+              <div>previous</div>
               <Link className="link" to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
-              </nav>
+              </div>
             )}
-          </li>
-          <li>
+          </div>
+          <div style={{width: '40%', alignItem: "right", marginTop: '3.5rem'}}>
             {next && (
-              <nav>
+              <div>
                 <div>next</div>
               <Link className="link" to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
-              </nav>
+              </div>
             )}
-          </li>
-        </ul>
-      </nav>
+          </div>
+      </NAV>
         
         <FooterDiv
           className="to"

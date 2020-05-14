@@ -15,5 +15,5 @@ export const lightTheme = {
     toggleBorder: '#6B8096',
     weight:'100',
     gradient: 'linear-gradient(#091236, #1E215D)',
-    floatingIntBG: 'hsla(280,50%,50%,0.9)'
+    floatingIntBG: 'hsla(280,40%,50%,0.34)'
   }

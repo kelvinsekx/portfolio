@@ -1,72 +1,90 @@
 ---
 title: "Elegancy with the for...loop using for-in loop and for-of loop as a case study"
-date: "2020-13-05"
+date: "2020-05-13"
 ---
 
-Today, we will be discussing about the famous for loops. Sadly, nerdy developers I know oly resort to the use of for loop after alternatives like recursion probably failed them in a particular instance(which can be very rare) or they have exhausted other elegant ones like map, every, array.from and the likes.
+Today, we will be discussing the famous for loops. Sadly, nerdy developers I know only resort to the use of for loop after alternatives like recursion have failed them (which can be very rare) or they have exhausted other elegant ones like map, every, array.from and the likes.
+
+Whatever, this still doesnot deny the fact that for-loop is our quick MESSIAH when it comes to LOOP.
+
+##**For-in Loop**
+
+For-in loop is one of the elegant means of looping through all properties is an object. It syntax is below. The most elegant reason I use for-in loop is because of its obvious skip for the variable keyword
 ```javascript
 {
-  Math.pow(7, 3) // 343
-  Math.pow(4, 0.5) // 2
+  for(variable in object){
+      //statements
+  }
+  for(x in [12,3,4,"molowo"]){
+      console.log(x) // returns 0,1,2,3,4
+  }
 }
 ```
 
-For me, this is unnecessary long compare to that of python (**).
+##**For-of Loop**
 
-But goodnews, the exponentiation operator similar to python is standardized in JavaScript with support for all browsers except IE(Internet Explorer).
-
-** The Exponentiation **
-
- The exponentiation returns the multiplication of the number on the left by the number of times of the number on the right. 
+ Yay!!, this is even more eleganter(permit me to use the word) in looping through and dumping property values of an iterable(i.e it returns the value of each property) 
 
 ```javascript
 {
- 2 ** 3 //becomes 2 * 2 * 2 = 8
+    for(variable in iterable){
+        //statement
+    }
+    for(x in [12,3,4,5, "oshomo"]){
+        console.log(x) // return 12,3,4,5,oshomo
+    }
 }
 ```
 
-Same operation above becomes achievable with 
+##**BONUS**
 
+Do you know you can apply a similar syntax like pattern of for-in loop with your usual loop on javascript??
+I also just got to know that I can gracefully skip the variable keyword in the usual for...lop. Check this out
 ```javascript
 {
-  7 ** 3 // 343
-  4 ** 0.5 // 2
+  for(x=0;x<[1,2,3,4,4]; x++){
+      console.log(x) // Everything works just fine even without declaring the x as a variable.
+  }
+
+  //THE USUAL WAY WOULD HAVE BEEN
+  for(let x = 0;x<[1,2,3,4,4]; x++){...}
 }
 ```
 
-For further reading check the <a href= "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators">MDN docs</a> 
+For further reading check these MDN docs: <a href= "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for..in loop</a> and <a href= https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of>for..in loop</a> 
 ****
-<span style="color:#349077">
-**Joke Time : dedicated to my friend Boluwatife**
-</span>
+ <h3 style="color:#349077">
+**Joke Time : dedicated to my little cousin, genesis**
+</h3>
 
- If life were to be human, it would have been a black woman
-
-How do I know??: ): Urrgh, it simple
-- A blackwoman is not fair
-- A blackwoman is tough
-- A blackwoman is beautiful
-
-
+Sing this nursey rhyme along with me
+- Tinko, tinko, little star
+- Howwa wonder whats so high
+- Up abovedaa world so hi
+- Like a diamond in the sky
 
 ***
-<span style="color:#349077">
+ <h3 style="color:#349077">
 **What if I interview you : little quick questions I try and answer myself**
-</span>
+</h3>
 
-Using the fastest means possible. Given an ordered list, return a boolean, true, if the output is achievable with the sum of a pair in the list. So that
+In javaScript, we donot have access to a utility function like Range() in python. Replecate this, Range(stop, start, step), by following the instructions below:
+- Your function name should be called Range
+- the function, Range, should take three arguments of stop, start and step
+- start has a default value of 0, and step default value is 1
+- Lastly, execute this function with a recursion. 
+So that
 
 ```javascript
 {
-    [1,2,3,4] Given output = 8 //returns false
-    [1,5,3,4] Given output = 9 //return true: since 5 and 4 are pairs that can be sumed up to the output 9
+    Range(5) // returns 0,1,2,3,4
+    Range(5,2) //returns 2,3,4
+    Range(10,2,3) //returns 2,5,8
 }
 ```
 
 
 #### Closing Note:
- Hope you smiled, thanks for reading. Remember to be you, a great individual.
-
- And a special thanks to you visiting  outside Africa. 
+ Hope you sang along and I didnot spoil your favourite ryhme, thanks for reading. Remember to be you, a great individual.
 
 

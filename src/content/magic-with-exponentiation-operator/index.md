@@ -1,6 +1,6 @@
 ---
 title: "Exponentiation operator is now standardized in JavaScript"
-date: "2020-08-05"
+date: "2020-05-08"
 ---
 
 Yello! ECMA2016 standardized the exponentiation operator (**).

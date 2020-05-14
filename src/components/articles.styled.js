@@ -46,3 +46,12 @@ export const Smalled = styled.small`
  font-size:1rem;
  color: #555555;
 `
+
+export const NAV = styled.nav`
+ display: flex;
+ display: -webkit-box;
+ display: -webkit-flex;
+ justify-content: space-between;
+ width: 100%;
+ margin-top:2em;
+`
