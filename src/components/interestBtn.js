@@ -7,7 +7,6 @@ import Book from "./icon/book.svg"
 import { SVG } from "./toggle.styled"
 
 export default function interestBtn() {
-  let color = "red"
   let borderBottom = `1px solid red`
   return (
     <>
@@ -16,7 +15,6 @@ export default function interestBtn() {
         className="floatingInt"
           href="https://www.twitter.com/utdkelvin"
           style={{
-            color: color,
             borderBottom: borderBottom,
           }}
         >
@@ -62,7 +60,7 @@ export default function interestBtn() {
         <a
         className="floatingInt"
           href="https://www.kelvinsekx.codes/"
-          style={{ color: `green`, borderBottom: `1px solid green` }}
+          style={{ borderBottom: `1px solid green` }}
         >
           interviews and speakers
         </a>
