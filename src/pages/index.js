@@ -78,7 +78,7 @@ function IndexPage() {
               <span title="world in my native language">Araye</span>, Welcome
               here and thanks for visiting. Ukuejubola Kelvin Oritsetimeyin is
               an Educator, developer and Economist. And he is passionate about
-              everything web. If he is not coding, he enjoys listening to good
+              everything web. He does magic with these prefered stack of node, react and graphql. Putting coding aside, he enjoys listening to good
               music and playing with oil and acrylic paints. Then one more
               thing, he is probably reading.
             </p>
