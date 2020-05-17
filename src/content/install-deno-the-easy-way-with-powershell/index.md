@@ -42,7 +42,7 @@ Copy and paste the code below after you confirmed your version is --5
 
 ##**Step 4**
 
-After you confirmed it downloaded, type deno and enter in the powershell console like I did below
+After you confirmed it downloaded, type deno and click enter in the powershell console like I did below
 
 ```javascript
 {
@@ -53,7 +53,7 @@ After you confirmed it downloaded, type deno and enter in the powershell console
 ```
 ##**Last Step**
 
-This works well inyour powershell console but try it out in other Command Line, did you notice it seems not to work??
+This works well in your powershell console but try it out in other Command Line Tools, did you notice it seems not to work??
 
 Alright. to solve that is simple, just restart your computer and everything should be fine now.
 
