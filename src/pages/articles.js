@@ -24,7 +24,7 @@ const ArticlesPage = ({ data }) => (
       />
       <main>
         <h4>
-          {data.allMarkdownRemark.totalCount} Article
+          {data.allMarkdownRemark.totalCount} Recent Article
           {data.allMarkdownRemark.totalCount === 1 ? " " : "s"}
         </h4>
 

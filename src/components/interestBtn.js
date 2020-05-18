@@ -50,19 +50,12 @@ export default function interestBtn() {
         </a>
         <a
           className="floatingInt"
-          href="https://kelvinsekx@gmail.com/"
+          href="mailto:kelvinsekx@gmail.com"
           style={{
             borderBottom: `1px solid green`,
           }}
         >
           <SVG><Gmail /></SVG>
-        </a>
-        <a
-        className="floatingInt"
-          href="https://www.kelvinsekx.codes/"
-          style={{ borderBottom: `1px solid green` }}
-        >
-          interviews and speakers
         </a>
       </div>
     </>

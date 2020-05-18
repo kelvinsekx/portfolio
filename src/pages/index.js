@@ -4,9 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 //Components that makes up the page
-import HeaderSummary from "../components/headerSum"
-import ImageContainer from "../components/imageContainer"
-import FloatingIcon from "../components/interestBtn"
+import HeaderContainer from "../components/maincomponent/headerContainer"
 import FloatingBtn from "../components/floatingBtn"
 import Anchor from "../components/link"
 //imports styled component
@@ -22,10 +20,8 @@ function IndexPage() {
 
   const changeMission=()=>{
     setShowMission(true)
-    //set long statement to disappear
-    setShowLong(false)
-    //set short statement to disappear
-    setShowShort(false)
+    setShowLong(false) //set long statement to disappear
+    setShowShort(false) //set short statement to disappear
   }
   const changeShort=()=> {
     setShowShort(true)
@@ -46,12 +42,7 @@ function IndexPage() {
     <Layout>
       <SEO title="Home" />
       <div id="overallWrapper">
-        <div className="container">
-          <HeaderSummary />
-          <ImageContainer />
-        </div>
-        <FloatingIcon/>
-
+        <HeaderContainer />
         <div className="instantPage-loader">
           <div className="floatingBtn">
             <FloatingBtn

@@ -21,13 +21,13 @@ export const GlobalStyles = createGlobalStyle`
   -webkit-text-size-adjust: 100%;
   }
 
-
+  a{
+    color: ${({ theme }) => theme.linkText};
+    text-decoration: none;
+  }
   .to{
     color: ${({ theme }) => theme.text};
-  }
-
-  .link{
-    color: ${({ theme }) => theme.linkText};
+    text-decoration: none;
   }
 
   .floatingInt{

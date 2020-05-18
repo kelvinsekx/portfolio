@@ -7,7 +7,6 @@ const Header = (props) => (
   <header
     style={{
       marginBottom: `0.25rem`,
-      border: `0.6px solid #888`,
       display:`flex`,
       alignItems:`center`,
       justifyContent: `space-between`
@@ -15,7 +14,7 @@ const Header = (props) => (
   >
     <div>
       <span style={{
-        fontSize:`1.5rem`,
+        fontSize:`1.8rem`,
          }}>
         <Link
           to="/"

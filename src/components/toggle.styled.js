@@ -12,12 +12,12 @@ export const ToggleContainer = styled.button`
   overflow: hidden;
   padding: 0.5rem;
   position: relative;
-  width: 8rem;
-  height: 3.4rem;
+  width: 5rem;
+  height: 2.4rem;
 
   svg {
     height: auto;
-    width: 2.5rem;
+    width: 2.9rem;
     transition: all 0.3s linear;
 
     // sun icon

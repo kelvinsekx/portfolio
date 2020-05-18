@@ -81,7 +81,6 @@ div.container {
         a{
            // padding:0.4em 1em;
             font-weight: 100;
-            margin-bottom: 1px;
         }   
     }
     div.instantPage-loader{
@@ -108,14 +107,9 @@ div.floatingInterests{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-height: 22rem;
     a{
        // padding:0.4em 1em;
         text-decoration: none;
-        font-size: 1.2em ;
-        font-weight: 300;
-        margin-bottom: -1px;
-        margin: 0.04em 0.4em;
     }   
 }
 div.instantPage-loader{
