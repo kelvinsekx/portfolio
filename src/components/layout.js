@@ -13,9 +13,10 @@ import "./layout.css"
 
 
 const Layout = ({ children }) => {
-  const [theme, toggleTheme] = useDarkMode();
+  const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
   
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,7 +26,10 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+  
+  if (!componentMounted) {
+    return <div />
+  };
   return (
     <ThemeProvider theme={themeMode}>
       <>
