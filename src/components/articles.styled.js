@@ -23,6 +23,7 @@ export const StyledLink = styled.div`
 export const StyledH3 = styled.h2`
   font-size: 2.5rem;
   font-weight: 700;
+  font-family: 'DM Mono', monospace;
   @media (max-width: 768px) {
     font-size: 2rem;
   }

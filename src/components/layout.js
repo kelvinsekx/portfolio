@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
   `)
   
   if (!componentMounted) {
-    return <div />
+    return null;
   };
   return (
     <ThemeProvider theme={themeMode}>
