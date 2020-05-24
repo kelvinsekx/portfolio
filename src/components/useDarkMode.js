@@ -1,32 +1,25 @@
 import { useEffect, useState } from "react"
 
 export const useDarkMode = () => {
+  let websiteTheme
+  if (typeof window !== `undefined`) {
+    websiteTheme = window.__theme
+  }
   // const [theme, setTheme] = useState('light');
-  const [theme, setTheme] = useState("light")
-  const [componentMounted, setComponentMounted] = useState(false)
+  const [theme, setTheme] = useState(websiteTheme)
+  // const [componentMounted, setComponentMounted] = useState(false)
 
   const toggleTheme = () => {
-    if (theme === "light") {
-      window.localStorage.setItem("theme", "dark")
-      setTheme("dark")
-    } else {
-      window.localStorage.setItem("theme", "light")
-      setTheme("light")
-    }
+      window.__setPreferredTheme( websiteTheme === 'dark' ? 'light' : 'dark')
+      
   }
 
   useEffect(() => {
-    const localTheme = window.localStorage.getItem("theme")
-    // localTheme && setTheme(localTheme);
-    if (localTheme) {
-      setTheme(localTheme)
-    } else {
-      setTheme("light")
-      window.localStorage.setItem("theme", "light")
-    }
-
-    setComponentMounted(true)
+    setTheme( window.__theme );
+    window.__onThemeChange = () => {
+      setTheme( window.__theme );
+    };
   }, [])
 
-  return [theme, toggleTheme, componentMounted]
+  return [theme, toggleTheme]
 }

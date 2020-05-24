@@ -19,6 +19,7 @@ export const GlobalStyles = createGlobalStyle`
   font-family: 'Roboto', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  transition: color 0.2s ease-out, background 0.2s ease-out,
   }
 
   a{
