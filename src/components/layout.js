@@ -18,9 +18,9 @@ import "./layout.css"
 //::::::^^^^^^^^^^^^^^+++++++++++++++^^^^^^^^^^^^^^^::::::
 //G O   A N D   B U I L D   G R E A T   T H I N G S
 
-const Layout = (props) => {
+const Layout = ({ children, home}) => {
     //:::deconstruction stays below:::
-    const { children, location} = props
+    ///const { children, home} = props
     // console.log(props)
     //::::deconstruction ends::::
   const [theme, toggleTheme] = useDarkMode()
@@ -37,9 +37,7 @@ const Layout = (props) => {
   `)
 
   const renderHeader = ()=>{
-    const rootPath = `/`
-    if ({location}.pathname === rootPath) {
-      console.log({location}.pathname)
+    if (home) {
       return (
         <div>
           <span
@@ -59,7 +57,7 @@ const Layout = (props) => {
           </span>
         </div>
       )
-    } else {
+    } else if(!(home)) {
       return (
       <div>
         <span
@@ -90,6 +88,7 @@ const Layout = (props) => {
           theme={theme}
         >
           {renderHeader()}
+         
         </Header>
         <div
           style={{

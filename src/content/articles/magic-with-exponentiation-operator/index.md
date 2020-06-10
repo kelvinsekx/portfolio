@@ -1,6 +1,7 @@
 ---
 title: "Exponentiation operator is now standardized in JavaScript"
 date: "2020-05-08"
+description: "exponentiation operation with javascript kelvinsekx"
 ---
 
 Yello! ECMA2016 standardized the exponentiation operator (**).

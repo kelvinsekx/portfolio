@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import SEO from "../components/seo"
 import { WrapperContainer, FooterDiv, Smalled, NAV } from "../components/articles.styled"
 import Layout from "../components/layout"
 import BackIcon from "../components/icon/back.svg"
@@ -8,17 +9,17 @@ import BackIcon from "../components/icon/back.svg"
 const blogTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const {next,previous} = pageContext
-  console.log(next)
-  console.log(previous)
+  
   return (
     <Layout>
+      <SEO title={post.frontmatter.title} />
       <WrapperContainer>
         <Link
           to="/articles"
           className="link"
-          style={{ display: "inline-flex", alignItems: "center" }}
+          style={{ display: "inline-flex", alignItems: "center", fontSize:"0.7em" }}
         >
-          <BackIcon style={{ height: "auto", width: "2.5rem" }} /> BACK TO
+          <BackIcon style={{ height: "auto", width: "1.5rem" }} /> BACK TO
           ARTICLES
         </Link>
         <h1>{post.frontmatter.title}</h1>

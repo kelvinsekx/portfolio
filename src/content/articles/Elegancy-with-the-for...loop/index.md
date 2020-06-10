@@ -1,6 +1,7 @@
 ---
 title: "Elegancy with the for...loop using for-in loop and for-of loop as a case study"
 date: "2020-05-13"
+description: "for loop for-in loop javascript loop kelvinsekx write on loop"
 ---
 
 Today, we will be discussing the famous for loops. Sadly, nerdy developers I know only resort to the use of for loop after alternatives like recursion have failed them (which can be very rare) or they have exhausted other elegant ones like map, every, array.from and the likes.
