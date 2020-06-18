@@ -13,6 +13,7 @@ const blogTemplate = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
+      <SEO description={post.frontmatter.title} />
       <WrapperContainer>
         <Link
           to="/articles"
