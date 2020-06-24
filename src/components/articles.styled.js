@@ -33,8 +33,14 @@ export const StyledParagraph=styled.p`
   font-size: 1.1em;
   font-weight: 50;
 `
+
 export const StyledSmall=styled.small`
  margin-top: 1.2em;
+`
+
+export const TypingP=styled.p`
+ margin: 0;
+ padding: 0;
 `
 
 export const FooterDiv = styled.a`
