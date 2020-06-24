@@ -46,18 +46,18 @@ div.container {
         //border: 2px solid red;
         width:26rem;
     }
-    
+
 }
 @media screen and (max-width:600px){
     div#overallWrapper{
-        width: 94vw;
+        width: 98vw;
     }
     div.container {
         flex-direction: column;
         align-items: center;
         justify-items: center;
         div.detailsContainer{
-            padding: 0 1rem;
+            padding: 0 0.5rem;
             // border: 2px solid red;
             h2{
                 font-size: 2rem;
@@ -70,7 +70,7 @@ div.container {
             width:17rem;
             margin: auto;
         }
-        
+
     }
     img{
         width: 70%;
@@ -81,7 +81,7 @@ div.container {
         a{
            // padding:0.4em 1em;
             font-weight: 100;
-        }   
+        }
     }
     div.instantPage-loader{
         // border: 2px solid red;
@@ -110,7 +110,7 @@ div.floatingInterests{
     a{
        // padding:0.4em 1em;
         text-decoration: none;
-    }   
+    }
 }
 div.instantPage-loader{
    // border: 2px solid red;

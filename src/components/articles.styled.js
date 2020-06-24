@@ -56,8 +56,3 @@ export const NAV = styled.nav`
  width: 100%;
  margin-top:2em;
 `
-
-export const StyledTyping = styled.span`
- color: #801234;
- min-height: 3em;
-`
