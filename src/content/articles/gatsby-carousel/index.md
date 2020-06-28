@@ -116,7 +116,7 @@ We would quickly create a next and previous button so that the images change on 
 this method can be unhealthy for production purpose but it sure does provide a lot understanding and knowledge that can help out in the next tutorial. Also you can just clone my repo to see how everything work on my side.
 ****
  <h3 style="color:#349077">
-**Joke Time : dedicated to Bukunmi**
+**Joke Time : dedicated to Victor**
 </h3>
 
 If a female tiger is called tigress,
