@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+
 import { Link } from "gatsby"
 
 //:::styled-components things:::
@@ -8,6 +8,8 @@ import { ThemeProvider } from "styled-components"
 import { useDarkMode } from "./useDarkMode"
 import { lightTheme, darkTheme } from "./theme"
 import { GlobalStyles } from "./global"
+import { StyledLogo} from "./articles.styled"
+import setFlickerAnimation from "./flickering"
 //:::component parts:::
 import Header from "./header"
 
@@ -26,59 +28,11 @@ const Layout = ({ children, home}) => {
   const [theme, toggleTheme] = useDarkMode()
   const themeMode = theme === "light" ? lightTheme : darkTheme
 
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  const renderHeader = ()=>{
-    if (home) {
-      return (
-        <div>
-          <span
-            style={{
-              fontSize: `1.8rem`,
-            }}
-          >
-            <Link
-              to="/"
-              style={{
-                color: `rgb(111, 23, 122)`,
-                textDecoration: `none`,
-              }}
-            >
-              {data.site.siteMetadata.title}
-            </Link>
-          </span>
-        </div>
-      )
-    } else if(!(home)) {
-      return (
-      <div>
-        <span
-          style={{
-            fontSize: `1.2rem`,
-          }}
-        >
-          <Link
-            to="/"
-            style={{
-              color: `rgb(255, 167, 196)`,
-              textDecoration: `none`,
-            }}
-          >
-            {data.site.siteMetadata.title}
-          </Link>
-        </span>
-      </div>
-      )
-    }
-  }
+  const color = {
+    name: "mediumseagreen"
+  };
+  setFlickerAnimation()
+  
   return (
     <ThemeProvider theme={themeMode}>
       <>
@@ -87,8 +41,15 @@ const Layout = ({ children, home}) => {
           toggleTheme={toggleTheme}
           theme={theme}
         >
-          {renderHeader()}
-         
+          <Link to="/"
+           style={{textDecoration: 'none'}}
+          >
+          <StyledLogo
+            color={color}
+            className="el_flicker"
+            theme={theme}
+          >kelvinsekx</StyledLogo>
+         </Link>
         </Header>
         <div
           style={{

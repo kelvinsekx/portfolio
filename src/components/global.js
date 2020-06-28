@@ -24,7 +24,6 @@ export const GlobalStyles = createGlobalStyle`
 
   a{
     color: ${({ theme }) => theme.linkText};
-    text-decoration: none;
   }
   .to{
     color: ${({ theme }) => theme.text};
