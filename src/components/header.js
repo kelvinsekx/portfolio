@@ -8,7 +8,7 @@ const Header = function(props) {
   return (
     <header
       style={{
-        padding: `1.25rem 0.24rem`,
+        padding: `0.25rem 0.04rem`,
         display: `flex`,
         alignItems: `center`,
         justifyContent: `space-around`,

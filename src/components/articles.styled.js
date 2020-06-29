@@ -13,7 +13,9 @@ export const WrapperContainer = styled.div`
 export const StyledLogo = styled.span`
   font-size: 2.5rem;
   font-weight: 600;
-  color: rgb(255, 167, 196);
+  @media (max-width: 720px) {
+    font-size: 2rem;
+  }
 
   ${props =>
     props.theme === "dark" &&
@@ -25,6 +27,11 @@ export const StyledLogo = styled.span`
         0 0 0.3em ${props => props.color.name},
         0 0 1em ${props => props.color.name},
         0 0 1.5em ${props => props.color.name};
+    `}
+  ${props =>
+    props.theme === "light" &&
+    css`
+      color: rgb(255, 167, 196);
     `}
 `
 
