@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function setFlickerAnimation() {
   // get all elements that should be animated
   const Document = typeof document !== `undefined` ? document : null
