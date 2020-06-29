@@ -1,13 +1,12 @@
 export default function setFlickerAnimation() {
   // get all elements that should be animated
- // let Document;
   const Document = typeof document !== `undefined` ? document : null
   // if (typeof document !== "undefined"){
   //   Document = document
   // }
-  const animatedElements = Array.from(
-    Document.querySelectorAll(".el_flicker")
-  )
+  const animatedElements = typeof document !== `undefined` ? Array.from(
+    document.querySelectorAll(".el_flicker")
+  ) : <div />
 
   if (!animatedElements.length) {
     return false
