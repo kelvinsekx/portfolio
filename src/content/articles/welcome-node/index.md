@@ -25,6 +25,6 @@ V8 according to https://v8.dev is Google’s open source high-performance javasc
 **Joke Time : dedicated to Oyin**
 </h3>
 
-If the sky was dark, white teeth would be a BIG deal
+If the sky were dark, white teeth would be a BIG deal
 
 ****
