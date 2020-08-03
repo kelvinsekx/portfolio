@@ -22,7 +22,7 @@ V8 according to https://v8.dev is Google’s open source high-performance javasc
 
 ****
  <h3 style="color:#349077">
-**Joke Time : dedicated to Oyin (rochas)**
+**Joke Time : dedicated to Oyin (Rochas)**
 </h3>
 
 If the sky were dark, white teeth would be a BIG deal
