@@ -44,6 +44,6 @@ If this country were to be sold, we would at least get a share.
 Thank you again for reading. It takes courage to learn programming concepts without typing a code.
 But a popular adage says "bitter things are for strong people". Lol, so you are strong if you read this far.
 
-The most important part is that this article help you. I fit does, congrats.
+The most important part is that this article helped you. I fit does, congrats.
 
 
