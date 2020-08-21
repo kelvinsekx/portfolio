@@ -64,6 +64,9 @@ function IndexPage() {
           <div
             id="short"
             className={`line-height24 ${showShort ? "current" : "none"}`}
+            style={{
+              padding: `2rem`,
+            }}
           >
             <p style={{fontSize: '2rem'}}>
               <span title="world in my native language">Araye</span>, Welcome
@@ -92,6 +95,9 @@ function IndexPage() {
           <div
             id="long"
             className={`line-height24 ${showLong ? "current" : "none"}`}
+            style={{
+              padding: `2rem`,
+            }}
           >
             <p>
               {" "}
