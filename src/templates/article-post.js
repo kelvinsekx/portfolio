@@ -4,7 +4,6 @@ import SEO from "../components/seo"
 import { WrapperContainer, FooterDiv, Smalled, NAV } from "../components/articles.styled"
 import Layout from "../components/layout"
 import BackIcon from "../components/icon/back.svg"
-//import SunIcon  from './icon/sun.svg';
 
 const blogTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -27,7 +26,7 @@ const blogTemplate = ({ data, pageContext }) => {
         <Smalled>
           Published {post.frontmatter.date} ----- {post.timeToRead} {post.timeToRead === 1 ? "minute": "minutes"} read
         </Smalled>
-        <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
         
         <NAV
           style={{
@@ -73,9 +72,11 @@ const blogTemplate = ({ data, pageContext }) => {
 
 export default blogTemplate
 
-export const query = graphql`
+export const pageQuery = graphql`
   query BlogPostByBlog($slug: String!) {
+
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
       html
       timeToRead
       frontmatter {
