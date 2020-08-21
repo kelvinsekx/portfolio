@@ -1,7 +1,7 @@
 
 
 export const lightTheme = {
-  body: "#f4f4f4",
+  body: "#fff",
   text: "#333333",
   linkText: "rgb(126, 40, 138)",
   toggleBorder: "#FFF",
