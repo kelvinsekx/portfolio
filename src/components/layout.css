@@ -60,7 +60,7 @@ footer {
 
 .flicker {
   animation: flicker 3s linear forwards alternate infinite;
-  font-size: 4.7rem;
+  font-size: 2.3rem;
 }
 .flicker:nth-child(even) {
   animation-delay: 0.3s;

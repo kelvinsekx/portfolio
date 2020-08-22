@@ -1,11 +1,6 @@
 import React from "react"
 import Typed from 'typed.js';
 
-// var options = {
-//   strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-//   typeSpeed: 40
-// };
-
 
 class Typing extends React.Component{
     componentDidMount(){
@@ -15,9 +10,9 @@ class Typing extends React.Component{
             "ramen", "Ibadan", "d one HAUSA girl", "seeing small jokes", "<b style='color:green'>not tweeting</b>", "BEING me", "wine ^(* ! *)^",
             "to-do lists", "public speaking", "lorde _//\\_", "nike shoes", "interior design", "dates", "the internet","the WEB",
             "<em style='font-size: 0.7em'>Havard Business School</em>",
-            "<em style='font-size: 0.7em'>Wharton Business School</em>", "and INSEAD", "chicago", "side hustles", "doing vs talking", "my MUM than anyone", "my bed",
-            "Game of Thrones", "weekends", "restaurants", "FOOD :(", "black twitter", "iphones, ::BUT never used one", "crop tops", "writing",
-            "looking funny and may be dump", "figure 8", "house plants", "mornings",
+            "<em style='font-size: 0.7em'>Wharton Business School</em>", "and INSEAD", "chicago", "side hustles", "doing vs talking", "my bed",
+            "Game of Thrones", "weekends", "restaurants", "FOOD :(", "black twitter", "iphones,but never used one", "crop tops", "writing",
+            "looking funny", "and may be dump", "figure 8", "house plants", "mornings",
             "sunshine, ","been indoor", "playing with kids", "like the POOR", "the humble",
             "<b style='color: yellow'>being loved</b>"],
           typeSpeed: 60,

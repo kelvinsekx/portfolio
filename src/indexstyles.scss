@@ -32,21 +32,13 @@ div.container {
     display: flex;
     align-items: center;
     justify-items: center;
-    div.detailsContainer{
-        padding: 0px 2.2rem;
-        // border: 2px solid red;
-        h2{
-            font-size: 2.4rem;
-            letter-spacing: 1px;
-            font-weight: 100;
-            //border: 2px solid red;
-        }
-    }
-    div.img-container{
-        //border: 2px solid red;
-        width:26rem;
-    }
+}
 
+img{
+    border-radius: 50%;
+    width: 19rem;
+    height: 19rem;
+    background-color: $designGreen;
 }
 @media screen and (max-width:600px){
     div#overallWrapper{
@@ -56,20 +48,6 @@ div.container {
         flex-direction: column;
         align-items: center;
         justify-items: center;
-        div.detailsContainer{
-            padding: 0 0.5rem;
-            // border: 2px solid red;
-            h2{
-                font-size: 2rem;
-                line-height: 3rem;
-                //border: 2px solid red;
-            }
-        }
-        div.img-container{
-            //border: 2px solid red;
-            width:17rem;
-            margin: auto;
-        }
 
     }
     img{
@@ -98,10 +76,6 @@ div.container {
 }
 
 //MOBILE CSS ENDS HERE
-
-
-
-
 div.floatingInterests{
     //border:2px solid red;
     display: flex;
@@ -129,12 +103,6 @@ div.instantPage-loader{
         }
     }
 }
-img{
-    border-radius: 50%;
-    width: 19rem;
-    height: 19rem;
-    background-color: $designGreen;
-}
 
 .fltBtn{
     border: 3px solid $designGreen;
@@ -159,9 +127,6 @@ img{
 }
 .butterGrey{
     color: #333333;
-}
-.line-height24{
-    line-height: 24px;
 }
 .material-icons {
     font-family: 'Material Icons';

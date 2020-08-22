@@ -12,9 +12,9 @@ export const WrapperContainer = styled.div`
 
 export const StyledLogo = styled.span`
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 450;
   @media (max-width: 720px) {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   ${props =>

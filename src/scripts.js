@@ -1,50 +1,8 @@
-import React, { useState } from "react"
-// import {banData} from "../scripts"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-//Components that makes up the page
-import HeaderContainer from "../components/maincomponent/headerContainer"
-import FloatingBtn from "../components/floatingBtn"
-import Anchor from "../components/link"
-import BanWrapper from "../components/banWrapper"
-//imports styled component
-import "../indexstyles.scss"
-
-function IndexPage() {
-  //This handles short
-  const [showShort, setShowShort] = useState(true)
-  //this handles mission
-  const [showMission, setShowMission] = useState(false)
-  //this handle long
-  const [showLong, setShowLong] = useState(false)
-
-  const changeMission=()=>{
-    setShowMission(true)
-    setShowLong(false) //set long statement to disappear
-    setShowShort(false) //set short statement to disappear
-  }
-  const changeShort=()=> {
-    setShowShort(true)
-    //make long statement disappear
-    setShowLong(false)
-    //make mission statement disappear likewise
-    setShowMission(false)
-  }
-  const changeLong=()=>{
-    setShowLong(true)
-    //make the short disappear
-    setShowShort(false)
-    //make the mission also disappear
-    setShowMission(false)
-  }
-
-  const banData = [
+export const banData =  [
     {
         banID:"short",
-        classname: showShort,
-        content: `<div><p style={{fontSize: '1rem'}}>
+        classname: 'showShort',
+        content: `<p style={{fontSize: '1rem'}}>
         <span title="world in my native language">Araye</span>, Welcome
         here and thanks for visiting.
       </p>
@@ -54,12 +12,11 @@ function IndexPage() {
         <p> 
         I do magic with these prefered stack of node, react and graphql. Putting coding aside, I enjoy listening to good
         music and playing with oil and acrylic paints.
-      </p>
-      </div>`
+      </p>`
     },
     {
         banID:"mission",
-        classname: showMission,
+        classname: 'showMission',
         content: `<p>kelvinsekx mission is to build neat, small and decomposable web with
         as much default technologies(html, css and vanilla javaScript) as
         possible together with emerging and modern frameworks and
@@ -67,7 +24,7 @@ function IndexPage() {
     },
     {
         banID:"long",
-        classname: showLong,
+        classname: 'showLong',
         content: `<p>
         {" "}
         Well, Thanks for wanting to read the details. Ukuejubola Kelvin
@@ -87,7 +44,6 @@ function IndexPage() {
         self taught engineer.
       </p>
       <p>
-      {" "}
         He got into coding with PHP and later learnt javaScript. Now he is
         in love with javaScript and preaces JS everywhere he could.
       </p>
@@ -99,7 +55,6 @@ function IndexPage() {
         it is so fun.
       </p>
       <p>
-      {" "}
         It is noteworthy to say that he is the very jovial type and no
         dull moment with him.
       </p>
@@ -116,41 +71,3 @@ function IndexPage() {
       </p>`
     }
 ]
-
-  return (
-    <Layout>
-      <SEO title="Home" />
-      <div id="overallWrapper">
-        <HeaderContainer />
-        <div className="instantPage-loader">
-          <div className="floatingBtn">
-            <FloatingBtn
-              className={showMission ? "changeCurrentColor" : "fltBtn"}
-              name="my-mission"
-              changeSomething={changeMission}
-            />
-            <FloatingBtn
-              className={showShort ? "changeCurrentColor" : "fltBtn"}
-              name="short"
-              changeSomething={changeShort}
-            />
-            <FloatingBtn
-              className={showLong ? "changeCurrentColor" : "fltBtn"}
-              name="long"
-              changeSomething={changeLong}
-            />
-          </div>
-          {banData.map((each)=>(
-             <BanWrapper
-             banID={each.banID}
-             classname={`${each.classname ? "current" : "none"}`}
-             key={each.classname}
-          ><div dangerouslySetInnerHTML={{ __html: each.content }} /></BanWrapper>
-          ))}
-        </div>
-      </div>
-    </Layout>
-  )
-}
-
-export default IndexPage
