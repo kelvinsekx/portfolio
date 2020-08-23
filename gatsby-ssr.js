@@ -1,6 +1,10 @@
 const React = require("react")
 
-exports.onRenderBody = ({ setPreBodyComponents }) => {
+exports.onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
+  setHeadComponents([
+    <script data-ad-client="ca-pub-1149332608171839" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+  ])
+  
   setPreBodyComponents([
     React.createElement("script", {
       dangerouslySetInnerHTML: {
