@@ -16,11 +16,16 @@ export const GlobalStyles = createGlobalStyle`
    color: ${({ theme }) => theme.text};
    background: ${({ theme }) => theme.body};
   font-weight: ${({ theme }) => theme.weight};
-  font-family: 'Roboto', sans-serif;
+  font-family:  sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   transition: color 0.2s ease-out, background 0.2s ease-out,
   }
+
+  main{
+    font-size: ${({ theme }) => theme.size};
+  }
+
 
   a{
     color: ${({ theme }) => theme.linkText};

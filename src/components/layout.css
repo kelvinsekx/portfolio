@@ -7,13 +7,22 @@ a {
   padding: 0;
 }
 
+.flicker {
+  animation: flicker 3s linear forwards alternate infinite;
+  font-size: 2rem;
+}
+.flicker:nth-child(even) {
+  animation-delay: 0.3s;
+  animation-direction: alternate-reverse;
+}
+
 @media only screen and (max-width: 480px) {
   html {
-    font-size: 100%;
+    font-size: 90%;
   }
 }
 footer {
-  width: 90%;
+  width: 100%;
   margin: auto;
   font-size: 0.9em;
 }
@@ -58,18 +67,15 @@ footer {
   }
 }
 
-.flicker {
-  animation: flicker 3s linear forwards alternate infinite;
-  font-size: 2.3rem;
-}
-.flicker:nth-child(even) {
-  animation-delay: 0.3s;
-  animation-direction: alternate-reverse;
-}
-
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0s !important;
     transition-duration: 0s !important;
   }
+}
+
+.borderTop {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 3px solid #3d7e9a;
 }

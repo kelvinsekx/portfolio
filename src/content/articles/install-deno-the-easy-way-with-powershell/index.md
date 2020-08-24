@@ -1,6 +1,7 @@
 ---
 title: "Installation of Deno with Powershell"
 date: "2020-05-16"
+lastupdated: "2020-08-24"
 description: "deno land Deno deno installation eith powershell Deno installtion kelvinsekx deno installation"
 ---
 

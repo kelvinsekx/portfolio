@@ -1,6 +1,7 @@
 ---
 title: "Elegancy with the for...loop using for-in loop and for-of loop as a case study"
 date: "2020-05-13"
+lastupdated: "2020-08-24"
 description: "for loop for-in loop javascript loop kelvinsekx write on loop"
 ---
 

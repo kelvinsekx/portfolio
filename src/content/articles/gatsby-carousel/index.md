@@ -1,6 +1,7 @@
 ---
 title: "Gatsby Carousel from Scratch "
 date: "2020-06-02"
+lastupdated: "2020-08-24"
 description: "gatsby carousel by kelvinsekx using gatsby-image gatsby-image gatsby gatsby carousel"
 ---
 

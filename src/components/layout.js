@@ -21,10 +21,6 @@ import "./layout.css"
 //G O   A N D   B U I L D   G R E A T   T H I N G S
 
 const Layout = ({ children, home}) => {
-    //:::deconstruction stays below:::
-    ///const { children, home} = props
-    // console.log(props)
-    //::::deconstruction ends::::
   const [theme, toggleTheme] = useDarkMode()
   const themeMode = theme === "light" ? lightTheme : darkTheme
 

@@ -1,6 +1,7 @@
 ---
 title: "Re(Back):2  Asynchronous and evented Node"
 date: "2020-08-20"
+lastupdated: "2020-08-24"
 description: "asynchronous api evented node js"
 ---
 

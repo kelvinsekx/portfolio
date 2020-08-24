@@ -3,8 +3,7 @@ import styled, { css } from "styled-components"
 export const WrapperContainer = styled.div`
   width: 70vw;
   margin: 0.5em auto;
-  font-size: 1.2rem;
-  line-spacing: 5px;
+  line-spacing: 3px;
   @media (max-width: 720px) {
     width: 90vw;
   }

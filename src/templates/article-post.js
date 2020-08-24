@@ -23,8 +23,9 @@ const blogTemplate = ({ data, pageContext }) => {
           ARTICLES
         </Link>
         <h1>{post.frontmatter.title}</h1>
-        <Smalled>
-          Published {post.frontmatter.date} ----- {post.timeToRead} {post.timeToRead === 1 ? "minute": "minutes"} read
+        <Smalled> 
+          <div>
+            {'^(* ! *)^'} {post.timeToRead} {post.timeToRead === 1 ? "minute": "minutes"} read</div>
         </Smalled>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         
@@ -34,8 +35,8 @@ const blogTemplate = ({ data, pageContext }) => {
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
-            padding: 0,
           }}
+          className="borderTop"
         >
           <div  style={{width: '42%', alignItem: "left"}}>
             {previous && (
@@ -55,9 +56,11 @@ const blogTemplate = ({ data, pageContext }) => {
                 {next.frontmatter.title} →
               </Link>
               </div>
-            )}
+            )
+            }
           </div>
       </NAV>
+      <div className="borderTop">Published on {post.frontmatter.date} {`&&`} Last modified: {post.frontmatter.lastupdated} by an awesome person</div>
         
         <FooterDiv
           className="to"
@@ -81,7 +84,8 @@ export const pageQuery = graphql`
       timeToRead
       frontmatter {
         title
-        date
+        date(formatString: "ddd, MMMM DD,YYYY")
+        lastupdated(formatString: "ddd, MMMM DD,YYYY")
       }
       fields {
         slug
