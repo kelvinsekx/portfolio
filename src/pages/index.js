@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 //Components that makes up the page
 import HeaderContainer from "../components/maincomponent/headerContainer"
 import FloatingBtn from "../components/floatingBtn"
-import Anchor from "../components/link"
+// import Anchor from "../components/link"
 import BanWrapper from "../components/banWrapper"
 //imports styled component
 import "../indexstyles.scss"

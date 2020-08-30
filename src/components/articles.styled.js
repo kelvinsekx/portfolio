@@ -1,9 +1,20 @@
 import styled, { css } from "styled-components"
 
+
+export const OverallWrapperContainer = styled.div`
+ width: 1100px;
+ border: 2px solid black;
+ margin: 0 auto;
+`
+export const ContentContainer = styled.div`
+  border: 2px solid purple;
+  // float: left;
+`
 export const WrapperContainer = styled.div`
-  width: 70vw;
   margin: 0.5em auto;
   line-spacing: 3px;
+  border: 2px solid red;
+  // float: right;
   @media (max-width: 720px) {
     width: 90vw;
   }

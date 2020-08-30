@@ -6,7 +6,7 @@ import FloatingIcon from "../interestBtn"
 export default function headerContainer() {
   return (
     <>
-      <div className="container">
+      <div className="header_container">
         <HeaderSummary />
         <ImageContainer />
       </div>

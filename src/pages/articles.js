@@ -2,7 +2,7 @@ import React from "react"
 import SEO from "../components/seo"
 import { graphql, Link } from "gatsby"
 import {
-  WrapperContainer,
+  //WrapperContainer,
   StyledH3,
   StyledLink,
   StyledSmall,
@@ -16,8 +16,9 @@ import Layout from "../components/layout"
 
 const ArticlesPage = ({ data }) => (
   <Layout>
-    <WrapperContainer>
       <SEO title="All posts" />
+      <div className="container">
+      <div className="row">
       <BIO
         data={data.site.siteMetadata.articles.articles}
         description={data.site.siteMetadata.articles.shortnote}
@@ -44,7 +45,8 @@ const ArticlesPage = ({ data }) => (
           </StyledLink>
         ))}
       </main>
-    </WrapperContainer>
+    </div>
+    </div>
   </Layout>
 )
 

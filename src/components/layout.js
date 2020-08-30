@@ -47,11 +47,7 @@ const Layout = ({ children, home}) => {
           >kelvinsekx</StyledLogo>
          </Link>
         </Header>
-        <div
-          style={{
-            margin: `0 auto`,
-          }}
-        >
+        <div className="container-fluid">
           <main>{children}</main>
 
           <footer>

@@ -20,13 +20,22 @@ a {
   html {
     font-size: 90%;
   }
+  .flicker {
+    font-size: 1rem;
+  }
 }
 footer {
   width: 100%;
   margin: auto;
   font-size: 0.9em;
 }
-
+h2{
+  margin: 0.6em 0;
+}
+ul li{
+  list-style: none;
+  margin-bottom: 0.5em;
+}
 #love {
   color: rgb(77, 14, 85);
   width: 5em;
