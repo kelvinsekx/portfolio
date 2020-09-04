@@ -66,7 +66,10 @@ function Image() {
 
   let image = arrayIt[index].image
 
-  return <Img fluid={image } style={style} />
+  return <Img 
+          fluid={image } 
+          style={style} 
+          className="changingImg" />
 }
 
 export default Image

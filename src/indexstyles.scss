@@ -34,13 +34,18 @@ div.header_container {
     justify-items: center;
 }
 
-img{
+.changingImg{
     border-radius: 50%;
     width: 19rem;
     height: 19rem;
     background-color: $designGreen;
     transition: all 0.3s ease-out;
 }
+
+code[class*="language-"], pre[class*="language-"] {
+   margin: 2em 0;
+}
+
 @media screen and (max-width:600px){
     div#overallWrapper{
         width: 98vw;
@@ -49,9 +54,13 @@ img{
         flex-direction: column;
         align-items: center;
         justify-items: center;
-
     }
-    img{
+    code[class*="language-"], pre[class*="language-"], img {
+        padding: 0!important;
+        margin-left: -1.81em!important;
+        width: 90vw!important;
+    }
+    .changingImg{
         width: 70%;
         height: 20rem;
     }

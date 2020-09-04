@@ -38,7 +38,8 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "styled-components": "^5.1.0",
-    "typed.js": "^2.0.11"
+    "typed.js": "^2.0.11",
+    "typeface-merriweather": "0.0.72"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

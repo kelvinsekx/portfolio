@@ -48,7 +48,6 @@ To guide your future self and potential code users, it is advisable to use propt
 We’ve talked a lot we can get our hands dirty now. We will start with a simple class component and make the change to a functional component.
 
 ```javascript
-{
     import React from “react”
     // bring in some components
     // here.
@@ -67,8 +66,6 @@ We’ve talked a lot we can get our hands dirty now. We will start with a simple
     }
 }
 export default App
-
-}
 ```
 
 To pass proptypes to our class component, there are two ways to do it:
@@ -92,7 +89,7 @@ In this our case, we will stick to the use of static method. Check it below:
             return (
                 <>
                     <div>
-                        {this.props.containerTitle}
+                        {this.props.title}
                     </div>
                 </>
             )
@@ -109,12 +106,14 @@ If you try to pass number type, you would get a screaming error in your console.
 
  Class App extends React.Component {
    ...
-        <PepperDem containerTitle={12} />
+        <PepperDem title={12} />
    ...
 }
 export default App
 
 ```
+
+![error image](./properror.png)
 
 <div class="borderTop">
 </div>
@@ -164,25 +163,19 @@ Sing this nursery rhyme along with me
 **What if I interview you : little quick questions I try and answer myself**
 </h3>
 
-In javaScript, we donot have access to a utility function like Range() in python. Replecate this, Range(stop, start, step), by following the instructions below:
-
-- Your function name should be called Range
-- the function, Range, should take three arguments of stop, start and step
-- start has a default value of 0, and step default value is 1
-- Lastly, execute this function with a recursion.
-  So that
+Which of this component will be rendered given that the Componenter below is true :
 
 ```javascript
 {
-  Range(5) // returns 0,1,2,3,4
-  Range(5, 2) //returns 2,3,4
-  Range(10, 2, 3) //returns 2,5,8
+  <Componenter /> || false // For example this will return <Componenter />
+  false || <Componenter /> 
+  false && <Componenter />
 }
 ```
 
 ## **Closing Note**:
 
 Props is cool, but with proptypes it even cooler.
-There is need for developers to code with human in mind and conscuously put in measures to mitigate problems and misunderstanding that might pop from using their piece.
+There is need for developers to code with human in mind and consciously put in measures to mitigate problems and misunderstanding that might pop from using their piece.
 
 In this regard, proptypes has come to the rescue.
