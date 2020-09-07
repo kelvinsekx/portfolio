@@ -2,7 +2,7 @@
 title: "Digging MERN I: hello world"
 date: "2020-09-03"
 lastupdated: "2020-09-03"
-description: "mern serverless react"
+description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners"
 ---
 
 This is an introductory tutorial that will happen in phases. By the end of this long tutorial, we would have created a complex and powerful blogging platform with the mern stacks.
@@ -72,7 +72,9 @@ Next, within the body, let's create a div that will hold the react component. It
     ...
 ```
 
-To write react, it important to understand some of its syntax. React creates element with a function just like the dom method, document.creatElement. Only a change to the document name to react, React.createElement. React.createElement is however more powerful in my opinion compare to the document method and takes three arguments.
+To write react, it is important to understand some of its syntax. 
+
+React creates element with a function just like the dom method, **document.creatElement**. Only a change to the document name to react, **React.createElement**. React.createElement is however more powerful in my opinion compare to the document method. It takes three arguments.
 
 ```javascript
 // the type can be any valid html tag
@@ -106,7 +108,7 @@ We can now replace our previous hard-coded hello world with react like this:
     ...
 ```
 
-However, this still doesnot do the work. If you reload your browser everything should remain the same. To make react render the elements we just created, there is a need to make use of the ReactDOM. This helps us to convert the elements from the virtual DOM to the browser DOM.
+However, this still doesnot do the work. If you reload your browser everything should be blank. To make react render the elements we just created, there is a need to make use of the ReactDOM. This helps us to convert the elements from the virtual DOM to the browser DOM.
 
 
 ```javascript
@@ -133,7 +135,7 @@ However, this still doesnot do the work. If you reload your browser everything s
     ...
 ```
 
-After you done that, everything should work right. Try and reload the browser. your complete code should look like this:
+After you done that, everything should work right. Try and reload the browser. Your complete code should look like this:
 
 ```javascript
 // index.html
@@ -169,15 +171,15 @@ After you done that, everything should work right. Try and reload the browser. y
 
 ## JSX
 
-With our previous code, things look fine but not too good. I only opted for that because that will make us understand React better in my opinion.
+With our previous code, things look fine but not too good. I only opted for that because it will make us understand React better in my opinion.
 
-However, If we decide to add more components this way things can get really clumpsy. And this why JSX shines. JSX helps to abstract the complicated syntax with writing React.createElement and makes our code look similar to HTML. 
+However, If we decide to add more components this way things can get really clumpsy. This is where JSX shines. JSX helps to abstract the complicated syntax with writing React.createElement and makes our code look similar to HTML. 
 
 Besides, JSX is not a replacement for html. In fact it is not html in any way.  
 
-Learn more about JSX
+<a href=jsx.org>Learn more about JSX</a>
 
-Let's re-write our previous code to take advantage of the wonder that comes with JSX.
+Let's re-write our previous code to take advantage of the wonders that come with JSX.
 
 ```javascript   
 <script>
@@ -227,9 +229,11 @@ Now everything should look good now. Our final code is below.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
     </head>
     <body>
-    // replace hello wold with the div
         <div id="___root"></div>
 
         <script type="text/babel">
@@ -240,7 +244,7 @@ Now everything should look good now. Our final code is below.
             </div>
          )
 
-          ReactDOM.render(elem, document.getElementById('___root'))
+          ReactDOM.render(Elem, document.getElementById('___root'))
         </script>
     </body>
     </html>
