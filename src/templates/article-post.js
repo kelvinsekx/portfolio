@@ -67,7 +67,7 @@ const blogTemplate = ({ data, pageContext }) => {
                   <div style={{ width: "42%", alignItem: "left" }}>
                     {previous && (
                       <div>
-                        <div>previous</div>
+                        <div>Next</div>
                         <Link
                           className="link"
                           to={previous.fields.slug}
@@ -87,7 +87,7 @@ const blogTemplate = ({ data, pageContext }) => {
                   >
                     {next && (
                       <div>
-                        <div>next</div>
+                        <div>Previous</div>
                         <Link className="link" to={next.fields.slug} rel="next">
                           {next.frontmatter.title} →
                         </Link>
