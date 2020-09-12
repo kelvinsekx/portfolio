@@ -20,13 +20,13 @@ when "two" is clicked, the list becomes:
 
 ## Before I share the code
 
-Before I share the code, what struck me was that I did a funny silly error. The error was that I was trying to manipulate/modify a prop.
+Before I share the code, what strucked me was that I did a funny silly error. The error was that I was trying to manipulate/modify a prop.
 
 Instead of modifying the prop, pass it to a state. 
 
 If you donot take anything away here. Please take this.
 
-**To the code**
+## **To the code**
 
 ```javascript
 // index.js
@@ -85,6 +85,6 @@ ReactDOM.render(<ListContainer />, document.getElementById("root"));
 
 // thanks for using my code snippet. If it helps you, tell me it did. I LOVE YOu
 ```
-**IF YOU'D LIKE THE LEARN MORE ABOUT THE LOGIC CONTACT ME**
+**HOPE IT HELPS. IF IT DOES MAKE ME MORE HAPPY AND SAY HELLO**
 
 
