@@ -18,7 +18,7 @@ when "two" is clicked, the list becomes:
 - one
 - three
 
-## Before I share the code
+## **Before I share the code**
 
 Before I share the code, what strucked me was that I did a funny silly error. The error was that I was trying to manipulate/modify a prop.
 
