@@ -5,11 +5,14 @@ lastupdated: "2020-09-07"
 description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners"
 ---
 
+<div class="introduction">
 In the <a href="/articles/hello-mern/">previous article</a>, you setup things all serverless. However, qiuckly you will know it is not efficient for anything, neither production nor development. The obvious reason is how long it takes for the browser to load, the punch of links, as Content Delivery Network(CDN) , are also unnecessary and quite large in size.
 
 This obvious reason and many others, require us to create a simple server that make things more efficient.
 
 To start handling things better, you will need to install few libraries and organize few files. But donot bother if you've never done this before. All you have to do is to follow the instructions here carefully.
+</div>
+
 
 To start:
 
@@ -206,8 +209,19 @@ Let’s add a script called compile whose command line is the Babel command line
 Stop your server (Ctr+C), but you will have to start it the unusual way. That is, you will need to compile first and start your server afterwards.
 You can see any changes to app.js reflected in the application.
 
+**run this on a separate terminal**
 `npm run compile`
+
+**run this on a separate terminal too**
 `npm start`
+
+<div class="watchout">
+If you compile, you will see a screaming error.
+To solve this create a .babelrc file at the src directory.
+and figure things out yourself. That your assignment.
+</div>
+
+**The solution to your assgnment is at the closing note**.
 
 Even after automating things up to this point, if you are familiar with client-side coding, you will notice an obvious pitfall here. We will have to reload our browser to see changes on our browser screen. 
 
@@ -238,4 +252,15 @@ Push up is the easiest exercise to do as far as you have hands and legs. All you
 What does the Elem variable in this tutorial contain.
 
 ## Closing Note:
- Digging MERN is important today than nerver before. When the MERN stack started it was very minimal and was easy to learn the basics. Today the MERN is larger than they thought it to be and it is easy not to learn the basics 
+ Digging MERN is important today than nerver before. When the MERN stack started it was very minimal and was easy to learn the basics. Today the MERN is larger than they thought it to be and it is easy not to learn the basics.
+
+ The solution is that you use the .babelrc (dot-babelrc file) to tell babel to include a preset or plugin when compile like this.
+
+ ```javascript
+ // src/.babelrc
+ {
+     "presets": [@babel/preset-react]
+ }
+ ```
+
+ Remember we downloaded the @babel/preset-react plugin.

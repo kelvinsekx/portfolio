@@ -46,6 +46,19 @@ code[class*="language-"], pre[class*="language-"] {
    margin: 2em 0;
 }
 
+.watchout{
+    background-color: rgb(216, 216, 114);
+    padding: 1.6em 0em 0.3em 2em;
+    border-left: 2rem solid rgb(236, 27, 27);
+    color: rgb(71, 64, 64);
+    margin: 2em 0;
+}
+
+.introduction {
+    margin: 2.5em 0.4em;
+    font-size: 1em;
+    font-family: "DM Mono", monospace;
+}
 @media screen and (max-width:600px){
     div#overallWrapper{
         width: 98vw;
