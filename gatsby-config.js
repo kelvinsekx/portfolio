@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `<kelvinsekx-codes/>`,
-    description: `Ukuejubola Kelvin, software engineer in Lagos-Ibadan.currently serving as a corp member in Gawu Babangida,Niger state. He is open for awesome people to work with`,
+    description: `Ukuejubola Kelvin, software engineer in Lagos, Nigeria. Who strives to build neat, small and decomposable web. He is open for awesome people to work with.`,
     author: `kelvinsekx`,
     articles:{
       articles: "Article and Blog",

@@ -2,11 +2,11 @@
 title: "Digging Mern III:react component"
 date: "2020-09-12"
 lastupdated: "2020-09-12"
-description: "list reorder react, list rearrange when clicked react, ol reordering"
+description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners"
 ---
 
 <div class="watchout">
-Note this article is the continuation of the Digging Mern series. And the codes here is an addition to the former codes.
+Note this article is the continuation of the Digging Mern series. And the code here is an addition to the former code.
 </div>
 
 <div class="introduction">

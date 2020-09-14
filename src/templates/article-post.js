@@ -22,7 +22,7 @@ const blogTemplate = ({ data, pageContext }) => {
             <div dangerouslySetInnerHTML={{ __html: post.tableOfContents }} style={{fontSize: '1rem'}}/>
           </div>
 
-          <div className="col-lg-10 col-sm-10">
+          <div className="col-lg-10 col-sm-12">
             <div className="row">
               <div className="col-lg-9">
                 <Link
