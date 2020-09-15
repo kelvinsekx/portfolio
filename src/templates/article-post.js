@@ -14,7 +14,7 @@ const blogTemplate = ({ data, pageContext }) => {
       <SEO 
       title={post.frontmatter.title} 
       description={post.frontmatter.description} />
-
+      
       <div className="container">
         <div class="row">
           <div className="col-lg-2 mt-5">
@@ -105,6 +105,7 @@ const blogTemplate = ({ data, pageContext }) => {
                 >
                   Edit on Github
                 </FooterDiv>
+
               </div>
               <div className="col-lg-3">
                 <ul>

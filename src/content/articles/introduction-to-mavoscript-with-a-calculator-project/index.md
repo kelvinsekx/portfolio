@@ -17,6 +17,9 @@ MavoScript to the rescue: mavoscript comes built out with the fact that you migh
 Remember mavoScript comes built out with the assumptions you don’t know javascript. In that regard, mavoscript works with special html attributes. Note: if you have used vue before now they seem similar most especially the special attribute part. However, Mavoscript is not javascript. Things are handled here a little different.
 </div>
 
+
+<div class="borderTop"></div>
+
 ## **Getting started with mavoscript**
 
 To get up and running with mavoscript, all you need is to paste the js and css files below into the head of your html document.
@@ -110,7 +113,7 @@ Pasting our values in the console is not enough. It does not make enough sense o
 
 All valid javascript expressions are valid in the mavo too. In this case we can dump javascript +, - etc and see some magic.
 
-Re-edit the script above so that Console.log([input1 + input2]) and tell me what you saw when you started adding numbers to both inputs.
+Re-edit the script above so that `Console.log([input1 + input2])` and tell me what you saw when you started adding numbers to both inputs.
 
 ## **mv-expression**
 
@@ -123,5 +126,25 @@ Well we can move on now.
 ## **Putting all together so far**
 
 If you understood everything so far, the changes shouldn’t be a deal. The full code can be found on https://github.com/kelvinsekx/mavocalculator.
+
+## **Closing Note**
+
+With this you have a functional calculator all without any programming language isn’t that awesome.
+
+Although this part isn’t necessary, you add this css file to make things look cool.
+
+```javascript
+<style>
+    .answerContainer{
+        width: 12rem;
+        margin-top: 10px;
+        font-size: 2rem;
+        padding: 2rem;
+        background: forestgreen;
+        color: #f4f4f4;
+    }
+</style>
+```
+
 
 
