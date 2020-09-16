@@ -3,7 +3,7 @@ title: "Digging MERN I: hello world"
 date: "2020-09-03"
 lastupdated: "2020-09-12"
 description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners"
-sourcecode: https://github.com/kelvinsekx/diggingmern/diggingmern-I
+sourcecode: https://github.com/kelvinsekx/diggingmernwithsekx/tree/master/diggingmern-I
 ---
 
 <div class="introduction">
