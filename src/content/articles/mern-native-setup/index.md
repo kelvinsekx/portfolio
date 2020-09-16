@@ -3,6 +3,7 @@ title: "Digging MERN II: minimal mern setup"
 date: "2020-09-07"
 lastupdated: "2020-09-07"
 description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners"
+sourcecode: https://github.com/kelvinsekx/diggingmern/diggingmern-II
 ---
 
 <div class="introduction">

@@ -3,6 +3,7 @@ title: "MavoScript for Beginner"
 date: "2020-09-14"
 lastupdated: "2020-09-14"
 description: "mavo mavoscript mavo-script-for-beginners mavoscript for beginners mavo-calculator-projects introduction-to-mavoscript MavoScript for Beginners"
+sourcecode: https://github.com/kelvinsekx/mavocalculator
 ---
 
 

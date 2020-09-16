@@ -59,6 +59,86 @@ code[class*="language-"], pre[class*="language-"] {
     font-size: 1em;
     font-family: "DM Mono", monospace;
 }
+
+.displayInline{
+    display: inline;
+}
+.sourcecode {
+    background-color: rgb(189, 189, 31);
+    font-weight: bold;
+    padding: 0 0 0 2rem;
+    border-left: 14px solid rgb(10, 8, 43);
+    color: #000;
+    font-size: 1.1em;
+    margin: 4rem 0 1rem 0;
+}
+
+div.floatingInterests{
+    //border:2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    a{
+       // padding:0.4em 1em;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+div.instantPage-loader{
+   // border: 2px solid red;
+    padding: 2rem 1rem 0px 1rem;
+    letter-spacing: 0.08em;
+    div.floatingBtn{
+        //border: 2px solid yellow;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        button{
+            padding: 0.3em 2em;
+            font-size:1rem;
+        }
+    }
+}
+
+.fltBtn{
+    border: 3px solid $designGreen;
+    box-shadow: 1px 0.2px 0.3px $designGreen;
+    border-radius: 20%;
+    background-color: transparent;
+    font-weight: 650;
+    cursor: pointer;
+    color:$designGreen
+    //text-shadow:1px 1px 1.1px rgb(31, 120, 172);
+}
+.details{
+    font-weight:415;
+    font-Size:1.5rem;
+    line-height:2rem;
+    font-family:sans-serif;
+    //border: `2px solid red;
+    margin-top:-9px;
+}
+.grey{
+    color:#888888;
+}
+.butterGrey{
+    color: #333333;
+}
+
+.white{
+    color: white !important;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-size: 24px;
+  }
+
 @media screen and (max-width:600px){
     div#overallWrapper{
         width: 98vw;
@@ -92,59 +172,3 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 //MOBILE CSS ENDS HERE
-div.floatingInterests{
-    //border:2px solid red;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    a{
-       // padding:0.4em 1em;
-        text-decoration: none;
-    }
-}
-div.instantPage-loader{
-   // border: 2px solid red;
-    padding: 2rem 1rem 0px 1rem;
-    letter-spacing: 0.08em;
-    div.floatingBtn{
-        //border: 2px solid yellow;
-        width: 80%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        button{
-            padding: 0.3em 2em;
-            font-size:1rem;
-        }
-    }
-}
-
-.fltBtn{
-    border: 3px solid $designGreen;
-    box-shadow: 1px 0.2px 0.3px $designGreen;
-    border-radius: 20%;
-    background-color: transparent;
-    font-weight: 650;
-    cursor: pointer;
-    color:$designGreen
-    //text-shadow:1px 1px 1.1px rgb(31, 120, 172);
-}
-.details{
-    font-weight:415;
-    font-Size:1.5rem;
-    line-height:2rem;
-    font-family:sans-serif;
-    //border: `2px solid red;
-    margin-top:-9px;
-}
-.grey{
-    color:#888888;
-}
-.butterGrey{
-    color: #333333;
-}
-.material-icons {
-    font-family: 'Material Icons';
-    font-size: 24px;
-  }

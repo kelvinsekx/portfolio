@@ -10,7 +10,7 @@ import Long from "../components/long"
 //Components that makes up the page
 import HeaderContainer from "../components/maincomponent/headerContainer"
 import BanWrapper from "../components/banWrapper"
-//imports styled component
+
 import "../indexstyles.scss"
 
 function IndexPage() {
@@ -26,6 +26,16 @@ function IndexPage() {
     }
   }
 
+  const buttons = ["mission", "short",  "long"].map(
+    each  => (
+    <button
+      className={show === each ? "changeCurrentColor" : "fltBtn"}
+      onClick={() => setShow(each)}
+    >
+      {each}
+    </button>
+  ))
+
   return (
     <Layout>
       <SEO title="Home" />
@@ -33,14 +43,7 @@ function IndexPage() {
         <HeaderContainer />
         <div className="instantPage-loader">
           <div className="floatingBtn">
-            {["mission", "short", "long"].map(each => (
-              <button
-                className={show === each ? "changeCurrentColor" : "fltBtn"}
-                onClick={() => setShow(each)}
-              >
-                {each}
-              </button>
-            ))}
+            {buttons}
           </div>
           <BanWrapper>{showIf()}</BanWrapper>
         </div>

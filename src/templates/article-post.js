@@ -9,6 +9,9 @@ const blogTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { next, previous } = pageContext
 
+  const source = post.frontmatter.sourcecode ? 
+                  <aside class="displayInline white"><a href={post.frontmatter.sourcecode} class="white">{post.frontmatter.sourcecode}</a></aside> : <span class="white">{`loading...`}</span>
+
   return (
     <Layout>
       <SEO 
@@ -53,6 +56,9 @@ const blogTemplate = ({ data, pageContext }) => {
                     </Smalled>
                   </div>
                 </div>
+                
+                <div class="sourcecode">source code :  {source}</div>
+
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
                 <NAV
@@ -134,6 +140,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "ddd, MMMM DD,YYYY")
         lastupdated(formatString: "ddd, MMMM DD,YYYY")
+        sourcecode
       }
       fields {
         slug

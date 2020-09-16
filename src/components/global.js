@@ -37,5 +37,6 @@ export const GlobalStyles = createGlobalStyle`
 
   .floatingInt{
     background-color: ${({theme})=> theme.floatingIntBG};
+    
   }
 `
