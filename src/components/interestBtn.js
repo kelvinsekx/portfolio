@@ -16,7 +16,7 @@ const interests = [
 
   {
     link: "blog",
-    href: "https://www.twitter.com/utdkelvin",
+    href: "/articles",
     color: "purple",
     component: <Book />,
   },
