@@ -29,6 +29,8 @@ Mavoscript makes us build UIs without the need to ever understand javascript. In
 ## **Getting started with mavoscript**
 To get up and running with mavoscript, all you need is to paste the js and css links below into the head component of your html document.
 
+<div class="watchout">Remember you need internet connection to make things work</div>
+
 `<link rel="stylesheet"  href="https://get.mavo.io/mavo.css"  / >`
 
 `<script src="https://get.mavo.io/mavo.js"></script>`
@@ -147,8 +149,51 @@ You wouldn’t want to place properties in the middle of elements without bracke
 
 Well we can move on now.
 
-## **Putting all together so far**
+## **conditionals**
+With mavo, there two ways to make conditionals : if() and mv-if
 
+According to https://mavo.io, "you can use the if(condition, ifyes, ifno) function to print out different text dependiong on a condition". While the mv-if is an attribute that hide or show an element considering that the condition is true.
+
+The if() amd mv-if works very similar. Only that the former, if() , is a function and can be used for more complex logic, and the latter, mv-if , is an attribute and simplifies logic to a simpler yes or no.
+
+<div class="borderBottom"></div>
+
+In this tutorial, I have decided to stick to mv-if since you must have been familiar with special attributes like `property` and also it is simpler to use.
+
+In our case, we would hide some element if the user chooses another option. It is not as difficult like you think if you check the code velow things should be very clear.
+
+```javascript
+<div class="answerContainer">
+
+    <!-- if the sign property is + show this else hide it-->
+    <div mv-if="sign = '+'">
+        <p>[input1] + [input2] = </p>
+        <p> [input1 + input2]</p>
+    </div>
+
+    <!-- if the sign property is - show this else hide it-->
+    <div mv-if="sign = '-'">
+        <p>[input1] - [input2] = </p>
+        <p>[Number(input1) - input2]</p>
+    </div>
+
+    <!-- if the sign property is * show this else hide it-->
+    <div mv-if="sign = '*'">
+        <p>[input1] * [input2] = </p>
+        <p>[input1 * input2]</p>
+    </div>
+
+    <!-- if the sign property is / show this else hide it-->
+    <div mv-if="sign = '/'">
+        <p>[input1] / [input2] = </p>
+        <p>[input1 / input2]</p>
+    </div>
+</div>
+```
+
+You now have an amazing calculator. Reload your browser to see the changes.
+
+## **Putting all together so far**
 If you understood everything so far, the changes shouldn’t be a deal. The full code can be found on https://github.com/kelvinsekx/mavocalculator.
 
 ## **Closing Note**
