@@ -60,9 +60,6 @@ code[class*="language-"], pre[class*="language-"] {
     font-family: "DM Mono", monospace;
 }
 
-.displayInline{
-    display: inline;
-}
 .sourcecode {
     background-color: rgb(189, 189, 31);
     font-weight: bold;
@@ -141,7 +138,7 @@ div.instantPage-loader{
 
 @media screen and (max-width:600px){
     div#overallWrapper{
-        width: 98vw;
+        width: 100vw;
     }
     div.header_container {
         flex-direction: column;

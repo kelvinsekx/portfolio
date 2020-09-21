@@ -7,15 +7,12 @@ description: "mern serverless react introduction-to-node introduction-to-mern me
 
 <div class="introduction">
 When it comes to data in react, including passing them around, two things should come as the first and basic in your mind. The first is props  : which is <strong>readonly</strong> data . The second is state  : which is the <strong>modifiable</strong> data.
-
-
-Props allow us to make interesting component. What is components without any variables?
-
 </div>
 
 <div class="borderTop"></div>
 
 ## **Passing Props around**
+Props allows us to make interesting component. Component that can send data and receive one too.
 
 Props allows parent component to send data to her child component and make it render differently on different instances. 
 

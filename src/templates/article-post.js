@@ -9,20 +9,21 @@ const blogTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { next, previous } = pageContext
 
-  const source = post.frontmatter.sourcecode ? 
-                  <aside class="displayInline white"><a href={post.frontmatter.sourcecode} class="white">{post.frontmatter.sourcecode}</a></aside> : <span class="white">{`loading...`}</span>
-
   return (
     <Layout>
-      <SEO 
-      title={post.frontmatter.title} 
-      description={post.frontmatter.description} />
-      
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+      />
+
       <div className="container">
         <div class="row">
-          <div className="col-lg-2 mt-5">
+          <div className="col-lg-2 mt-5 mb-2">
             <h5>CONTENT</h5>
-            <div dangerouslySetInnerHTML={{ __html: post.tableOfContents }} style={{fontSize: '1rem'}}/>
+            <div
+              dangerouslySetInnerHTML={{ __html: post.tableOfContents }}
+              style={{ fontSize: "1rem" }}
+            />
           </div>
 
           <div className="col-lg-10 col-sm-12">
@@ -53,12 +54,16 @@ const blogTemplate = ({ data, pageContext }) => {
                       <div style={{ color: "#031b4e", fontWeight: "550" }}>
                         Last modified on {post.frontmatter.lastupdated}
                       </div>
+                      <div>{post.frontmatter.sourcecode ? (
+                          <a href={post.frontmatter.sourcecode}>
+                            Source Code here on Github
+                          </a>
+                      ) : (
+                        <span>{`loading...`}</span>
+                      )}</div>
                     </Smalled>
                   </div>
                 </div>
-                
-                <div class="sourcecode">source code :  {source}</div>
-
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
                 <NAV
@@ -111,7 +116,6 @@ const blogTemplate = ({ data, pageContext }) => {
                 >
                   Edit on Github
                 </FooterDiv>
-
               </div>
               <div className="col-lg-3">
                 <ul>
