@@ -2,12 +2,12 @@
 title: "Digging MERN I: hello world"
 date: "2020-09-03"
 lastupdated: "2020-09-12"
-description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners"
+description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners mern stack tutorial"
 sourcecode: https://github.com/kelvinsekx/diggingmernwithsekx/tree/master/diggingmern-I
 ---
 
 <div class="introduction">
-This is an introductory tutorial that will happen in phases. By the end of this long tutorial, we would have created a complex and powerful blogging platform with the mern stacks.
+This is an introductory mern stack tutorial that will happen in phases. By the end of this long tutorial, we would have created a mern stack project, a complex and powerful blogging platform with the mern stacks.
 
 This tutorial is the first part of many parts before we complete this amazing project. It will for sure look good on your resume and help you and I understand mern even more.
 
