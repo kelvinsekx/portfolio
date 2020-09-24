@@ -2,8 +2,30 @@ const React = require("react")
 
 exports.onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
   setHeadComponents([
-    <script data-ad-client="ca-pub-1149332608171839" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+    <script data-ad-client="ca-pub-1149332608171839" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />,
+    <script
+    dangerouslySetInnerHTML={{
+    __html:`var vglnk = {key: 'de3d3757987fc8a894399a9c82c60612'};
+
+    (function(d, t) {
+
+        var s = d.createElement(t);
+
+            s.type = 'text/javascript';
+
+            s.async = true;
+
+            s.src = '//cdn.viglink.com/api/vglnk.js';
+
+        var r = d.getElementsByTagName(t)[0];
+
+            r.parentNode.insertBefore(s, r);
+
+    }(document, 'script'));`
+  }}
+  />
   ])
+  
   
   setPreBodyComponents([
     React.createElement("script", {
