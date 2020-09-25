@@ -2,7 +2,7 @@
 title: "MavoScript for Beginner"
 date: "2020-09-14"
 lastupdated: "2020-09-19"
-description: "mavo mavoscript mavo-script-for-beginners mavoscript for beginners mavo-calculator-projects introduction-to-mavoscript MavoScript for Beginners"
+description: " This is an introductory article that explains basic concepts on mavoscript. It is targeted at complete beginners to mavoscript. At the end of this article you would have built a mavo project, mavo-calculator-project, all from scartch."
 sourcecode: https://github.com/kelvinsekx/mavocalculator
 ---
 
@@ -119,7 +119,7 @@ console.log([input1])
 </script>
 ```
 
-<div class="watchout">You fell for it? Remember I told you mavoscript isn't javascript. If you did like my instinct did above you would get an error in your console. If you've actually done the console.logging above, try to see the console in your browser. It should print **Uncaught ReferenceError: input1 isnot defined**</div>
+<div class="watchout">You fell for it? Remember I told you mavoscript isn't javascript. If you did like my instinct did above you would get an error in your console. If you've actually done the console.logging above, try to see the console in your browser. It should print **Uncaught ReferenceError: input1 isnot defined**. Please delete the script because it won't work.</div>
 
 To actually handle things, we can only see changes through the html. Do this now.
 
@@ -167,25 +167,25 @@ It is not as difficult like you think. If you check the code below things should
 ```javascript
 <div class="answerContainer">
 
-    <!-- if the sign property is + show this else hide it-->
+    <!-- if the sign property is '+', show this else hide it-->
     <div mv-if="sign = '+'">
         <p>[input1] + [input2] = </p>
         <p> [input1 + input2]</p>
     </div>
 
-    <!-- if the sign property is - show this else hide it-->
+    <!-- if the sign property is '-', show this else hide it-->
     <div mv-if="sign = '-'">
         <p>[input1] - [input2] = </p>
-        <p>[Number(input1) - input2]</p>
+        <p>[input1 - input2]</p>
     </div>
 
-    <!-- if the sign property is * show this else hide it-->
+    <!-- if the sign property is '*', show this else hide it-->
     <div mv-if="sign = '*'">
         <p>[input1] * [input2] = </p>
         <p>[input1 * input2]</p>
     </div>
 
-    <!-- if the sign property is / show this else hide it-->
+    <!-- if the sign property is '/', show this else hide it-->
     <div mv-if="sign = '/'">
         <p>[input1] / [input2] = </p>
         <p>[input1 / input2]</p>

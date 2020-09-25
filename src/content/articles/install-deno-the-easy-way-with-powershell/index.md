@@ -2,7 +2,7 @@
 title: "Installation of Deno with Powershell"
 date: "2020-05-16"
 lastupdated: "2020-08-24"
-description: "deno land Deno deno installation eith powershell Deno installtion kelvinsekx deno installation"
+description: "Step by step guide on deno installation for windows. This guide helps with the most effiecient way to download or install deno for windows 10."
 ---
 
 Hello, deno is becoming popular and it only makes sense to deal with it while it is still fresh now. In this regard, I made my first step by trying to install deno on my windows laptop and this is how I did mine. Thanks for following me.
@@ -91,7 +91,7 @@ So that
 ```
 
 
-#### Closing Note:
+## Closing Note:
  Hope you enjoyed the ride, I would be sharing my Github link on my silly works on deno soon. Thanks for reading. Remember to be you, a great individual. 
 
 

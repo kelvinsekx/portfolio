@@ -49,21 +49,27 @@ const Layout = ({ children, home}) => {
         </Header>
         <div className="container-fluid">
           <main>{children}</main>
-
-          <footer>
-            <aside>
-              Kelvinsekx.codes is built, maintained and written by Ukuejubola
-              Kelvin together with all the agape <span id="love">&#10084;</span>{" "}
-              there is in the world. <br /> Icons from{" "}
+          <div className="container" style={{ paddingTop: '3rem'}}>
+            <hr />
+          <footer className="row">
+            <aside>&copy; 2020 kelvinsekx. All rights reserved</aside>
+            <aside id="asideFlex">
+              <div>Made with all the agape</div> 
+              <div className="lovecontainer"><span id="love">&#10084;</span></div>
+              <div>there is in the world.</div>
+            </aside>
+          </footer>
+          <hr />
+          <div>Kelvinsekx.codes is built, maintained and written by Ukuejubola Kelvin</div>
+          <div>Icons from{" "}
               <a
                 className="link"
                 href="https://www.flaticon.com/"
                 title="Flaticon"
               >
                 www.flaticon.com
-              </a>
-            </aside>
-          </footer>
+              </a></div>
+          </div>
         </div>
       </>
     </ThemeProvider>

@@ -9,6 +9,7 @@ export const lightTheme = {
   weight: "500",
   gradient: "linear-gradient(#39598A, #79D7ED)",
   floatingIntBG: "transparent",
+  artHeader: "#031b4e",
 }
 
 export const darkTheme = {
@@ -20,4 +21,5 @@ export const darkTheme = {
   weight: "380",
   gradient: "linear-gradient(#091236, #1E215D)",
   floatingIntBG: "hsla(280,40%,50%,0.34)",
+  artHeader: "rgb(38, 35, 240)"
 }

@@ -29,83 +29,10 @@ const blogTemplate = ({ data, pageContext }) => {
           <div className="col-lg-10 col-sm-12">
             <div className="row">
               <div className="col-lg-9">
-                <Link
-                  to="/articles"
-                  className="link"
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    fontSize: "0.7em",
-                  }}
-                >
-                  <BackIcon style={{ height: "auto", width: "1.5rem" }} /> BACK
-                  TO ARTICLES
-                </Link>
-                <div className="mt-2" style={{ color: "#031b4e" }}>
-                  <h1 style={{ fontWeight: "800" }}>
-                    {post.frontmatter.title}
-                  </h1>
-                  <div className="mb-4">
-                    <Smalled>
-                      <div style={{ color: "#031b4e", fontWeight: "650" }}>
-                        {"^(* ! *)^"} {post.timeToRead}{" "}
-                        {post.timeToRead === 1 ? "minute" : "minutes"} read
-                      </div>
-                      <div style={{ color: "#031b4e", fontWeight: "550" }}>
-                        Last modified on {post.frontmatter.lastupdated}
-                      </div>
-                      <div>{post.frontmatter.sourcecode ? (
-                          <a href={post.frontmatter.sourcecode}>
-                            Source Code here on Github
-                          </a>
-                      ) : (
-                        <span>{`loading...`}</span>
-                      )}</div>
-                    </Smalled>
-                  </div>
-                </div>
-                <div dangerouslySetInnerHTML={{ __html: post.html }} />
-
-                <NAV
-                  style={{
-                    display: `flex`,
-                    flexWrap: `wrap`,
-                    justifyContent: `space-between`,
-                    listStyle: `none`,
-                  }}
-                  className="borderTop"
-                >
-                  <div style={{ width: "42%", alignItem: "left" }}>
-                    {previous && (
-                      <div>
-                        <div>Next</div>
-                        <Link
-                          className="link"
-                          to={previous.fields.slug}
-                          rel="prev"
-                        >
-                          ← {previous.frontmatter.title}
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-                  <div
-                    style={{
-                      width: "40%",
-                      alignItem: "right",
-                      marginTop: "3.5rem",
-                    }}
-                  >
-                    {next && (
-                      <div>
-                        <div>Previous</div>
-                        <Link className="link" to={next.fields.slug} rel="next">
-                          {next.frontmatter.title} →
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-                </NAV>
+                <ReturnLink />
+                <ArticleHeader post={post} />
+                <article dangerouslySetInnerHTML={{ __html: post.html }} />
+                <Navigator previous={previous} next={next} />
                 <div className="borderTop">
                   Published on {post.frontmatter.date}{" "}
                 </div>
@@ -119,7 +46,7 @@ const blogTemplate = ({ data, pageContext }) => {
               </div>
               <div className="col-lg-3">
                 <ul>
-                  <ol>Just another ads</ol>
+                  <ol></ol>
                 </ul>
               </div>
             </div>
@@ -131,6 +58,86 @@ const blogTemplate = ({ data, pageContext }) => {
 }
 
 export default blogTemplate
+
+const Navigator = ({ previous, next }) => (
+  <NAV
+    style={{
+      display: `flex`,
+      flexWrap: `wrap`,
+      justifyContent: `space-between`,
+      listStyle: `none`,
+    }}
+    className="borderTop"
+  >
+    <div style={{ width: "42%", alignItem: "left" }}>
+      {previous && (
+        <div>
+          <div>Next</div>
+          <Link className="link" to={previous.fields.slug} rel="prev">
+            ← {previous.frontmatter.title}
+          </Link>
+        </div>
+      )}
+    </div>
+    <div
+      style={{
+        width: "40%",
+        alignItem: "right",
+        marginTop: "3.5rem",
+      }}
+    >
+      {next && (
+        <div>
+          <div>Previous</div>
+          <Link className="link" to={next.fields.slug} rel="next">
+            {next.frontmatter.title} →
+          </Link>
+        </div>
+      )}
+    </div>
+  </NAV>
+)
+
+const ReturnLink = () => (
+  <Link
+    to="/articles"
+    className="link"
+    style={{
+      display: "inline-flex",
+      alignItems: "center",
+      fontSize: "0.7em",
+      padding: "2em 0",
+    }}
+  >
+    <BackIcon style={{ height: "auto", width: "1.5rem" }} /> RETURN TO ARTICLES
+  </Link>
+)
+
+const ArticleHeader = ({ post }) => {
+  const minutes = `${post.timeToRead}
+  ${post.timeToRead === 1 ? "minute" : "minutes"}`
+  const posts = post.frontmatter
+  return (
+    <div className="mt-2 artHeader">
+      <h1 style={{ fontWeight: "800", }}>{posts.title}</h1>
+      <div className="mb-4">
+        <Smalled>
+          <div className="artHeader">
+            {"^(* ! *)^"} {minutes} read
+          </div>
+          <div className="artHeader">Last modified on {posts.lastupdated}</div>
+          <div>
+            {post.frontmatter.sourcecode ? (
+              <a href={posts.sourcecode}>Source Code here on Github</a>
+            ) : (
+              <span>{`loading...`}</span>
+            )}
+          </div>
+        </Smalled>
+      </div>
+    </div>
+  )
+}
 
 export const pageQuery = graphql`
   query BlogPostByBlog($slug: String!) {
