@@ -1,7 +1,7 @@
 ---
 title: "Digging MERN IV : Passing data around with props"
 date: "2020-09-14"
-lastupdated: "2020-09-14"
+lastupdated: "2020-09-26"
 description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners"
 sourcecode: https://github.com/kelvinsekx/diggingmernwithsekx/tree/master/diggingmern-IV
 ---
