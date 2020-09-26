@@ -93,7 +93,7 @@ class BlogRow extends React.Component {
         <div>
             <h3>{this.props.title}</h3>
             <span>{this.props.dateTime}</span>
-            <p>{this.props.children}</p>
+            <div>{this.props.children}</div>
         </div>
     )
 }}
@@ -118,6 +118,7 @@ We’ll replace the hard-coded set of BlogRow with one that simulate that of a r
 If your hearing database quickly, donot be scared man. We would not be dealing with any deal here. We will only have to create an array of objects that stays in memory.
 
 ```javascript
+// put at the top of the src/app.js file
 const blogsDATA = [
     {
      id: 1, status: 'granteed', owner: 'kelvin', 
@@ -131,6 +132,8 @@ const blogsDATA = [
 ```
 
 Instead of repeating the BlogRow component twice, we will have to instantiate the BlogRow from the array like this.
+
+Donot forget to replace props.children at BlogRow to props.summary.
 
 ```javascript
 …
@@ -149,6 +152,6 @@ If you are conversant you would notice there is a new attribute that have not be
 I would give you the chance to handle that yourself and decide where you want the data to be displayed. Now the ball is in your court have fun.
 
 If you reload the browser everything should look good.
-Also, you can add more issues into the array. For now, two issues are enough to demostrate dynamic composition.
+Also, you can add more issues into the array. For now, two issues are enough.
 
 

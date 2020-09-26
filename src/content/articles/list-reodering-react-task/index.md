@@ -41,9 +41,9 @@ function ListItem(props) {
     // instead pass it to a state
     const [listItems, setListItems] = useState(props.items);
 
-    // inorder to avoid modifying the props directly,
+    // inorder to avoid modifying the state directly,
     // I cloned the array into a new one before manipulations
-    let newList = listItems.slice(0, listItems.length);
+    let newList = listItems.slice();
 
     // the method to handle onClick and every other logic that accompanies it.
     const handleClick = (item) => {
