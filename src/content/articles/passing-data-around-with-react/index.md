@@ -2,6 +2,7 @@
 title: "Digging MERN IV : Passing data around with props"
 date: "2020-09-14"
 lastupdated: "2020-09-26"
+category: "mern"
 description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners"
 sourcecode: https://github.com/kelvinsekx/diggingmernwithsekx/tree/master/diggingmern-IV
 ---
@@ -134,19 +135,25 @@ const blogsDATA = [
 
 Instead of repeating the BlogRow component twice, we will have to instantiate the BlogRow from the array like this.
 
-Donot forget to replace props.children at BlogRow to props.summary.
-
 ```javascript
+// BlogPage Component
+// also donot forget the { } wrapped around the expression
 …
-blogsDATA.map((each)=>{
+{
+    blogsDATA.map((each)=>{
     <BlogRow 
     summary = {each.summary}
     dateTime= {each.created}
     title= {each.title}
     owner = {each.owner} />
-})
+    })
+}
 …
 ```
+
+<div class="watchout>
+Donot forget to replace props.children at BlogRow to props.summary.
+</div>
 
 If you are conversant you would notice there is a new attribute that have not been taken into consideration. That is the **owner** attribute. 
 

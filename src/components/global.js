@@ -42,4 +42,11 @@ export const GlobalStyles = createGlobalStyle`
   .artHeader{
     color: ${({theme})=> theme.artHeader};
   }
+
+  .sideContent{
+    background-color: ${({theme})=> theme.sideContent};
+    @media (max-width: 468px) {
+      padding: 2rem 0;
+    }
+  }
 `

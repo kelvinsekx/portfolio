@@ -7,13 +7,13 @@ sourcecode: https://github.com/kelvinsekx/mavocalculator
 ---
 
 
-<div class="introduction">
+
 Over the years as a javascript developer, I have understood the ubiquitousness of javascript libraries and frameworks in order to build awesome user interfaces. 
 
 They make our hard work shine. In this regard, libraries and frameworks like react and vue have shined respectively.
 
 Although, react and vue do all the heavy lifting, they come with a small itch: **they require that their users have more than basic understanding of javascript at least [IMO]**.
-</div>
+
 
 <div class="borderTop"></div>
 

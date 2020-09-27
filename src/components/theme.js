@@ -6,10 +6,11 @@ export const lightTheme = {
   size: '1.3em',
   linkText: "rgb(126, 40, 138)",
   toggleBorder: "#FFF",
-  weight: "500",
+  weight: "360",
   gradient: "linear-gradient(#39598A, #79D7ED)",
   floatingIntBG: "transparent",
   artHeader: "#031b4e",
+  sideContent: '#eee',
 }
 
 export const darkTheme = {
@@ -21,5 +22,6 @@ export const darkTheme = {
   weight: "380",
   gradient: "linear-gradient(#091236, #1E215D)",
   floatingIntBG: "hsla(280,40%,50%,0.34)",
-  artHeader: "rgb(38, 35, 240)"
+  artHeader: "rgb(38, 35, 240)",
+  sideContent: '#222',
 }

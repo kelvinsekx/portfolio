@@ -47,7 +47,7 @@ const Layout = ({ children, home}) => {
           >kelvinsekx</StyledLogo>
          </Link>
         </Header>
-        <div className="container-fluid">
+        <div className="container-fluid" style={{marginTop: '4.2rem'}}>
           <main>{children}</main>
           <div className="container" style={{ paddingTop: '3rem'}}>
             <hr />

@@ -2,6 +2,7 @@
 title: "Passing props to a components and validating them with Proptypes."
 date: "2020-08-25"
 lastupdated: "2020-08-25"
+category: "mern"
 description: "props propstype react reactProps"
 ---
 

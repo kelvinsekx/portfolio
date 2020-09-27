@@ -12,6 +12,13 @@ const Header = function(props) {
         display: `flex`,
         alignItems: `center`,
         justifyContent: `space-around`,
+        backgroundColor: `#20232a`,
+        position: `fixed`,
+        zIndex: `1`,
+        width: `100%`,
+        top: `0`,
+        left: `0`,
+        border: '5px solid #00'
       }}
     >
       {children}

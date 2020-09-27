@@ -16,17 +16,17 @@ const blogTemplate = ({ data, pageContext }) => {
         description={post.frontmatter.description}
       />
 
-      <div className="container">
-        <div class="row">
-          <div className="col-lg-2 mt-5 mb-2">
-            <h5>CONTENT</h5>
+      <div>
+        <div className="row">
+          <div className="col-lg-3 py-3 sideContent">
+            <h5 style={{paddingLeft:'2.4rem'}}>CONTENT</h5>
             <div
               dangerouslySetInnerHTML={{ __html: post.tableOfContents }}
-              style={{ fontSize: "1rem" }}
+              style={{ fontSize: "1.1rem" }}
             />
           </div>
 
-          <div className="col-lg-10 col-sm-12">
+          <div className="col-lg-9 col-sm-12">
             <div className="row">
               <div className="col-lg-9">
                 <ReturnLink />

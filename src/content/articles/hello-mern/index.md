@@ -1,7 +1,8 @@
 ---
 title: "Digging MERN I: hello world"
 date: "2020-09-03"
-lastupdated: "2020-09-12"
+category: "mern"
+lastupdated: "2020-09-27"
 description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners mern stack tutorial"
 sourcecode: https://github.com/kelvinsekx/diggingmernwithsekx/tree/master/diggingmern-I
 ---
@@ -11,16 +12,15 @@ This is an introductory mern stack tutorial that will happen in phases. By the e
 
 This tutorial is the first part of many parts before we complete this amazing project. It will for sure look good on your resume and help you and I understand mern even more.
 
-As is customary, this part 1 will start with the simple and amazing Hello World application. We would be using <a href=http://www.reactjs.org>react</a> to render the Hello Page and use <a href=http://www.express.com>express</a> to serve the web server.
+As is customary, this part 1 will start with the simple and amazing Hello World application. We would be using [react](http://www.reactjs.org "link to the react official site") to render the Hello Page and use [express](http://www.express.com "link to express official site") to serve the web server.
 </div>
 
+<div class="borderTop"></div>
+
 ## HelloWorld
+To get things happen quickly, we would build a simple HelloWorld with everything BASIC (no installation, downloads and server). All that will be needed is a modern browser and a weak internet for now.
 
-To get things happen quickly, let's build a simple HelloWorld with everything BASIC (no installation, downloads and server). All that will be needed is a modern browser and a weak internet for now.
-
-Start by creating an HTML file with a simple bootstrap html code and call it:
-
-**index.html**
+Start by creating an HTML file with a simple bootstrap html code and call it: **index.html**
 
 Also you can use any favourite editor of your choice and save the file anywhere. Even, you can use vim editor on the terminal for now. See mine here:
 
@@ -44,10 +44,9 @@ Also you can use any favourite editor of your choice and save the file anywhere.
 </div>
 
 ## Serverlessly rendered Hello World with React and ReactDOM
-
 In the previous section Hello World was statically written but that's below our aim. Let's rather do the same with React and ReactDom.
 
-To achieve this, Let's use the development version of the React and ReactDOM libraries from http://www.unpkg.com/browse/react@16.13.1 and put them into the head element in our index file. Like this:
+To achieve this, Let's use the development version of the React and ReactDOM libraries from http://www.unpkg.com/browse/react@16.13.1 and put them into the head element in our index file.
 
 ```javascript
 // index.html
@@ -65,10 +64,6 @@ To achieve this, Let's use the development version of the React and ReactDOM lib
 
 Next, within the body, let's create a `div` that will hold the react component. 
 
-<div class="watchout">
-It is advisable for now that the div be empty and pass an id to make the element unique to react.
-</div>
-
 ```javascript
 // index.html
 // I named mine ___root, but you can name your's any unique name
@@ -79,11 +74,17 @@ It is advisable for now that the div be empty and pass an id to make the element
     ...
 ```
 
+<div class="watchout">
+It is advisable for now that the div be empty and pass an id to make the element unique to react.
+</div>
+
+<div class="borderTop"></div>
+
 To write react, it is important to understand some of its syntax. 
 
-React creates element with a function just like the dom method, **document.creatElement**. Only a change to the document name to React( **React.createElement** ). 
+React creates element with a function similar to the dom method, **document.creatElement**. The react own is **React.createElement**. You should notice the only difference is the change of document to react.
 
-React.createElement is however more powerful in my opinion compare to the document method. It takes three arguments.
+React.createElement takes three arguments.
 
 ```javascript
 // the type can be any valid html tag

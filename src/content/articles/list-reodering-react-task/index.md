@@ -1,22 +1,22 @@
 ---
 title: "reodering list with react js"
 date: "2020-09-11"
-lastupdated: "2020-09-11"
+lastupdated: "2020-09-27"
 description: "list reorder react, list rearrange when clicked react, ol reordering"
 ---
 
-Last week, I had an onine interview. I was given a task to be finished under 17 minutes. And I failed it. The good news is that after the interview, It took me 12 minutes to figure out. I am happy to share this fun work.
+Last week, I had an online interview. I was given a task to be finished under 17 minutes. And I failed it. The good news is that after the interview, It took me 12 minutes to figure out. I am happy to share this fun work.
 
 The task was that I re-render a clicked list to become first from any position on the array. so that if the initial list was: 
 
-- one
-- two
-- three
+1. one
+2. two
+3. three
 
 when "two" is clicked, the list becomes:
-- two
-- one
-- three
+1. two
+2. one
+3. three
 
 ## **Before I share the code**
 
