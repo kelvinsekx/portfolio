@@ -21,10 +21,10 @@ export const WrapperContainer = styled.div`
 `
 
 export const StyledLogo = styled.span`
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 450;
   @media (max-width: 720px) {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   ${props =>
@@ -54,7 +54,7 @@ export const StyledLink = styled.div`
   }
 `
 
-export const StyledH3 = styled.h2`
+export const StyledH3 = styled.h3`
   font-size: 2.5rem;
   font-weight: 700;
   font-family: "DM Mono", monospace;

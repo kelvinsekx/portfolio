@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const ToggleContainer = styled.button`
-  background: ${({ theme }) => theme.gradient};
   border: 2px solid ${({ theme }) => theme.toggleBorder};
   border-radius: 20px;
   cursor: pointer;
@@ -12,12 +11,12 @@ export const ToggleContainer = styled.button`
   overflow: hidden;
   padding: 0.5rem;
   position: relative;
-  width: 5rem;
+  width: 4rem;
   height: 2.4rem;
 
   svg {
     height: auto;
-    width: 2.9rem;
+    width: 3.5rem;
     transition: all 0.3s linear;
 
     // sun icon

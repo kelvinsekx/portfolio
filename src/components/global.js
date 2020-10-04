@@ -45,6 +45,7 @@ export const GlobalStyles = createGlobalStyle`
 
   .sideContent{
     background-color: ${({theme})=> theme.sideContent};
+    border-right:0.1px solid rgba(59, 58, 58, 0.2);;
     @media (max-width: 468px) {
       padding: 2rem 0;
     }

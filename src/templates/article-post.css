@@ -1,0 +1,34 @@
+h1{
+    line-height: 5rem;
+    /* border: 2px solid red; */
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 1rem 0;
+}
+@media only screen and (max-width: 480px) {
+    h1{
+        font-size:2.1rem;
+        line-height: 3rem;
+    }
+}
+
+h2{
+    margin-top: 10rem;
+    font-size: 2rem;
+    border-top: 1px solid #8de4ce;
+    padding-top:3rem;
+    padding-bottom: 3rem;
+  }
+
+.introduction, em {
+    margin: 2.5em 0.4em;
+    font-size: 1.2em;
+    font-weight: 370;
+}
+
+.watchout, blockquote{
+    background-color: rgb(255, 229, 100, 0.2);
+    padding: 1.6em 0em 0.3em 2em;
+    border-left: 0.6rem solid #ffe564;
+    margin: 30px -10px;
+}

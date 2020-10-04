@@ -86,7 +86,6 @@ load(){
 
 Where do we use the load function? This exactly would be answered in the next section.
 
-<div class="borderTop"></div>
 
 ## **Adding Lifecycle Methods**
 React does provides us with few hooks where react lifecycle can be hooked to. 
@@ -110,7 +109,6 @@ You can see the magic on the brower now.
 
 It should take the browser 5 seconds delay before it displays the data. Now that a real SPA.
 
-<div class="borderTop"></div>
 
 ## **Update the blog**
 In this section, we have two objectives. 

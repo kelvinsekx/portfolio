@@ -15,8 +15,6 @@ They make our hard work shine. In this regard, libraries and frameworks like rea
 Although, react and vue do all the heavy lifting, they come with a small itch: **they require that their users have more than basic understanding of javascript at least [IMO]**.
 
 
-<div class="borderTop"></div>
-
 ## **MavoScript to the rescue**
 Mavoscript comes built out with the assumption that you might only know HTML and CSS. Yet want to build awesome UIs.
 
@@ -24,7 +22,6 @@ Mavoscript makes us build UIs without the need to ever understand javascript. In
 
 <div class="watchout"> If you have used vue or angular before now they seem similar. Most especially the special attribute part. However, Mavoscript is not javascript. Things are handled here a little different.</div>
 
-<div class="borderTop"></div>
 
 ## **Getting started with mavoscript**
 To get up and running with mavoscript, all you need is to paste the js and css links below into the head component of your html document.
@@ -156,7 +153,6 @@ According to https://mavo.io, "you can use the if(condition, ifyes, ifno) functi
 
 The if() amd mv-if works very similar. Only that the former, if() , is a function and can be used for more complex logic, and the latter, mv-if , is an attribute and simplifies logic to a simpler yes or no.
 
-<div class="borderBottom"></div>
 
 In this tutorial, I have decided to stick to mv-if since you must have been familiar with special attributes like `property` and also mv-if is simpler to use.
 

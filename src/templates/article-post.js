@@ -5,6 +5,8 @@ import { FooterDiv, Smalled, NAV } from "../components/articles.styled"
 import Layout from "../components/layout"
 import BackIcon from "../components/icon/back.svg"
 
+import "./article-post.css"
+
 const blogTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { next, previous } = pageContext
@@ -33,15 +35,13 @@ const blogTemplate = ({ data, pageContext }) => {
                 <ArticleHeader post={post} />
                 <article dangerouslySetInnerHTML={{ __html: post.html }} />
                 <Navigator previous={previous} next={next} />
-                <div className="borderTop">
-                  Published on {post.frontmatter.date}{" "}
-                </div>
+                <div className="borderTop" />
 
                 <FooterDiv
                   className="to"
                   href={`https://github.com/kelvinsekx/gatsbyblog/blob/master/src/content${post.fields.slug}index.md`}
                 >
-                  Edit on Github
+                  Edit this page
                 </FooterDiv>
               </div>
               <div className="col-lg-3">
@@ -119,8 +119,8 @@ const ArticleHeader = ({ post }) => {
   const posts = post.frontmatter
   return (
     <div className="mt-2 artHeader">
-      <h1 style={{ fontWeight: "800", }}>{posts.title}</h1>
-      <div className="mb-4">
+      <h1>{posts.title}</h1>
+      <div className="mt-5 mb-4">
         <Smalled>
           <div className="artHeader">
             {"^(* ! *)^"} {minutes} read
@@ -128,7 +128,7 @@ const ArticleHeader = ({ post }) => {
           <div className="artHeader">Last modified on {posts.lastupdated}</div>
           <div>
             {post.frontmatter.sourcecode ? (
-              <a href={posts.sourcecode}>Source Code here on Github</a>
+              <a href={posts.sourcecode}>Source code on Github</a>
             ) : (
               <span>{`loading...`}</span>
             )}

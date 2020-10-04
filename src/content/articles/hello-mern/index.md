@@ -2,20 +2,18 @@
 title: "Digging MERN I: hello world"
 date: "2020-09-03"
 category: "mern"
-lastupdated: "2020-09-27"
+lastupdated: "2020-10-03"
 description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners mern stack tutorial"
 sourcecode: https://github.com/kelvinsekx/diggingmernwithsekx/tree/master/diggingmern-I
 ---
 
-<div class="introduction">
-This is an introductory mern stack tutorial that will happen in phases. By the end of this long tutorial, we would have created a mern stack project, a complex and powerful blogging platform with the mern stacks.
+_This is an introductory mern stack tutorial that will happen in phases. By the end of this long tutorial, we would have created a mern stack project, a complex and powerful blogging platform with the mern stacks._
 
-This tutorial is the first part of many parts before we complete this amazing project. It will for sure look good on your resume and help you and I understand mern even more.
 
-As is customary, this part 1 will start with the simple and amazing Hello World application. We would be using [react](http://www.reactjs.org "link to the react official site") to render the Hello Page and use [express](http://www.express.com "link to express official site") to serve the web server.
-</div>
+_This tutorial is the first part of many parts. If you follow to the end, It will for sure look good on your resume and help you and I understand mern even more._
 
-<div class="borderTop"></div>
+_As it is customary, this part 1 will start with the simple and amazing Hello World application. We would be using [react](http://www.reactjs.org "link to the react official site") to render the Hello Page and use [express](http://www.express.com "link to express official site") to serve the web server._
+
 
 ## HelloWorld
 To get things happen quickly, we would build a simple HelloWorld with everything BASIC (no installation, downloads and server). All that will be needed is a modern browser and a weak internet for now.
@@ -25,7 +23,7 @@ Start by creating an HTML file with a simple bootstrap html code and call it: **
 Also you can use any favourite editor of your choice and save the file anywhere. Even, you can use vim editor on the terminal for now. See mine here:
 
 ```javascript
-// index.html
+<!-- index.html -->
 
 <!DOCTYPE html>
     <html lang="en">
@@ -40,8 +38,6 @@ Also you can use any favourite editor of your choice and save the file anywhere.
     </html>
 ```
 
-<div class="borderTop">
-</div>
 
 ## Serverlessly rendered Hello World with React and ReactDOM
 In the previous section Hello World was statically written but that's below our aim. Let's rather do the same with React and ReactDom.
@@ -49,14 +45,16 @@ In the previous section Hello World was statically written but that's below our 
 To achieve this, Let's use the development version of the React and ReactDOM libraries from http://www.unpkg.com/browse/react@16.13.1 and put them into the head element in our index file.
 
 ```javascript
-// index.html
+<!-- index.html -->
     ...
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--changes-->
         <script crossorgin src="https://unpkg.com/react@16/umd/react.development.js"></scipt>
         <script crossorgin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></scipt>
-        <title>Document</title>
+        <!-- -->
+        <title>mern and sekx</title>
     </head>
     ...
 ```
@@ -65,8 +63,9 @@ To achieve this, Let's use the development version of the React and ReactDOM lib
 Next, within the body, let's create a `div` that will hold the react component. 
 
 ```javascript
-// index.html
-// I named mine ___root, but you can name your's any unique name
+<!-- index.html --> 
+<!-- I named mine ___root, but you can name your's any unique name -->
+
     ...
     <body>
         <div id="___root"></div>
@@ -74,38 +73,45 @@ Next, within the body, let's create a `div` that will hold the react component.
     ...
 ```
 
-<div class="watchout">
-It is advisable for now that the div be empty and pass an id to make the element unique to react.
-</div>
+>It is advisable for now that the div be empty and pass an id to make the element unique to react.
 
 <div class="borderTop"></div>
 
 To write react, it is important to understand some of its syntax. 
 
-React creates element with a function similar to the dom method, **document.creatElement**. The react own is **React.createElement**. You should notice the only difference is the change of document to react.
+React creates element with a function similar to the dom method, **document.creatElement**. 
+
+That of react is **React.createElement**. 
+
+You should notice the only difference is the change of **document** to **react** between the two functions.
 
 React.createElement takes three arguments.
 
+1. **type**.
+this is any standard html tag. But do not forget to always write them in small letters all through. e.g 'div', 'p', 'small' etc. This is how react best distinguishes them from custom tags like 'ColorList'.
+2. **props**.
+props is a javascript object that can be an html attribute or a customized variable passed to a component.
+3. **children**.
+these are other nested or inherited components.The  children are elements creatable with createElement.
+
 ```javascript
-// the type can be any valid html tag
 React.createElement(type, [..props], [...children])
 ```
-
-props is a javascript object that can be an html attribute or a customized variable passed to a component. The last argument, children, is another element creatable with createElement. 
+ 
 
 <a href="/articles/react-props-and-propsType/">Learn more about props</a>
 
-We can now replace our previous hard-coded hello world with react like this: 
+We can now replace our previous hard-coded hello world with react. 
 
 ```javascript
-// index.html
+<!--  index.html --> 
     ...
     <body>
         <div id="___root"></div>
 
         <script>
           React.createElement(
-              'div' // type,
+              'div'
               null,
               React.createElement(
                   'h1',
@@ -148,14 +154,16 @@ However, this still doesnot do the work. If you reload your browser everything s
 After you done that, everything should work right. Try and reload the browser. Your complete code should look like this:
 
 ```javascript
-// index.html
+<!-- index.html --> 
 
 <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <script crossorgin src="https://unpkg.com/react@16/umd/react.development.js"></scipt>
+        <script crossorgin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></scipt>
+        <title>mern and sekx</title>
     </head>
     <body>
     <!-- replace hello wold with the div -->
@@ -164,7 +172,7 @@ After you done that, everything should work right. Try and reload the browser. Y
         <script>
         // pass the created element into a variable
           const Elem = React.createElement(
-              'div' // type,
+              'div',
               null,
               React.createElement(
                   'h1',
@@ -173,7 +181,7 @@ After you done that, everything should work right. Try and reload the browser. Y
               )
           )
 
-          ReactDOM.render(elem, document.getElementById('___root'))
+          ReactDOM.render(Elem, document.getElementById('___root'))
         </script>
     </body>
     </html>
@@ -206,9 +214,12 @@ Let's re-write our previous code to take advantage of the wonders that come with
 </script>
 ```
 
-If you reload the browser, you should see a screaming error and the page would not load( It will take minutes and still not load). This is because JSX needs to be compiled to javascript.
+If you reload the browser, you should see a screaming error and the page would not load
 
-To compile things, we need a compiler. In our case, Babel is cool to compile JSX and let's do the compilation with Babel then. 
+
+To compile things, we need a compiler. In our case, let's fast forward and just use Bael.
+
+Babel is cool to compile JSX and let's do the compilation with Babel then. 
 
 However, since  we are doing this serverlessly, let's import another link into the head.
 
@@ -220,9 +231,15 @@ However, since  we are doing this serverlessly, let's import another link into t
 </head>
 ```
 
-You can reload the browser now (If it takes few more seconds donot bother). But oops things still donot work. 
+You can reload the browser now.
 
-You know why?? This is because babel needs to be told what script it should compile. To do this, an attribute needs to be added to our script.
+> **Note:** If your page took few more minutes while loading?? DONOT PANIC. This is because JSX needs to be compiled to javascript.
+
+But oops things still donot work. 
+
+You know why?? This is because babel needs to be told what script it should compile. 
+
+To inform Babel what scripts it should compile specifically, an attribute, **type="text/babel"**, needs to be added to our script.
 
 ```javascript
 ...
@@ -232,10 +249,10 @@ You know why?? This is because babel needs to be told what script it should comp
 ...
 ```
 
-Now everything should look good now. Our final code is below.
+Everything should look good now. Our final code is below.
 
 ```javascript
-// index.html
+<!-- index.html --> 
 
 <!DOCTYPE html>
     <html lang="en">
@@ -251,7 +268,6 @@ Now everything should look good now. Our final code is below.
         <div id="___root"></div>
 
         <script type="text/babel">
-
         const Elem = (
             <div>
              <h1 title="hello">Hello World</h1>
@@ -288,6 +304,6 @@ How do I know??: ): Urrgh, it simple
 Mention three (3) means by which we can pass styles to a react element. What way seem to be the most efficient??
 
 ## Closing Note:
- Digging MERN is important today than nerver before. When the MERN stack started it was very minimal and was easy to learn the basics. Today the MERN is larger than they thought it to be and it is easy not to learn the basics 
+On a bye note for now, hope you had fun learning and learnt something new.
 
-
+Digging MERN is important today than nerver before. When the MERN stack started it was very minimal and was easy to learn the basics. Today the MERN is larger than they thought it to be and it is easy not to learn the basics.
