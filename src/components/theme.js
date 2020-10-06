@@ -10,6 +10,8 @@ export const lightTheme = {
   floatingIntBG: "transparent",
   artHeader: "#282c34",
   sideContent: 'rgba(238,238,238,0.2)',
+  x_btn: '#000',
+  x_clr: "#fff",
 }
 
 export const darkTheme = {
@@ -22,4 +24,6 @@ export const darkTheme = {
   floatingIntBG: "hsla(280,40%,50%,0.34)",
   artHeader: "#ffffff",
   sideContent: 'rgba(34,34,34,0.2)',
+  x_btn: '#fff',
+  x_clr: "#111"
 }

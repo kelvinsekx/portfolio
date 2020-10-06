@@ -1,15 +1,18 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import SEO from "../components/seo"
-import { FooterDiv, Smalled, NAV } from "../components/articles.styled"
+
+import { MediaQueryBtn, Smalled, NAV, FooterDiv } from "./article-post.styled"
+
 import Layout from "../components/layout"
 import BackIcon from "../components/icon/back.svg"
 
 import "./article-post.css"
 
-const blogTemplate = ({ data, pageContext }) => {
+const BlogTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { next, previous } = pageContext
+  const [state, setState] = React.useState(false)
 
   return (
     <Layout>
@@ -17,18 +20,30 @@ const blogTemplate = ({ data, pageContext }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description}
       />
-
+      <MediaQueryBtn
+        className={state === false ? "re" : "er"}
+        onClick={() => {
+          setState(!state)
+        }}
+      >
+        X
+      </MediaQueryBtn>
       <div>
         <div className="row">
-          <div className="col-lg-3 py-3 sideContent">
-            <h5 style={{paddingLeft:'2.4rem'}}>CONTENT</h5>
+          <div
+            className={`col-lg-3 py-3 sideContent ${state ? "css-x" : null}`}
+          >
+            <h5 style={{ padding: "2rem 0 0 2.4rem" }}>CONTENT</h5>
             <div
               dangerouslySetInnerHTML={{ __html: post.tableOfContents }}
               style={{ fontSize: "1.1rem" }}
             />
           </div>
 
-          <div className="col-lg-9 col-sm-12">
+          <div
+            className="col-lg-9 col-sm-12"
+            style={state ? { opacity: 0 } : { opacity: 1 }}
+          >
             <div className="row">
               <div className="col-lg-9">
                 <ReturnLink />
@@ -57,18 +72,10 @@ const blogTemplate = ({ data, pageContext }) => {
   )
 }
 
-export default blogTemplate
+export default BlogTemplate
 
 const Navigator = ({ previous, next }) => (
-  <NAV
-    style={{
-      display: `flex`,
-      flexWrap: `wrap`,
-      justifyContent: `space-between`,
-      listStyle: `none`,
-    }}
-    className="borderTop"
-  >
+  <NAV className="borderTop">
     <div style={{ width: "42%", alignItem: "left" }}>
       {previous && (
         <div>
@@ -99,42 +106,31 @@ const Navigator = ({ previous, next }) => (
 )
 
 const ReturnLink = () => (
-  <Link
-    to="/articles"
-    className="link"
-    style={{
-      display: "inline-flex",
-      alignItems: "center",
-      fontSize: "0.7em",
-      padding: "2em 0",
-    }}
-  >
+  <Link to="/articles" className="link returnLink">
     <BackIcon style={{ height: "auto", width: "1.5rem" }} /> RETURN TO ARTICLES
   </Link>
 )
 
 const ArticleHeader = ({ post }) => {
   const minutes = `${post.timeToRead}
-  ${post.timeToRead === 1 ? "minute" : "minutes"}`
+  ${post.timeToRead > 1 ? "minutes" : "minute"}`
   const posts = post.frontmatter
   return (
     <div className="mt-2 artHeader">
       <h1>{posts.title}</h1>
-      <div className="mt-5 mb-4">
-        <Smalled>
-          <div className="artHeader">
-            {"^(* ! *)^"} {minutes} read
-          </div>
-          <div className="artHeader">Last modified on {posts.lastupdated}</div>
-          <div>
-            {post.frontmatter.sourcecode ? (
-              <a href={posts.sourcecode}>Source code on Github</a>
-            ) : (
-              <span>{`loading...`}</span>
-            )}
-          </div>
-        </Smalled>
-      </div>
+      <Smalled>
+        <div>
+          {"^(* ! *)^"} {minutes} read
+        </div>
+        <div>Last modified on {posts.lastupdated}</div>
+        <div>
+          {posts.sourcecode ? (
+            <a href={posts.sourcecode}>Source code on Github</a>
+          ) : (
+            `loading...`
+          )}
+        </div>
+      </Smalled>
     </div>
   )
 }
@@ -149,7 +145,6 @@ export const pageQuery = graphql`
       frontmatter {
         description
         title
-        date(formatString: "ddd, MMMM DD,YYYY")
         lastupdated(formatString: "ddd, MMMM DD,YYYY")
         sourcecode
       }
