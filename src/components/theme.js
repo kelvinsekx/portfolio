@@ -12,6 +12,7 @@ export const lightTheme = {
   sideContent: 'rgba(238,238,238,0.2)',
   x_btn: '#000',
   x_clr: "#fff",
+  strong: `rgb(247, 190, 126, 0.4)`
 }
 
 export const darkTheme = {
@@ -25,5 +26,6 @@ export const darkTheme = {
   artHeader: "#ffffff",
   sideContent: 'rgba(34,34,34,0.2)',
   x_btn: '#fff',
-  x_clr: "#111"
+  x_clr: "#111",
+  strong: `rgb(247, 190, 126, 0.2)`
 }

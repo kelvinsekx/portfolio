@@ -28,11 +28,7 @@ span.joke{
     font-weight: bolder;
     font-size: 2rem;
 }
-div.header_container {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-}
+
 
 .changingImg{
     border-radius: 50%;
@@ -127,13 +123,7 @@ div.instantPage-loader{
     div#overallWrapper{
         width: 100vw;
     }
-    div.header_container {
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
     
-   
     div.floatingInterests{
         //border:2px solid red;
         a{

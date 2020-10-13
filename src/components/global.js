@@ -53,4 +53,9 @@ export const GlobalStyles = createGlobalStyle`
      opacity: 0;
     }
   }
+
+  strong{
+    background-color: ${({theme})=> theme.strong};
+    font-weight: 500;
+  }
 `

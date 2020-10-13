@@ -1,10 +1,10 @@
 import React from "react"
-import Twitter from "./icon/twitter.svg"
-import Gmail from "./icon/gmail.svg"
-import Cater from "./icon/cat.svg"
-import Linkedin from "./icon/linkedin.svg"
-import Book from "./icon/book.svg"
-import { SVG } from "./toggle.styled"
+import Twitter from "../icon/twitter.svg"
+import Gmail from "../icon/gmail.svg"
+import Cater from "../icon/cat.svg"
+import Linkedin from "../icon/linkedin.svg"
+import Book from "../icon/book.svg"
+import { SVG } from "./interestbtn.styled"
 
 const interests = [
   {
@@ -58,8 +58,8 @@ const A = props => (
   </a>
 )
 
-const interestsButton = interests.map((each)=>(
-                        <A link={each.link} href={each.href} color={each.color}>
+const interestsButton = interests.map((each, i)=>(
+                        <A link={each.link} key={i} href={each.href} color={each.color}>
                          {each.component}
                         </A>))
 

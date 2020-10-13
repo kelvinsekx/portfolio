@@ -72,9 +72,5 @@ export const StyledSmall = styled.small`
   margin-top: 1.2em;
 `
 
-export const TypingP = styled.p`
-  margin: 0;
-  padding: 0;
-`
 
 

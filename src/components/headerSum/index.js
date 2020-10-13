@@ -1,22 +1,27 @@
-import React from 'react'
+import React from "react"
 
-// imported styles
 import "./headersum.scss"
 
-import {TypingP} from "../articles.styled.js"
-import Typing from "../typing"
+import { TypingP, TypingDiv } from "../typing/typing.styled.js"
+import Typing from "../typing/typing"
 
 export default function headerSum() {
-    return (
-        <>
-          <div className="detailsContainer">
-            <h1 style={{margin: '1em 0'}}>Ukuejubola Kelvin</h1>
-            <div className="details grey">
-              Software Engineer
-              <div style={{fontSize:'0.5em', margin: '0.1em 0', padding:'0'}}>JavaScript | Web experience | node | React | Amateur python</div>
-             <TypingP>I like: <Typing /></TypingP>
-            </div>
+  return (
+    <>
+      <div className="detailsContainer">
+        <h1 style={{ marginTop: "0.56em" }}>Ukuejubola Kelvin</h1>
+        <div className="details grey">
+          <p>Software Engineer</p>
+          <div style={{ fontSize: "0.5em", margin: "0.1em 0", padding: "0" }}>
+            JavaScript | Web experience | node | React | Amateur python
           </div>
-        </>
-    )
+          <TypingDiv>
+            <TypingP>
+              I like: <Typing />
+            </TypingP>
+          </TypingDiv>
+        </div>
+      </div>
+    </>
+  )
 }

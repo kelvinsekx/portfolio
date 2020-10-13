@@ -1,16 +1,18 @@
 import React from "react"
+
+import {HeadContainer} from "./headercom.styled"
 import HeaderSummary from "../headerSum/index"
 import ImageContainer from "../imageContainer/index"
-import FloatingIcon from "../interestBtn"
+import InterestBtn from "../interestBtn/interestBtn"
 
 export default function headerContainer() {
   return (
     <>
-      <div className="header_container">
+      <HeadContainer>
         <HeaderSummary />
         <ImageContainer />
-      </div>
-      <FloatingIcon />
+      </HeadContainer>
+      <InterestBtn />
     </>
   )
 }

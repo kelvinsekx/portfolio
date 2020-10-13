@@ -15,13 +15,13 @@ If not, see the [first series](/articles/hello-mern "first series link").
 After you must have completed the 
 [last tutorial](/articles/introduction-to-mavoscript-with-a-calculator-project/), you should have had a static page that resembles a blog.
 
-However, real blogs are not that static so much that more blogs can not be added. In this tutorial we would start manipulating our data thanks to react state.
+However, real blogs are not that static so much that more blogs can not be added. In this tutorial we would start manipulating our data thanks to **react state**.
 
 By the end of this tutorial you would have learned how to set state, render state and update state.
 
 ## **State**
 
-We can start by rendering the blogData from state instead of the way it is currently handled.
+We can start by rendering the blogsData through state instead of the way it is currently handled.
 
 Replace blogsData with this.state.blogData in the render() method
 
@@ -67,7 +67,7 @@ The setTimeout will help us delay the code from executing...instead talking much
 
 <div class="borderTop"><div>
 
-At first we will make the blogsData variable empty, if you reload the browser the BlogRow component should be empty.
+At first we will make the blogsData variable empty, if you reload the browser the BlogRow component should be empty too.
 
 ```javascript
 ...
@@ -76,7 +76,7 @@ At first we will make the blogsData variable empty, if you reload the browser th
  }
 ```
 
-We would use a function that helps load the data after few seconds have elapsed.
+We would use a method that helps load the data after few seconds have elapsed.
 
 ```javascript
 load(){
@@ -84,7 +84,7 @@ load(){
 }
 ```
 
-Where do we use the load function? This exactly would be answered in the next section.
+Where do we use the load method? This exactly would be answered in the next section.
 
 
 ## **Adding Lifecycle Methods**
@@ -153,7 +153,7 @@ createBlog(newBlog){
     newBlog.created = new Date();
     const newBlogData = this.state.blogsData.slice();
     newBlogData.push(newBlog);
-    this.setState({blogData: newBlogData})
+    this.setState({blogsData: newBlogData})
 }
 render(){
     return(

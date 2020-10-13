@@ -54,7 +54,7 @@ const Layout = ({ children, home}) => {
           <footer className="row">
             <aside>&copy; 2020 kelvinsekx. All rights reserved</aside>
             <aside id="asideFlex">
-              <div>Made with all the agape</div> 
+              <div>Made with all the christ love and agape</div> 
               <div className="lovecontainer"><span id="love">&#10084;</span></div>
               <div>there is in the world.</div>
             </aside>

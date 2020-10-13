@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import SEO from "../components/seo"
 
-import { MediaQueryBtn, Smalled, NAV, FooterDiv } from "./article-post.styled"
+import { MediaQueryBtn, Smalled, NAV, FooterDiv, Spanner1, Spanner2 } from "./article-post.styled"
 
 import Layout from "../components/layout"
 import BackIcon from "../components/icon/back.svg"
@@ -26,7 +26,8 @@ const BlogTemplate = ({ data, pageContext }) => {
           setState(!state)
         }}
       >
-        X
+        <Spanner1 st={state === true}>{`<`}</Spanner1>
+        <Spanner2 st={state === true}>{`>`}</Spanner2>
       </MediaQueryBtn>
       <div>
         <div className="row">
