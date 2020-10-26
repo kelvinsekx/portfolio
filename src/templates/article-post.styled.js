@@ -40,10 +40,10 @@ fontSize: 2rem;
 export const Spanner1 = styled.div`
 font-weight:800;
 font-size: 1.5rem;
-transform: ${({st})=> st ? "translate(6px,16px)" : "translateX(2px) rotate(0.25turn)"};
+transform: ${({st})=> st ? "translate(6px,17px)" : "translateX(2px) rotate(0.25turn)"};
 `
 export const Spanner2 = styled.div`
 font-weight:800;
 font-size: 1.5rem;
-transform: ${({st})=> st ? "translate(-3px,-15px)" : "translateX(2px) rotate(0.25turn)"};
+transform: ${({st})=> st ? "translate(-3px,-17px)" : "translateX(2px) rotate(0.25turn)"};
 `

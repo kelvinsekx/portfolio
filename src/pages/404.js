@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 // <link rel="stylesheet" href="https://get.mavo.io/mavo.css">
 // <script src="https://get.mavo.io/mavo.js"></script>

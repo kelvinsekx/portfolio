@@ -6,46 +6,55 @@ import {
   StyledH3,
   StyledLink,
   StyledSmall,
-  StyledParagraph,
 } from "../components/articles.styled"
 
 //import other components here
 import BIO from "../components/articlesComponent/bio"
 //this should come last
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 
 const ArticlesPage = ({ data }) => (
   <Layout>
-      <SEO title="All posts" />
-      <div className="container">
+    <SEO title="All posts" />
+    <div className="container">
       <div className="row">
-      <BIO
-        data={data.site.siteMetadata.articles.articles}
-        description={data.site.siteMetadata.articles.shortnote}
-      />
-      <main>
-        <h4>
-          {data.allMarkdownRemark.totalCount} Recent Article
-          {data.allMarkdownRemark.totalCount === 1 ? " " : "s"}
-        </h4>
+        <BIO
+          data={data.site.siteMetadata.articles.articles}
+          description={data.site.siteMetadata.articles.shortnote}
+        />
+        <main>
+          <p>
+            {data.allMarkdownRemark.totalCount} Recent Article
+            {data.allMarkdownRemark.totalCount === 1 ? " " : "s"}
+          </p>
 
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <StyledLink key={node.id}>
-            
-              <StyledH3>
-              <Link 
-              className="to" to={node.fields.slug}>
-                {node.frontmatter.title}
-                </Link>
-              </StyledH3>
-            
-            <StyledSmall>Kelvinsekx on {node.frontmatter.date}</StyledSmall>
-            <StyledParagraph>{node.excerpt}</StyledParagraph>
-            <div><Link className="link" to={node.fields.slug}>read details &#187;</Link></div>
-          </StyledLink>
-        ))}
-      </main>
-    </div>
+          <div style={{ display: "flex", flexWrap: "wrap", marginTop: "2rem" }}>
+            {data.allMarkdownRemark.edges.map(({ node }) => (
+                <StyledLink key={node.id} className="col-lg-4 col-md-6 col-sm-6 col-xm-6">
+                  <div>
+                    <StyledH3 ftSize={'1.7rem'}>
+                      <Link className="to" to={node.fields.slug}>
+                        {node.frontmatter.title}
+                      </Link>
+                    </StyledH3>
+                  </div>
+
+                  <div>
+                    <StyledSmall ftSize={'1rem'}>
+                      Kelvinsekx on {node.frontmatter.date}
+                    </StyledSmall>
+                  </div>
+
+                  <StyledSmall ftSize={'0.99rem'}>
+                    <Link className="link" to={node.fields.slug}>
+                      read details &#187;&#187;&#187;
+                    </Link>
+                  </StyledSmall>
+                </StyledLink>
+            ))}
+          </div>
+        </main>
+      </div>
     </div>
   </Layout>
 )
@@ -73,7 +82,6 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt(pruneLength: 260,truncate: false)
         }
       }
       totalCount

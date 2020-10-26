@@ -9,7 +9,7 @@ a {
 
 .flicker {
   animation: flicker 3s linear forwards alternate infinite;
-  font-size: 2rem;
+
 }
 .flicker:nth-child(even) {
   animation-delay: 0.3s;
@@ -21,47 +21,10 @@ a {
     font-size: 95%;
   }
 }
-footer {
-  margin-top: 4em; 
-  font-size: 0.9em;
-  display: flex;
-  align-items: stretch;
-  justify-content:space-around;
-}
 
 ul li{
   list-style: none;
   margin-bottom: 0.5em;
-}
-#asideFlex{
-  display: flex
-}
-.lovecontainer{
-  /* border: 2px solid red; */
-  min-width: 2em;
-  min-height: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#love {
-  display: inline-block;
-  color: rgb(232, 58, 255);
-  margin: auto;
-  animation-name: size;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-@keyframes size {
-  0% {
-    font-size: 20%;
-  }
-  50% {
-    font-size: 70%;
-  }
-  100% {
-    font-size: 90%;
-  }
 }
 
 @keyframes flicker {

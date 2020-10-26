@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const style = {
-  transition : '2s ease-out'
+  transition : '1s ease-out'
 }
 function Image() {
   const [index, setIndex] = useState(1)
@@ -11,14 +11,6 @@ function Image() {
   const data  = useStaticQuery(
       graphql` 
       query {
-      image1:file(relativePath: { eq: "kelvin-hands.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 190, maxHeight: 190) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
       image2:file(relativePath: { eq: "kelvin-ugly.png" }) {
         childImageSharp {
           fluid(maxWidth: 190, maxHeight: 190) {
@@ -53,7 +45,7 @@ function Image() {
       // let new_index = Math.floor(Math.random() * length)
       index === 2 ? setIndex(0) :
       setIndex(index+1)
-    }, 5000)
+    }, 10000)
     return _ => clearInterval(interval)
   })
   

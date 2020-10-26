@@ -8,21 +8,23 @@ sourcecode: https://github.com/kelvinsekx/diggingmernwithsekx/tree/master/diggin
 ---
 
 
-_In the <a href="/articles/hello-mern/">previous article</a>, we setup things all serverless. However, qiuckly you will notice it is not efficient for anything, neither production nor development. The obvious reason is how long it takes for the browser to load, the punch of links, as Content Delivery Network(CDN) , are also unnecessary and quite large in size._
+In the <a href="/articles/hello-mern/">previous article</a>, we setup things all serverless. However, quickly you will notice it is not efficient for anything, neither for production nor for development. The obvious reason is how long it takes for the browser to load, the punch of links, as Content Delivery Network(CDN).
 
-_This obvious reason and many others, require us to create a simple server that make things more efficient._
+This obvious reason and many others, require us to create a simple server that make things more efficient.
 
-_To start handling things better, you will need to install few libraries and organize few files. But donot bother if you've never done this before. All you have to do is to follow the instructions here carefully._
+To start handling things better, you will need to install few libraries and organize few files. But donot bother if you've never done this before. All you have to do is to follow the instructions here carefully.
 
 ## Node Installation
 
-Node allows javascript to run outside the browser, or in the server as it is popularly said. There are different ways to either install or download node. 
+Node allows javascript to run outside the browser, or in the server as it is popularly said. 
 
-To install node visit https://nodejs.org/en/download/. It is pretty simple all you have to do is to select your OS and follow the instructions there. If you are done with the installation come back here.
+There are different ways to either install or download node. 
+
+To install node visit https://nodejs.org/en/download/. It is pretty simple all you have to do is to select your OS and follow the instructions there. If you are done with the installation come back to this article. I will be right here waiting.
 
 To confirm node is on your computer, use `$ node --version ` on your terminal. This should print the current node version on your computer. 
 
-Node pre-installs node package manager to your computer too. You can confirm by putting `$ npm --version` into your terminal. And this should print out the current version too.
+Node pre-installs node package manager (NPM) to your computer too. You can confirm by putting `$ npm --version` into your terminal. And this should print out the current version too.
 
 If something got wrong with your installations, please visit https://www.npmjs.com/get-npm. You should see updated info on node and npm download there.
 
@@ -83,7 +85,7 @@ app.listen(port, ()=>console.log(`server started on localhost:${port}`))
 
 ```
 
-Now run it using the Node.js runtime like this, at the root directory of the project:
+Run it using the Node.js runtime, at the root directory of the project:
 
 `$: node server.js`
 
@@ -98,15 +100,15 @@ The alternative is `npm start`.
 >**Note:** Try to put the link, localhost:3838, into a browser to see if same index.html file renders to the DOM.
 
 
-With npm start, npm serves the argument file with node just like we could have done with node server.js.
+With npm start, npm serves the argument file with node just like we could have done with node < filename >.
 
->At this point, if you have the server running, you can stop the server (use Ctr + c) and let's implement the use of npm so that things can be better servered.
+>At this point, if you have the server running, you can stop the server (use Ctr-C) and let's implement the use of npm so that things can be better servered.
 
 Let's serve the server from a folder instead of a file ( the server.js file). 
 
 To do this, you should edit the **package.json** file like I did below. 
 
-But before you make these changes, please create a folder in your root directory and name it **server** then put the server.js file into the server folder
+But before you make these changes, please create a folder in your root directory and name it **server** then put the server.js file into the server folder.
 
 ```javascript 
   "description": "",
@@ -152,7 +154,7 @@ mernworld
     
 ```
 
->Please, if things get confusing, visit the previous tutorial**
+>Please, if things get confusing, kindly visit [the previous tutorial](/articles/hello-mern)**
 
 
 And the script in public/index.html should be replaced as a link to public/app.js
@@ -240,11 +242,11 @@ That is, you will need to
 
 1. compile first.
 **run this on a separate terminal**
-`npm run compile`
+`$ npm run compile`
 
 2. start your server afterwards.
 **run this on a separate terminal too**
-`npm start`
+`$ npm start`
 
 
 >If you compile, you will see a screaming error.

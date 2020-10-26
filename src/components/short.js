@@ -2,7 +2,8 @@ import React from "react"
 
 export default function Short () {
     return (
-        <div><p style={{fontSize: '1rem'}}>
+        <div>
+        <p>
         <span title="world in my native language">Araye</span>, Welcome
         here and thanks for visiting.
       </p>

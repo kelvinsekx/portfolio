@@ -7,13 +7,11 @@ description: "mern serverless react introduction-to-node introduction-to-mern me
 sourcecode: https://github.com/kelvinsekx/diggingmernwithsekx/tree/master/diggingmern-IV
 ---
 
-<div class="introduction">
-When it comes to data in react, including passing them around, two things should come as the first and basic in your mind. The first is props  : which is <strong>readonly</strong> data . The second is state  : which is the <strong>modifiable</strong> data.
-</div>
+When it comes to data in react, including passing them around, two things should come as the first and basic in your mind. The first is props  : which is **readonly** data . The second is state  : which is the **modifiable** data.
 
-<div class="borderTop"></div>
 
-## **Passing Props around**
+
+## Passing Props around
 Props allows us to make interesting component. Component that can send data and receive one too.
 
 With props, parent component can send data to her child components and make it render differently on different instances. 
@@ -24,9 +22,8 @@ The first is every normal data in javascript popularly array and object (common 
 
 The second is the children component. These are nested react components directly under the instantiated component.
 
-<div class="watchout">
-Props however has a <strong>BIG DEMERIT</strong>, you can’t modify it directly. You would have to pass it to a state to do that.
-</div>
+
+>Props however has a **BIG DEMERIT**, you can’t modify it directly. You would have to pass it to a state to do that.
 
 Now that you know a little about props to be dangerous, let us make a component, **BlogRow**, and reuse it a few times in the BlogPage component.
 
@@ -48,7 +45,7 @@ Before we create the BlogRow component, a little discussion has to be made furth
 
 You need to know the easiest way to pass data around with props is the use of attribute. 
 
-If you've been following from <a href="/articles/hello-mern/">Digging Mern – I</a>, you have used props when you passed "Hello World" to a title attribute. Moreover, the title attribute is a standard ***html attribute***, we will be using a ***custom attribute*** on our case. 
+If you've been following from [Digging Mern – I](/articles/hello-mern/), you have used props when you passed "Hello World" to a title attribute. Moreover, the title attribute is a standard **html attribute**, we will be using a **custom attribute** on our case. 
 
 Copy and paste the changes made to the BlogPage component.
 
@@ -82,9 +79,7 @@ class BlogRow extends React.Component {
 }
 ```
 
-<div class="borderTop"></div>
-
-## **Passing Data Using Children**
+## Passing Data Using Children
 
 Instead of passing our props the way we did initially. Let us now take advantage of props.children, the second way of passing props around.
 
@@ -111,7 +106,7 @@ In the child component, this can be accessed with a special props, this.props.ch
 <BlogRow>
 ```
 
-## **Dynamic Composition**
+## Dynamic Composition
 
 In this section, you will solidify your knowledge about props. 
 
@@ -151,9 +146,9 @@ Instead of repeating the BlogRow component twice, we will have to instantiate th
 …
 ```
 
-<div class="watchout>
-Donot forget to replace props.children at BlogRow to props.summary.
-</div>
+
+>Donot forget to replace props.children at BlogRow to props.summary.
+
 
 If you are conversant you would notice there is a new attribute that have not been taken into consideration. That is the **owner** attribute. 
 

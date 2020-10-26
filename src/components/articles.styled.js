@@ -55,12 +55,10 @@ export const StyledLink = styled.div`
 `
 
 export const StyledH3 = styled.h3`
-  font-size: 2.5rem;
+  font-size: ${({ftSize})=>ftSize};
   font-weight: 700;
   font-family: "DM Mono", monospace;
-  @media (max-width: 768px) {
-    font-size: 2rem;
-  }
+  min-height: 2rem;
 `
 
 export const StyledParagraph = styled.p`
@@ -70,6 +68,7 @@ export const StyledParagraph = styled.p`
 
 export const StyledSmall = styled.small`
   margin-top: 1.2em;
+  font-size: ${({ftSize})=> ftSize}
 `
 
 

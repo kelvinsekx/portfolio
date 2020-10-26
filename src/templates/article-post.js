@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 
 import { MediaQueryBtn, Smalled, NAV, FooterDiv, Spanner1, Spanner2 } from "./article-post.styled"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 import BackIcon from "../components/icon/back.svg"
 
 import "./article-post.css"
@@ -26,11 +26,12 @@ const BlogTemplate = ({ data, pageContext }) => {
           setState(!state)
         }}
       >
-        <Spanner1 st={state === true}>{`<`}</Spanner1>
-        <Spanner2 st={state === true}>{`>`}</Spanner2>
+        <Spanner1 st={state}>{`<`}</Spanner1>
+        <Spanner2 st={state}>{`>`}</Spanner2>
       </MediaQueryBtn>
       <div>
         <div className="row">
+          {/* // sidebar for table of content */}
           <div
             className={`col-lg-3 py-3 sideContent ${state ? "css-x" : null}`}
           >
@@ -80,7 +81,7 @@ const Navigator = ({ previous, next }) => (
     <div style={{ width: "42%", alignItem: "left" }}>
       {previous && (
         <div>
-          <div>Next</div>
+          <div>Previous</div>
           <Link className="link" to={previous.fields.slug} rel="prev">
             ← {previous.frontmatter.title}
           </Link>
@@ -96,7 +97,7 @@ const Navigator = ({ previous, next }) => (
     >
       {next && (
         <div>
-          <div>Previous</div>
+          <div>Next</div>
           <Link className="link" to={next.fields.slug} rel="next">
             {next.frontmatter.title} →
           </Link>
