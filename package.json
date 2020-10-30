@@ -31,7 +31,7 @@
     "gatsby-transformer-remark": "^2.8.0",
     "gatsby-transformer-sharp": "^2.3.19",
     "jquery": "^3.5.1",
-    "letterloading": "^1.0.0",
+    "letterloading": "^1.0.3",
     "node-sass": "^4.13.1",
     "prismjs": "^1.20.0",
     "prop-types": "^15.7.2",
@@ -39,7 +39,6 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "styled-components": "^5.1.0",
-    "typed.js": "^2.0.11",
     "typeface-merriweather": "0.0.72"
   },
   "devDependencies": {
