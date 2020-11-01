@@ -6,7 +6,11 @@ import { TypingP, TypingDiv } from "../typing/typing.styled.js"
 import Typing from "../typing/typing"
 
 
-export default function HeaderSum() {
+export default class HeaderSum extends React.Component {
+  componentDidMount(){
+    <Typing />
+  }
+  render(){
   return (
     <>
       <div className="detailsContainer">
@@ -25,4 +29,4 @@ export default function HeaderSum() {
       </div>
     </>
   )
-}
+}}
