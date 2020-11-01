@@ -28,7 +28,7 @@ export default class HeaderSum extends React.Component {
           </div>
           <TypingDiv>
             <TypingP>
-              I like: {ready ? <Typing /> :<span />}
+              I like: {this.state.ready ? <Typing /> :<span />}
             </TypingP>
           </TypingDiv>
         </div>
