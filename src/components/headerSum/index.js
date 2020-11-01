@@ -7,8 +7,14 @@ import Typing from "../typing/typing"
 
 
 export default class HeaderSum extends React.Component {
+  constructor(props){
+    super(props)
+    this.state={
+      ready: false
+    }
+  }
   componentDidMount(){
-    <Typing />
+    this.setState({ready: true})
   }
   render(){
   return (
@@ -22,7 +28,7 @@ export default class HeaderSum extends React.Component {
           </div>
           <TypingDiv>
             <TypingP>
-              I like: <Typing />
+              I like: {ready ? <Typing /> :<span />}
             </TypingP>
           </TypingDiv>
         </div>
