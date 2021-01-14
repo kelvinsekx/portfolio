@@ -3,7 +3,7 @@ title: "A Little Something: PRE and CODE"
 date: "2021-01-13"
 lastupdated: "2021-01-13"
 category: "Kelvinsekx with a Little Something"
-description: "the Pre element tells the browser the content between the tags is \"preformatter\" and that the browser shouldnot add any styling..."
+description: "the Pre element tells the browser the content between the tags is \"preformatted\" and that the browser shouldnot add any styling..."
 ---
 
 The PRE element tells the browser that the enclosed text is "preformatted". The browser ensures it renders the content between the tags whatever way the author inputs it or presents it. 
