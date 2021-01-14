@@ -11,7 +11,7 @@ sourcecode: https://github.com/kelvinsekx/diggingmernwithsekx/tree/master/diggin
 >**Note:** this article is the continuation of the Digging Mern series. And the code here is an addition to the former code.
 
 
-_In the <a href="/articles/mern-native-setup">previous article</a>, we accomplished a small react component. However, Hello World doesnot come close to the complex blog I talked about <a href="/articles/hello-mern/">here</a>. In this tutorial, you and I will start building react components that come closer to the said blog._
+In the <a href="/articles/mern-native-setup">previous article</a>, we accomplished a small react component. However, Hello World doesnot come close to the complex blog I talked about <a href="/articles/hello-mern/">here</a>. In this tutorial, you and I will start building react components that come closer to the said blog.
 
 ## **React Component**
 

@@ -1,11 +1,11 @@
 ---
 title: "reodering list with react js"
-date: "2020-09-11"
+date: "2021-01-13"
 lastupdated: "2020-09-27"
 description: "list reorder react, list rearrange when clicked react, ol reordering"
 ---
 
-Last week, I had an online interview. I was given a task to be finished under 17 minutes. And I failed it. The good news is that after the interview, It took me 12 minutes to figure out. I am happy to share this fun work.
+Last week, I had an online interview. I was given a task to be finished under 17 minutes and I failed it. The good news is  after the interview, It took me 12 minutes to figure out the problem with my code. I am happy to share this fun work.
 
 The task was that I re-render a clicked list to become first from any position on the array. so that if the initial list was: 
 
@@ -24,9 +24,9 @@ Before I share the code, what strucked me was that I did a funny silly error. Th
 
 Instead of modifying the prop, pass it to a state. 
 
-If you donot take anything away here. Please take this.
+If you donot take anything away here. Please take that.
 
-## **To the code**
+## **Shut up and Take me to the code**
 
 ```javascript
 // index.js
@@ -64,8 +64,8 @@ function ListItem(props) {
   };
 
     // render the items in the array as list
-  return listItems.map((item, keys) => (
-    <li key={`${keys}`} onClick={() => handleClick(`${item}`)}>
+  return listItems.map((item, index) => (
+    <li key={`${index}`} onClick={() => handleClick(`${item}`)}>
       {item}
     </li>
   ));
@@ -85,6 +85,7 @@ ReactDOM.render(<ListContainer />, document.getElementById("root"));
 
 // thanks for using my code snippet. If it helps you, tell me it did. I LOVE YOu
 ```
-**HOPE IT HELPS. IF IT DOES MAKE ME MORE HAPPY AND SAY HELLO**
+**I really hope it helps you out.**
+If you think it could be improved, please send me a DM on twitter @kelvinsekx.
 
 
