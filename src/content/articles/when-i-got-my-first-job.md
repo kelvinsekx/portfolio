@@ -33,7 +33,7 @@ After 2 months, I asked for an increment that which I deserved the other day. I 
 
 Now since I left, I witnessed some part you deserve to know if you had face the rigor to read this length. I earned far more than most teacher would on a full time considering the teaching pay atmosphere in Ibadan because I made my employer knew I would do well even if I left the job or wasnot employed. I am a developer and then was teaching one how to code when I got the par time teaching role. It was painless and powerful.
 
-Get a skill friend, and make your employer know you are better if not given, and they will be betteroff if they give you the job instead.
+Get a skill friend, and make your employer know you are better if not given, and they will be betteroff if they gave you the job instead.
 
 I am unemployed currently,  love coding and teaching people how to.
 
