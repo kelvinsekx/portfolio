@@ -4,7 +4,7 @@ date: "2021-03-16"
 description: "about my first job scenario after school"
 ---
 
-In my mother's land after first degree all citizens are expected to on board on a 12 months compulsory service - NYSC. I was done with mine by June 31, 2020, usually what coomes after service is "Job search". Mine was no exception.
+In my mother's land after first degree all citizens are expected to on board on a 12 months compulsory service - NYSC. I was done with mine by June 31, 2020, usually what comes after service is "Job search". Mine was no exception.
 
 Not until January of the subsequent year, I was working for free in a small farm somewhere in Ibadan. But Hey, I got a job offer as a teacher in a leading secondary school in the same area I lived. Before then, I have made a covenant with myself to only work per time as a teacher. Well do you need that part...let's move on.
 
