@@ -21,21 +21,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Roboto Mono`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Roboto`,
-            variants: [`100`, `300`]
-          },
-        ],
-      },
-    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
