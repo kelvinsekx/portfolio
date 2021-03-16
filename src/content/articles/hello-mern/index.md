@@ -2,20 +2,21 @@
 title: "Digging MERN I: hello world"
 date: "2020-09-03"
 category: "mern"
-lastupdated: "2020-10-24"
+lastupdated: "2021-03-13"
 description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners mern stack tutorial"
 sourcecode: https://github.com/kelvinsekx/diggingmernwithsekx/tree/master/diggingmern-I
 ---
 
 This is an introductory mern stack tutorial that will happen in phases. By the end of this long tutorial, we would have created a mern stack project, a complex and powerful blogging platform with the mern stacks.
 
-Although long, I will do my best to keep every part small and consized. 
+Although it is a long tutorial thing, I will do my best to keep every part small and consized. 
   It will be painless trust me.
 
-This tutorial is the first part of many parts. If you follow to the end, It will for sure look good on your resume and help you and I understand mern even more.
+This tutorial is the first part of many parts. If you follow until the end, the aftermath of this tutorial will  look good on your resume and help you and I understand mern even more.
 
 As it is customary, this part 1 will start with the simple and amazing Hello World application. We would be using [react](http://www.reactjs.org "link to the react official site") to render the Hello Page and use [express](http://www.express.com "link to express official site") to serve the web server.
 
+Get your yourself, laptop, pen, paper and smart phone cause it will be a long drive.
 
 ## HelloWorld
 To start off, we would build a **simple HelloWorld** application with no installation, no downloads and no servers either. 
@@ -45,9 +46,9 @@ You can use any favourite editor of your choice and save the file anywhere. In f
 
 
 ## Serverlessly Hello World
-In the section above, Hello World was statically written and that's below our aim. 
+In the section above, Hello World was statically written and that's below our intended outcome. 
 
-Instead of been static, we can leverage on React and ReactDom to make it even more awesome and dynamic instead of being statically dumped.
+Instead of been static, we can leverage on React and ReactDom to make it even more awesome and dynamic.
 
 To achieve this, we would use the development version of the React and ReactDOM libraries from http://www.unpkg.com/browse/react@16.13.1 and put them into the head element of our index file.
 
@@ -58,10 +59,8 @@ To achieve this, we would use the development version of the React and ReactDOM 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--changes-->
         <script crossorgin src="https://unpkg.com/react@16/umd/react.development.js"></scipt>
         <script crossorgin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></scipt>
-        <!-- -->
 
         <title>mern and sekx</title>
     </head>
@@ -72,8 +71,9 @@ To achieve this, we would use the development version of the React and ReactDOM 
 Next, within the body, let's create a `div` that will hold the react component. 
 
 ```javascript
-<!-- index.html --> 
-<!-- I named mine ___root, but you can name your's any unique name -->
+<!-- index.html -->
+
+<!-- I named mine "___root", but you can name your's any unique name -->
 
     ...
     <body>
@@ -98,7 +98,7 @@ React.createElement takes three arguments.
 
 1. **type**.
 this can be any **standard html element tag**, **custom element tag**, or **react.fragment**. 
-> **BEWARE###**: Do not forget to always write standard html tags in lowercase letters all through. e.g 'div', 'p', 'small' etc. And custom tags in Camel case letter e.g 'BanWrapper', 'ContainerPlace' etc.
+> **BEWARE#**: Do not forget to always write standard html tags in lowercase letters all through. e.g 'div', 'p', 'small' etc. And custom tags in Camel case letter e.g 'BanWrapper', 'ContainerPlace' etc.
 This is how react best distinguishes standard html elements from custom elements.
 <p></p>
 
@@ -107,7 +107,7 @@ props is a javascript object that can be an html attribute or a customized varia
 <p></p>
 
 3. **children**.
-these are other nested or inherited components.The  children are elements creatable with createElement.
+these are other nested or inherited components.The  children are elements creatable with React.createElement.
 
 ```javascript
 React.createElement(type, [..props], [...children])
@@ -119,7 +119,7 @@ React.createElement(type, [..props], [...children])
 <div></div>
 
 ### BACK TO CODE
-We can now replace our previous hard-coded hello world with react. 
+We can now replace our previous hard-coded hello world with react's. 
 
 ```javascript
 <!--  index.html --> 
@@ -133,7 +133,7 @@ We can now replace our previous hard-coded hello world with react.
               null,
               React.createElement(
                   'h1',
-                  {title:"Hello"},
+                  {title: "Hello"},
                   null
               )
           )
@@ -142,7 +142,7 @@ We can now replace our previous hard-coded hello world with react.
     ...
 ```
 
-However, this still doesnot do the work. If you reload your browser everything should be blank. To make react render the elements we just created, there is a need to make use of the ReactDOM. This helps us to convert the elements from the virtual DOM to the browser DOM.
+This still doesnot do the work. If you reload your browser everything should be blank. To make react render the elements we just created, there is a need to make use of the ReactDOM. This helps us to convert the elements from the virtual DOM to the browser DOM.
 
 
 ```javascript
@@ -163,15 +163,16 @@ However, this still doesnot do the work. If you reload your browser everything s
               )
           )
 
-        <!-- new changes-->
+        <!-- changes-->
           ReactDOM.render(Elem, document.getElementById('___root'))
-        <!-- -->
         </script>
     </body>
     ...
 ```
 
-After you done that, everything should work right. Try and reload the browser. Your complete code should look like this:
+After you done that, everything should work right. Reload the browser. You now have a react render but also looking "Hello World".
+
+Your complete code should look like this:
 
 ```javascript
 <!-- index.html --> 
@@ -213,7 +214,7 @@ With our previous code, things look fine but soon it will become difficult to ke
 
 If we decide to add more components this way, things can get really clumpsy. This is where JSX shines.
 
-JSX helps to abstract the complicated syntax with writing React.createElement and makes our code look similar to HTML. 
+JSX helps to abstract the complicated syntax with writing React.createElement and makes our code look similar to HTML (What frontend developers love) .
 
 Besides, JSX is not a replacement for html. In fact it is not html in any way.  
 
@@ -237,11 +238,12 @@ Let's re-write our previous code to take advantage of the wonders that come with
 If you reload the browser, you should see a screaming error and the page would not load.
 
 
-To compile things, we need a compiler. In our case, let's fast forward and just use Bael transcomplier for javascript.
+To compile things, we need a compiler. In our case, let's fast forward and just use Babel transcomplier for javascript.
 
-Babel is cool to compile JSX and let's do the compilation with Babel then. 
+Babel is used to compile JSX. In that case, we will be doing the compilation with Babel then. 
 
 Since  we are doing this serverlessly, let's import another link into the head.
+This will help us to import Babel into our code.
 
 ```javascript
 <head>
@@ -253,11 +255,11 @@ Since  we are doing this serverlessly, let's import another link into the head.
 
 You can reload the browser now.
 
-> **Note:** If your page took few more minutes while loading?? DONOT PANIC. This is because JSX needs to be compiled to javascript.
+> **Note:** If your page took few more minutes while loading? DONOT PANIC DEAR. This is because JSX needs to be compiled to javascript first before the DOM loads.
 
->But OOPS things still donot work. 
+>But OOPS things broke. 
 
-You know why?? This is because babel needs to be told what script it should compile. 
+You know why? Let me help you: This is because babel needs to be told what script it should compile. 
 
 To inform Babel what scripts it should compile specifically, an attribute, **type="text/babel"**, needs to be added to our script.
 
@@ -269,7 +271,7 @@ To inform Babel what scripts it should compile specifically, an attribute, **typ
 ...
 ```
 
-Everything should look good now. Our final code is below.
+Everything should look good now. Reload the file and things should look good again. Our final code is below.
 
 ```javascript
 <!-- index.html --> 
@@ -302,18 +304,18 @@ Everything should look good now. Our final code is below.
 
 ## What is Next??
 
-This part is sure too long for our first step. I will cut it short with time. But at that, it is just long enough to keep us ready for fun ahead.
+This part is seems too long for our first step. But don't break, it is just long enough to keep us ready for the fun ahead.
 
-[**Next**](/articles/mern-native-setup), YOU and I will make a quick setup for our big mern app.
+[Next](/articles/mern-native-setup), You and I will make a quick setup for our big mern app.
 
 ****
 <span style="color:#349077">
 **Joke Time : dedicated to my friend Boluwatife**
 </span>
 
- If life were to be human, it would have been a black woman
+If life were to be human, it would have been a black woman
 
-How do I know??: ): Urrgh, it simple
+How do I know??: ): Urrgh, its simple
 - A blackwoman is not fair
 - A blackwoman is tough
 - A blackwoman is beautiful
@@ -326,9 +328,9 @@ How do I know??: ): Urrgh, it simple
 </span>
  
 
-Mention three (3) means by which we can pass styles to a react element. What way seem to be the most efficient??
+Mention three (3) means by which we can pass styles to a react element. What way seem to be the most efficient ? You might need to read look into google's lighthouse.
 
 ## Closing Note:
-On a bye note for now, hope you had fun learning and learnt something new.
+On a bye note, hope you had fun learning and learnt something new.
 
-Digging MERN is important today than nerver before. When the MERN stack started it was very minimal and was easy to learn the basics. Today the MERN is larger than they thought it to be and it is easy not to learn the basics.
+Digging MERN is important today than never before. When the MERN stack started it was very minimal and was easy to learn the basics. Today the MERN is larger than they thought it to be and it is easy not to learn the basics.

@@ -124,7 +124,7 @@ const ArticleHeader = ({ post }) => {
         <div>
           {"^(* ! *)^"} {minutes} read
         </div>
-        <div>Last modified on {posts.lastupdated}</div>
+        <div>Last modified on {posts.lastupdated || posts.date}</div>
         <div>
           {posts.sourcecode ? (
             <a href={posts.sourcecode}>Source code on Github</a>

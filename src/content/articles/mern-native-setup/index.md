@@ -8,11 +8,11 @@ sourcecode: https://github.com/kelvinsekx/diggingmernwithsekx/tree/master/diggin
 ---
 
 
-In the <a href="/articles/hello-mern/">previous article</a>, we setup things all serverless. However, quickly you will notice it is not efficient for anything, neither for production nor for development. The obvious reason is how long it takes for the browser to load, the punch of links, as Content Delivery Network(CDN).
+In the <a href="/articles/hello-mern/">previous article</a>, we setup things all serverless. Albeit, quicker or later, you will notice it is not efficient for anything, neither for production nor for development. The most obvious reason is how long it takes for the browser to load the punch of links.
 
-This obvious reason and many others, require us to create a simple server that make things more efficient.
+That obvious reason and many others, require us to create a simple server that will make things efficient.
 
-To start handling things better, you will need to install few libraries and organize few files. But donot bother if you've never done this before. All you have to do is to follow the instructions here carefully.
+To start handling things better, you will need to install few libraries and organize few files. Donot bother if you've never done this before. All you have to do is to follow the instructions here carefully.
 
 ## Node Installation
 
@@ -20,11 +20,13 @@ Node allows javascript to run outside the browser, or in the server as it is pop
 
 There are different ways to either install or download node. 
 
+> If you have node on your system please skip this section.
+
 To install node visit https://nodejs.org/en/download/. It is pretty simple all you have to do is to select your OS and follow the instructions there. If you are done with the installation come back to this article. I will be right here waiting.
 
 To confirm node is on your computer, use `$ node --version ` on your terminal. This should print the current node version on your computer. 
 
-Node pre-installs node package manager (NPM) to your computer too. You can confirm by putting `$ npm --version` into your terminal. And this should print out the current version too.
+Node does not come alone. It pre-installs node package manager (NPM) to your computer too. You can confirm by putting `$ npm --version` into your terminal. And this should print out the current version.
 
 If something got wrong with your installations, please visit https://www.npmjs.com/get-npm. You should see updated info on node and npm download there.
 
@@ -33,7 +35,7 @@ If something got wrong with your installations, please visit https://www.npmjs.c
 
 The installations above may be ok for now. Let's get you to set the folder and files where your code will reside.
 
-To start with create a directory or folder as it is popularly called then name it **mernworld** or anything you choose to call it, it is on your PC afterall. 
+To start with, create a directory or folder as it is popularly called then name it **mernworld** or anything you choose to call it, it is on your PC afterall. 
 
 Initialize the project with `$ npm init` on the terminal and don't be scared when the terminal asks you some questions, answer them the best way you can it is never a big deal. And move on.
 
@@ -63,6 +65,8 @@ mernworld
 
 ## Express Server
 After the instructions above. Copy and paste the code below to a server.js file at the root of your mernworld folder.
+
+Please if you would, you remove the comments in the code if you find them bordersome.
 
 ```javascript
 // import the express module and store it in a variable called express
@@ -114,6 +118,7 @@ But before you make these changes, please create a folder in your root directory
   "description": "",
   "main": "index.js",
   "scripts": {
+    // changes
     "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

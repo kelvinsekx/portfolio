@@ -70,6 +70,3 @@ export const StyledSmall = styled.small`
   margin-top: 1.2em;
   font-size: ${({ftSize})=> ftSize}
 `
-
-
-

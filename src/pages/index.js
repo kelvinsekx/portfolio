@@ -3,9 +3,8 @@ import React, { useState } from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 
-import Short from "../components/short"
-import Mission from "../components/mission"
-import Long from "../components/long"
+
+import {Mission, Short, Long} from "../components/mission"
 
 import HeaderContainer from "../components/maincomponent/headerContainer"
 import BanWrapper from "../components/banWrapper"
