@@ -29,10 +29,10 @@ For-in loop is one of the elegant means of looping through all properties is an 
 
 ```javascript
 {
-    for(variable in iterable){
+    for(variable of iterable){
         //statement
     }
-    for(x in [12,3,4,5, "oshomo"]){
+    for(x of [12,3,4,5, "oshomo"]){
         console.log(x) // return 12,3,4,5,oshomo
     }
 }
@@ -53,7 +53,7 @@ I also just got to know that I can gracefully skip the variable keyword in the u
 }
 ```
 
-For further reading check these MDN docs: <a href= "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for..in loop</a> and <a href= https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of>for..in loop</a> 
+For further reading check these MDN docs: <a href= "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for..in loop</a> and <a href= https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of>for..of loop</a> 
 ****
  <h3 style="color:#349077">
 **Joke Time : dedicated to my little cousin, genesis**
