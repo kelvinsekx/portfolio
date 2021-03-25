@@ -1,0 +1,24 @@
+---
+title: "Nigeria and Aborted-bound Creativity"
+date: "2021-03-19"
+lastupdated: "2021-03-19"
+category: "general"
+---
+
+"The cost of freedom is always high, but Americans have always paid it. One path we shall never choose, and that is the path of ... submission" John F. Kenedy, 5th U.S President (1917-1963)
+
+When economies are compared, most especially the america and nigeria economy, what is differs and is so distinctively a driving force is the amount and tenacity of continuous creative destructions ( as defined by Joseph Schumpeters in 1942). The hypothesized problem of what differs then demands an answer, sorry I forgot to say a solution too, One better approach to arrive at an answer or solution could be with the question: What inhibits Entrepreneurship and Creativity in Nigeria ? - a factor that aborts them, I mean it is needless to say factors that would birth creativity in Nigeria, this is because Nigerians are overduly blessed (preferably bound) with enterpreneurship and creativeness.
+
+Usually at evening I take a long walk for few advantegious reasons. Foremost is that it serves as exercise and the other that it helps me reduce the stress or brain burden attributable to somewhat over-reasoning - Don't take that for it on a lighter note. On this day, I was taking my usual walk when I heard a woman sharply corrected some boys who almost walked past her as she sits on a green plastic chair outside a building with a small provision shop in front of it. "What is it on your ear, a ring or what ? She said like someone who had authority accompanied with a serial frowning face. Quickly did one of the boys tried to remove what looked like ear-ring on his ear, it fell and while he was busy searching for his fallen ear-ring I walked passed them as he and his frineds were in the middle of aligning a million reason why one of them used an ear-ring at the same time.
+
+Nigeria is one place where people claim they over-understand or too understand, sorry for my misuse of the english language, religion and culture yet both religion and culture are failing factors that have binded creative destruction and rebellion than liberated them recently. What has the woman got to do with a group of boys and one with an ear-ring? As youths, the fear for our culture and religious misinterpretations - interpretation inclusive, and the highly reverend cultural and religious leaders that we put above our geniusness is one big factor responsible for aborted destructive thinking and these will perpetually do.
+
+With the small snapshots of history I have, great leaders like Sango, a male, would plait hair, use ear rings and yet he was and still is considered a man of valour hitherto.  If the leading figures in our culture did these and more to attain greatness, don't we know by now that creative destruction and rebellion are key to liberating our generation, the X-Gen, and our immediate seniors, the millenium.
+
+Why then are we been reprimanded for re-inventing these attributes by the same people who claim they are the leading figures for the same culture today? May be, they have intentionally turned deaf ears and blind eyes to these parts so as to inflict suffering on her younger generation or to endanger the valour kinds among us who would achieve fits they could not. I will go with the latter. 
+
+The religions leaders are not different, as this is popular in religious preachings. Leaders proclaim the chapters and verse more only if it befits their doctrine and way of life (I can not remember what this science is called) bamboozoling us by spreading a prayer of creativity for the Nigerian youths even when they themselves don't make an enabling environment declare those who try to rebel a christian outcast.
+
+Just a few days ago, we ranked well again as the third most unemployment savaged nation in the WORLD - I needed to capitalize that to make you, if you are Nigerian, see this as a serious mess because where I came from everything is legitimately a joke. Usually when such gigantic figures are re-deployed to the public, because they exist anyways, questions arise here and there with plenty as a noise than not.
+
+I can see it different, my eyes are open. The Nigerian government is not the failure or cause either. I repeat they are not. Else if your eyes are not opened let me help you with this - since, our culture and religion are placed above every institutions in Nigeria...- Haha, now you see who are responsible. Exactly, our cultural and untouchable religious leaders are the failure. Not the culture or religion its self, because Sango came and gave me and you the liberty to paint our fingers and hair and every other freedom to choose from, in fact Jesus had very long curly hairs but those wicked leaders took them away. They are, they are the murderers killing the freedom and enterpreneurship in You and I, because enterpreneurship do not happen until we are totally free to cause destructions.

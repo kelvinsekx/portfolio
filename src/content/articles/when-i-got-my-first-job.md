@@ -4,7 +4,7 @@ date: "2021-03-16"
 description: "about my first job scenario after school"
 ---
 
-In my mother's land after first degree all citizens are expected to on board on a 12 months compulsory service - NYSC. I was done with mine by June 31, 2020, usually what coomes after service is "Job search". Mine was no exception.
+In my mother's land after first degree all citizens are expected to on board on a 12 months compulsory service - NYSC. I was done with mine by June 31, 2020, usually what comes after service is "Job search". Mine was no exception.
 
 Not until January of the subsequent year, I was working for free in a small farm somewhere in Ibadan. But Hey, I got a job offer as a teacher in a leading secondary school in the same area I lived. Before then, I have made a covenant with myself to only work per time as a teacher. Well do you need that part...let's move on.
 
@@ -33,7 +33,7 @@ After 2 months, I asked for an increment that which I deserved the other day. I 
 
 Now since I left, I witnessed some part you deserve to know if you had face the rigor to read this length. I earned far more than most teacher would on a full time considering the teaching pay atmosphere in Ibadan because I made my employer knew I would do well even if I left the job or wasnot employed. I am a developer and then was teaching one how to code when I got the par time teaching role. It was painless and powerful.
 
-Get a skill friend, and make your employer know you are better if not given, and they will be betteroff if they give you the job instead.
+Get a skill friend, and make your employer know you are better if not given, and they will be betteroff if they gave you the job instead.
 
 I am unemployed currently,  love coding and teaching people how to.
 

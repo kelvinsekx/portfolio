@@ -1,47 +1,51 @@
 ---
 title: "MavoScript for Beginner"
-date: "2020-09-14"
-lastupdated: "2020-10-10"
+date: "2020-09-20"
+lastupdated: "2021-03-20"
 description: " This is an introductory article that explains basic concepts on mavoscript. It is targeted at complete beginners to mavoscript. At the end of this article you would have built a mavo project, mavo-calculator-project, all from scartch."
 sourcecode: https://github.com/kelvinsekx/mavocalculator
 ---
 
 
 
-_Over the years as a javascript developer, I have understood the ubiquitousness of javascript libraries and frameworks in order to build awesome user interfaces._ 
+Over the years as a javascript developer, I have understood the ubiquitousness of javascript libraries and frameworks in order to build awesome user interfaces: They make our hard work shine. 
 
-_They make our hard work shine._ 
+In that regard, libraries and frameworks like react and vue have stood foremost respectively.
 
-_In this regard, libraries and frameworks like react and vue have shined respectively._
-
-_Although, react and vue do all the heavy lifting, they come with a small itch: **they require that their users have more than basic understanding of javascript at least [IMO]**._
+Although, react and vue do all the heavy lifting, they come with a small itch: **they require that their users have more than basic understanding of javascript at least IMO (In My Opinion)**.
 
 
-## **MavoScript to the rescue**
-**Mavoscript** comes built out with the assumption that you might only know HTML and CSS yet want to build awesome UIs.
+## MavoScript to the rescue
+**Mavoscript** comes built out with the assumption that you might only know HTML and CSS yet want to build awesome UIs. The author of mavoscript herself is a big supporter of accessible programming to those without computer science background.
 
-Mavoscript makes us build UIs without the need to ever understand javascript. With that in mind, mavoscript power resides in the use of its special **html attributes**. 
+Mavoscript makes you want to build UIs without the need to ever understand javascript as much as you will need for react or vue to start building something useful. With that in mind, mavoscript power with you, you won't be needing all the module, transcompilation and bundling headache that loom us the javascript guyz. Here it is cleaner.
+
+The only prerequisite is that you know about **html attributes**. And that's all. In mavoscript we heavily rest our shoulders on the special html attributes to make wonders. Join me.
 
 >**Note:** If you have used vue or angular before now they seem similar. Most especially the special attribute part. However, Mavoscript is not javascript. Things are handled here a little different.</div>
 
 
-## **Getting started with mavoscript**
+## Getting started with mavoscript
+Talk is cheap, let's code.
+
 To get up and running with mavoscript, all you need is to paste the js and css links below into the head component of your html document.
 
->**note** Remember you need internet connection to make things work
+>sorry, I will be assuming you are familiar with html and its structure. If not please for whatever sake, leave here and get a 10 minutes reading about it. There are plenty awesome help online on HTML. I will be right here waiting.
 
 `<link rel="stylesheet"  href="https://get.mavo.io/mavo.css"  / >`
 
 `<script src="https://get.mavo.io/mavo.js"></script>`
 
-## **Grant mavo permission with mv-app**
-If you’ve successfully pasted the links, the next step is to notify mavo which element you want it to handle. 
+>**note** Remember you need internet connection to make things work
+
+## Grant mavo permission with mv-app
+If you’ve successfully pasted the links into the head, may be just immediately after the title tag, the next step is to notify mavo which element you want it to handle. 
 
 This is similar to react unique id html-attribute passed to ReactDOM but we will have to replace id with **mv-app**. 
 
-The **mv-app** html-attribute notifies mavo it should be responsible for the element. I mean this, **mv-app tells mavoscript that the element is concerned with her and she, mavo, should take note and start treating it differently**.
+The **mv-app** html-attribute notifies mavo it should be responsible for the element. I mean this, **mv-app tells mavoscript that the element is concerned with only her, mavo would take note and start treating that element differently**.
 
-See how to tell mavoscript about an element below.
+See how to tell mavoscript about an element it shpuld be responsible for in your document.
 
 ```javascript
 <!-- mv-app is passed like a regular html-attribute -->
@@ -50,7 +54,8 @@ See how to tell mavoscript about an element below.
 </div>
 ```
 
-## **Deep Dive into mavo basics**
+
+## Deep Dive into mavo basics
 To practice the basic concepts we will create a calculator project. 
 
 Along the way, I will be discussing the most basic concepts in mavo.
@@ -82,12 +87,12 @@ You can use the markup below as a template for your calculator.
 </div>
 ```
 
-### **Property**
+### Property
 The concept you will be learning first is **property**.
 
 To me, property is the most fundamental concept with mavo. It is very similar to variables in javascript or in any programming language you are familiar with. 
 
-Howbeit, property is not as complicated as variable can be.
+Albeit, property is not as complicated as variable can be.
 
 It is just an attribute that is passed to an element inorder to collect its values.
 
@@ -106,7 +111,7 @@ Check out how I added three properties and named them.
 <input type="text" property="input2" />
 …
 ```
-Now that we added property attribute to some of our elements we can watch changes to the element.
+Now that we added property attribute to some of our elements we can watch changes to these elements.
 
 1. **input1:** This will be used to collect the first inputed number. 
 
@@ -114,7 +119,7 @@ Now that we added property attribute to some of our elements we can watch change
 
 3. **input2:** The third element we want to keep track is the second inputed number
 
->##ALERT!!!: SPOILER AHEAD
+><div style="font-size: 2rem; font-weight: 900; line-height: 2.5rem">ALERT!!!: SPOILER AHEAD</div>
 
 To confirm, let’s make a quick script to see our changes in the console.
 
@@ -125,9 +130,10 @@ console.log([input1])
 </script>
 ```
 
->**###The Spoiler:** You fell for it? Remember I told you mavoscript isn't javascript. If you did like my instinct did above you would get an error in your console. If you've actually done the console.logging above, try to see the console in your browser. It should print **Uncaught ReferenceError: input1 isnot defined**. Please delete the script because it won't work.
+>**The Spoiler:** You fell for it? Remember I told you mavoscript isn't javascript. If you did like my instinct did above you would have gotten an error in your console. If you've actually done the console.logging above, try to see the console in your browser. It should print **Uncaught ReferenceError: input1 isnot defined**. Please delete the script because it won't work.
 
-To actually handle things, we can only see changes through the html. Do this now.
+To actually handle things, we can only see changes through the html. Remember this is mavoscript and we deal in html attributes majorly.
+ Do this now.
 
 ```javascript
 …
@@ -138,16 +144,16 @@ To actually handle things, we can only see changes through the html. Do this now
     </div>
 ```
 
-Start typing numbers into the first input and see the changes live in the div with class answerContainer. This is more than enough evidence property really keep watches for changes to element.
+Start typing numbers into the first input and see the changes live in the div with the class name : "answerContainer". This is more than enough evidence property really keep watches for changes to element.
 
-### **Expression**
+### Expression
 Pasting our values to see is not enough. It does not make enough sense of what calculators can do. Calculators take input and transform them. We want the same.  This is where expression comes in. You want input1 + input2 to give an answer.
 
 All valid javascript expressions are valid in the mavo too. In this case we can dump javascript +, - etc and see some magic.
 
 Re-edit the immediate changes above to `[input1 + input2]` and tell me what you saw when you started adding numbers to both inputs.
 
-### **mv-expression**
+### mv-expression
 If you are a little bit conversant, you should have noticed a strange bracket `" **[** " input1 + input2 " **]** ". I have been using it for quite a while in this article.
 
 Expressions need a place to stay, and mavo created that with the brackets. You can't just put the property's name into the html value and expect it to do something.
@@ -158,7 +164,7 @@ You wouldn’t want to place properties in the middle of elements without bracke
 
 Well we can move on now.
 
-### **conditionals**
+### conditionals
 With mavo, there are two ways to make conditionals : **if()** and **mv-if**
 
 According to https://mavo.io, "you can use the if(condition, ifyes, ifno) function to print out different text depending on a condition". On the other hand, the mv-if is an attribute that hides or shows an element considering that the condition is true.
@@ -170,7 +176,7 @@ In this tutorial, I have decided to stick to mv-if for two reasons
 1. since you must have been familiar with special attributes like **property** and **mv-app**,
 2. mv-if is simpler if().
 
-##**BACK TO CODING: enough of the talking**
+## BACK TO CODING : enough of the talking
 In our case, we would hide some element based on the user chosen option. 
 
 >**note: ##Please read the code below carefully** It might first look confusing, but re-read. It is not as difficult like you think. If you re-read, it should be very clear.
@@ -206,10 +212,10 @@ In our case, we would hide some element based on the user chosen option.
 
 You now have an amazing calculator. Reload your browser to see the changes.
 
-## **Putting all together so far**
+## Putting all together so far
 If you understood everything so far, the changes shouldn’t be a deal. The full code can be found on https://github.com/kelvinsekx/mavocalculator.
 
-## **Closing Note**
+## Closing Note
 
 With this you have a functional calculator all without any programming language isn’t that awesome.
 

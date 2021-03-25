@@ -5,6 +5,11 @@ h1 {
   font-weight: 800;
   margin: 1rem 0;
 }
+
+article>h2{
+  font-size: 180%;
+  letter-spacing: -2px;
+}
 @media only screen and (max-width: 500px) {
   h1 {
     font-size: 2.1rem;
@@ -59,3 +64,4 @@ blockquote {
   -moz-transform: translate(30px, 20px) rotate(20deg);
   color:red;
 }
+
