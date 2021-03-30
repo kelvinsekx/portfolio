@@ -1,6 +1,6 @@
 ---
 title: "Make a .gitignore first"
-date: "2020-03-30"
+date: "2021-03-30"
 category: "func fun time"
 lastupdated: "2021-03-30"
 description: "the hardway I learnt to always make .gitignore file"
