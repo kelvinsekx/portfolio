@@ -37,20 +37,36 @@ The installations above may be ok for now. Let's get you to set the folder and f
 
 To start with, create a directory or folder as it is popularly called then name it **mernworld** or anything you choose to call it, it is on your PC afterall. 
 
+```javascript
+kelvinsekx MONKWA ~
+$: mkdir mernworld && cd mernworld
+```
 Initialize the project with `$ npm init` on the terminal and don't be scared when the terminal asks you some questions, answer them the best way you can it is never a big deal. And move on.
+
+```javascript
+kelvinsekx MONKWA ~/mernworld
+$ npm init
+```
 
 > On a good note, you can skip the terminal asking questions by using **npm init --yes** instead of **npm init**
 
 
 ## npm
+NPM, Node's Package Manager, is the repository for most javascript code. It just don't keep the code, it comes with the necessary tools to manage, deploy and use code in it's repository.
 
-NPM helps to manage your code together with other javascript developer's code. To use other developer's code, all you need is to install it like this `npm install <other developer's package>`. 
+From a very biased perspective, NPM helps to manage your code together with other javascript developer's code. To use other developer's code, all you need is to install  `npm install <other developer's package>`. 
 
 For now let's install express. We will need it for our server: `$ npm install express@4`
 
 Follow the steps to complete the setup:
 1. create a folder at the root of the mernworld and name it **public**
 2.  copy our final code at the <a href="/articles/hello-mern/">previous article</a> and put it into a public directory you just created in your mernworld folder.
+
+```javascript
+kelvinsekx MONKWA ~/mernworld
+$ mkdir public
+$ mv index.html public
+```
 
 Your folder structure will look like below.
 
@@ -91,7 +107,10 @@ app.listen(port, ()=>console.log(`server started on localhost:${port}`))
 
 Run it using the Node.js runtime, at the root directory of the project:
 
-`$: node server.js`
+```javascript
+kelvinsekx MONKWA ~/mernworld
+$ node server.js
+```
 
 This should print the message we passed to the console:  **the server started on localhost:3838**.
 
@@ -113,6 +132,11 @@ Let's serve the server from a folder instead of a file ( the server.js file).
 To do this, you should edit the **package.json** file like I did below. 
 
 But before you make these changes, please create a folder in your root directory and name it **server** then put the server.js file into the server folder.
+
+```javascript
+kelvinsekx MONKWA ~/mernworld
+$ mkdir server && mv server.js server
+```
 
 ```javascript 
   "description": "",
@@ -193,14 +217,18 @@ Instead of the unnecessary and inefficient cdn links, let's start to handle thin
 To start transformations, you will have to install few babel tools. We need the core Babel library and a command-line interface (CLI) to do the transform. 
 
 Install these to get them here...
-
-`$ npm install --save-dev @babel/core@7 @babel/cli@7 `
+```javascript
+kelvinsekx MONKWA ~/mernworld
+$ npm install --save-dev @babel/core@7 @babel/cli@7
+```
 
 After you've installed them, we will need a plugin to enable us transform JSX syntax to pure javascript. The preset/plugin to do this transformation is @babel/preset-react. 
 
 You will have to install this preset before it can be used.
-
-`$ npm install --save-dev @babel/preset-react@7`
+```javascript
+kelvinsekx MONKWA ~/mernworld
+$ npm install --save-dev @babel/preset-react@7
+```
 
 Remove the former app.js file and put it into a new folder called src. So that your root directory now look like this.
 

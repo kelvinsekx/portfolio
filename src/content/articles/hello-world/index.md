@@ -18,7 +18,7 @@ My articles are not aimed at complete beginners. I am very sad I couldnot make n
 
 Leaving that aside, I write with you and me in mind, I love what I do and I write this articles with love. 
 
-The reason I write here is to help you first and then myself. Articles here are written with utmost sincerity and naiveness. What's most important is that when you read, remember it is written by another human. Try to be fair when.
+The reason I write here is to help you first then myself. Articles here are written with utmost sincerity and naiveness. What's most important is that when you read, remember it is written by another human. Try to be fair when and hope it truly helps you.
 
 If you love me like I love you, say hi when you can on any of the platform on the <a href="/">Home Page</a>
 
@@ -34,12 +34,12 @@ On a closing note, I love criticisms, I love cooperation as much as I love compe
 
 Before I end this post, mummy I love you. You might not understand my writings or post, but I hope one day I make you just as happy as you have never been. 
 
- I want to say thank you to Daniel and James for being those tough friends.
+I want to say thank you to Daniel and James for being those tough friends.
 
 My stay in the university would not have been fun without some cool friends: jidescata, AB, Jiladi, Bolu and wura who loved me irrespective of my unusual traits.
 
 
-To all the girls I loved: Fawole Feranmi, Lola, Bukunmi Aje Josphine and Sadiha Dauda.
+To all the girls I ever loved: Fawole Feranmi, Lola, Bukunmi Aje Josephine and Sadiha Dauda.
 
 Also to peace of Gawu who is the meekest of them all.
 
@@ -47,7 +47,7 @@ FINALLY, ERIC AND JOSHUA you are the BEST.
 
 ## **closing note**
 
-Thank you for reading thus far. I have something you should check out --ellie goulding army-- that the song I was litsening to when I made this post. I hope you find the joy in the song just like I did.
+Thank you for reading thus far. I have something you should check out --ellie goulding army-- that was the song I was litsening to when I made this post. I hope you find the joy in the song just like I did.
 
 
 Here's a video to the song. Like my friend jideScata would say ENJOY!!!!

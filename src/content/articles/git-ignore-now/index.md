@@ -3,7 +3,7 @@ title: "Make a .gitignore first"
 date: "2021-03-30"
 category: "func fun time"
 lastupdated: "2021-03-30"
-description: "the hardway I learnt to always make .gitignore file"
+description: "the hard way I learnt to always make .gitignore file"
 ---
 
 Immediately I entered, It would never return...I waited forever but it was not enough to make me commit.

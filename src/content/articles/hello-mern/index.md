@@ -2,31 +2,40 @@
 title: "Digging MERN I: hello world"
 date: "2020-09-03"
 category: "mern"
-lastupdated: "2021-03-13"
+lastupdated: "2021-04-02"
 description: "mern serverless react introduction-to-node introduction-to-mern mern for beginners mern stack tutorial"
 sourcecode: https://github.com/kelvinsekx/diggingmernwithsekx/tree/master/diggingmern-I
 ---
 
-This is an introductory mern stack tutorial that will happen in phases. By the end of this long tutorial, we would have created a mern stack project, a complex and powerful blogging platform with the mern stacks.
+This is an introductory mern stack tutorial that will happen in phases. By the end of this long tutorial, you would have created a mern stack project, a complex and powerful blogging platform with the mern stacks.
 
 Although it is a long tutorial thing, I will do my best to keep every part small and consized. 
   It will be painless trust me.
 
-This tutorial is the first part of many parts. If you follow until the end, the aftermath of this tutorial will  look good on your resume and help you and I understand mern even more.
+This tutorial is the first part of many parts. If you follow until the end, the aftermath of this tutorial will  look good on your resume and help you and I understand the mern even more.
 
 As it is customary, this part 1 will start with the simple and amazing Hello World application. We would be using [react](http://www.reactjs.org "link to the react official site") to render the Hello Page and use [express](http://www.express.com "link to express official site") to serve the web server.
 
 Get your yourself, laptop, pen, paper and smart phone cause it will be a long drive.
 
-## HelloWorld
-To start off, we would build a **simple HelloWorld** application with no installation, no downloads and no servers either. 
+## MERN ?
+It is better never to assume, let me ask you : what is mern ?
 
-All that you will need is a modern browser and a weak internet.
+It might be supprising you got it all thinking what does mern even mean. But if you were quick to the answer you would have found the question embarassing, pardon my manners.
+
+A quick search can help and before you do or you don't want to at all. The MERN is an acronym for MongoDB, Express, React and Node. It is stack of technologies that can be used to make some really awesome webapps.
+
+To know more about the mern here I will be dipping straight to their use with a tutorial.
+
+## HelloWorld
+To start off, we would build a **simple HelloWorld** application with no installation, no downloads and no servers either.  Hhen, only a few imported links in our document head.
+
+All that you will need is a modern browser and a weak internet trust me.
 
 ## First Step
-Start by creating an HTML file with a simple bootstrap html code and name it **index.html**
+They say the journey of a thousand years begin with a step.
 
-You can use any favourite editor of your choice and save the file anywhere. In fact, you can use vim editor on the terminal. See mine here.
+Start by creating an HTML file with a simple bootstrap html code and name it **index.html**
 
 ```javascript
 <!-- index.html -->
@@ -44,9 +53,13 @@ You can use any favourite editor of your choice and save the file anywhere. In f
     </html>
 ```
 
+You can use any favourite editor of your choice and save the file anywhere. In fact, you can use the vim editor on the terminal.
+
 
 ## Serverlessly Hello World
-In the section above, Hello World was statically written and that's below our intended outcome. 
+Truly painless so far even with the gigantic first step.
+
+In the first step, "Hello World" was statically written and that's below our intended outcome. 
 
 Instead of been static, we can leverage on React and ReactDom to make it even more awesome and dynamic.
 
@@ -116,8 +129,6 @@ React.createElement(type, [..props], [...children])
 
 <a href="/articles/react-props-and-propsType/">Learn more about props</a>
 
-<div></div>
-
 ### BACK TO CODE
 We can now replace our previous hard-coded hello world with react's. 
 
@@ -142,7 +153,7 @@ We can now replace our previous hard-coded hello world with react's.
     ...
 ```
 
-This still doesnot do the work. If you reload your browser everything should be blank. To make react render the elements we just created, there is a need to make use of the ReactDOM. This helps us to convert the elements from the virtual DOM to the browser DOM.
+This still does not do the work. If you reload your browser everything should be blank. To make react render the elements we just created, there is a need to make use of the ReactDOM. This helps us to convert the elements from the virtual DOM to the browser DOM.
 
 
 ```javascript
@@ -170,7 +181,7 @@ This still doesnot do the work. If you reload your browser everything should be 
     ...
 ```
 
-After you done that, everything should work right. Reload the browser. You now have a react render but also looking "Hello World".
+After you done that, everything should work right. Reload the browser. You now have a react rendered but awesome looking "Hello World".
 
 Your complete code should look like this:
 
@@ -212,7 +223,7 @@ Your complete code should look like this:
 
 With our previous code, things look fine but soon it will become difficult to keep adding components with the react.createElement(). I only opted for it because it would help us understand React better in my opinion.
 
-If we decide to add more components this way, things can get really clumpsy. This is where JSX shines.
+If we decide to add more components this way, things can get really clumpsy. This is where JSX shines. Aside the components addition trouble, a favourable percentage of frontend developers really love to write codes that is html syntax friendly. I mean I would always prefer to write to the DOM with html than not.
 
 JSX helps to abstract the complicated syntax with writing React.createElement and makes our code look similar to HTML (What frontend developers love) .
 
@@ -304,7 +315,7 @@ Everything should look good now. Reload the file and things should look good aga
 
 ## What is Next??
 
-This part is seems too long for our first step. But don't break, it is just long enough to keep us ready for the fun ahead.
+This part may seem too long for our first step. But don't break, it is just long enough to keep us ready for the fun ahead.
 
 [Next](/articles/mern-native-setup), You and I will make a quick setup for our big mern app.
 
@@ -328,7 +339,7 @@ How do I know??: ): Urrgh, its simple
 </span>
  
 
-Mention three (3) means by which we can pass styles to a react element. What way seem to be the most efficient ? You might need to read look into google's lighthouse.
+Mention three (3) means by which we can pass styles to a react element. What way seem to be the most efficient ? You might need to read into google's lighthouse.
 
 ## Closing Note:
 On a bye note, hope you had fun learning and learnt something new.
