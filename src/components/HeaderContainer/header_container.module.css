@@ -61,7 +61,7 @@
   }
 
   .enquiryBtns {
-        flex-wrap: wrap;
-        gap: 0.5rem 1.2rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.2rem;
    }
 }

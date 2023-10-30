@@ -3,15 +3,29 @@
     gap: 4rem;
     padding: 1rem 0px;
 }
+
+.boardBoxHolder {
+    width: 79%;
+}
+
 .boardHeader {
     font-weight: 500;
     width: 7rem;
 }
 
-.boardBoxHolder {
- width: 79%;
-}
 .boardBox {
     border: 1px solid grey;
     padding: 0.1rem 0.05rem;
 }
+
+@media screen and (max-width: 600px) {
+    .board {
+     flex-direction: column;
+     gap: 1rem;
+    }
+
+    .boardBoxHolder {
+     width: 92%;
+    }
+}
+

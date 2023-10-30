@@ -30,3 +30,9 @@ a{
 .light{
   color: var(--sekx-black);
 }
+
+@media screen and (max-width: 600px) {
+  .body {
+    width: 85%;
+  }
+}

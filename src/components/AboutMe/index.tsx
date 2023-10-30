@@ -77,7 +77,7 @@ export function Short() {
 
   return (
     <div>
-      <p>Hi there, thanks for visiting.</p>
+      <p>Hi there!</p>
       <p>
         My name is Kelvin - but popular as Kelvinsekx. 
         I'm the co-founder and community lead of 
