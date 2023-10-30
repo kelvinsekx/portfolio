@@ -54,9 +54,9 @@ class HeaderSummary extends React.Component {
 }
 
 const imgsrc = [
-  "/src/assets/kelvin-ugly.png",
-  "/src/assets/kelvinsmilling.png",
-  "/src/assets/yeye.png",
+  "/kelvin-ugly.png",
+  "/kelvinsmilling.png",
+  "/yeye.png",
 ]
 function ImageContainer() {
   const [i, setImg] = React.useState(1);
