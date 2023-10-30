@@ -9,8 +9,11 @@ import * as React from "react"
 import styles from "./header_container.module.css"
 
 import { colors } from "../utils"
-
 import { randColor } from "../utils/hooks"
+
+import img1 from "../../assets/kelvin-ugly.png"
+import img2 from "../../assets/kelvinsmilling.png"
+import img3 from "../../assets/yeye.png"
 
 export default function headerContainer() {
   return (
@@ -54,9 +57,7 @@ class HeaderSummary extends React.Component {
 }
 
 const imgsrc = [
-  "/kelvin-ugly.png",
-  "/kelvinsmilling.png",
-  "/yeye.png",
+  img1, img2, img3
 ]
 function ImageContainer() {
   const [i, setImg] = React.useState(1);
