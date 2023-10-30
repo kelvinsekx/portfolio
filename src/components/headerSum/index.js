@@ -1,6 +1,5 @@
 import React from "react"
 
-import "./headersum.scss"
 
 import { TypingP, TypingDiv } from "../typing/typing.styled.js"
 import Typing from "../typing/typing"
@@ -36,3 +35,18 @@ export default class HeaderSum extends React.Component {
     </>
   )
 }}
+
+
+
+export default function imageContainer() {
+    return (
+        <>
+           <div className="img-container">
+            <div className="img-wrapper">
+              IMAGE SHOULD BE HERE
+            </div>
+          </div> 
+        </>
+    )
+}
+

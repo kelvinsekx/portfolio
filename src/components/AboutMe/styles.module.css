@@ -1,0 +1,26 @@
+.defaultBtn {
+  color: var(--sekx-grey);
+  border: 2px solid var(--sekx-grey);
+  padding: 1rem 2rem;
+}
+
+.activeBtn {
+  background-color: var(--sekx-grey-light);
+  color: #f5f2f2;
+}
+
+.defaultBtn:hover {
+  background-color: var(--sekx-grey-light);
+}
+
+.floatingBtns {
+   margin: 1rem 0px;
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .floatingBtns {
+     flex-wrap: wrap;
+  }
+}
+

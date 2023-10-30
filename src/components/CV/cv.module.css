@@ -1,0 +1,17 @@
+.board {
+    display: flex;
+    gap: 4rem;
+    padding: 1rem 0px;
+}
+.boardHeader {
+    font-weight: 500;
+    width: 7rem;
+}
+
+.boardBoxHolder {
+ width: 79%;
+}
+.boardBox {
+    border: 1px solid grey;
+    padding: 0.1rem 0.05rem;
+}
