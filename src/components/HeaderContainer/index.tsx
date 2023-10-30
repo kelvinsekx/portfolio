@@ -25,7 +25,7 @@ export default function headerContainer() {
 }
 
 class HeaderSummary extends React.Component {
-  constructor(props) {
+  constructor(props: {}) {
     super(props)
     this.state = {
       ready: false,
