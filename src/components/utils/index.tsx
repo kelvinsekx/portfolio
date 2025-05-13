@@ -1,2 +1,9 @@
-export const colors = ["red", "#FEBE10", "pink", "green", "blue", "purple"]
-export const rand = (r: number)=> Math.floor(Math.random()*r)
+export const colors = [
+  "#FF0000",
+  "#FEBE10",
+  "#FFC0CB",
+  "#008000",
+  "#0000FF",
+  "#800080",
+]
+export const rand = (r: number) => Math.floor(Math.random() * r)

@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./cv.module.css"
+import * as styles from "./cv.module.css"
 
 const data = [
   {
@@ -37,13 +37,7 @@ export const CV = () => {
   )
 }
 
-const Board = ({
-  header,
- stems
-}: {
-  header: string
-  stems: string[]
-}) => {
+const Board = ({ header, stems }: { header: string; stems: string[] }) => {
   return (
     <div className={styles.board}>
       <div className={styles.boardHeader}>{header}</div>
@@ -56,10 +50,9 @@ const Board = ({
   )
 }
 
-const BoardBox: React.FC<React.ComponentPropsWithoutRef<"div"> & {child: string}> = ({
-  className,
-  child,
-}) => {
+const BoardBox: React.FC<
+  React.ComponentPropsWithoutRef<"div"> & { child: string }
+> = ({ className, child }) => {
   return (
     <div
       className={`${styles.boardBox} ${className}`}

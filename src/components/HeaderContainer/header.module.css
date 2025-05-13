@@ -30,16 +30,6 @@
   color: var(--sekx-grey);
 }
 
-.enquiryBtn {
-  display: flex;
-  align-items: baseline;
-  padding: 0px;
-  font-weight: 500;
-  font-size: medium;
-  opacity: 0.6;
-  text-decoration: none;
-}
-
 .enquiryBtns {
   display: flex;
   gap: 0px 2rem;
@@ -57,11 +47,11 @@
   }
 
   .title {
-   text-align: center;
+    text-align: center;
   }
 
   .enquiryBtns {
     flex-wrap: wrap;
     gap: 0.5rem 1.2rem;
-   }
+  }
 }

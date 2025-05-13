@@ -1,38 +1,11 @@
-:root {
-  --sekx-black: #232B2B;
-  --sekx-grey: #c5c1c1;
-  --sekx-grey-light: rgba(153, 140, 140, 0.4);
-}
-
-a{
-  text-decoration: none;
-}
-
-
 @font-face {
-   font-family: roboto;
-   src: url(../assets/RobotoMono-VariableFont_wght.ttf);
+  font-family: roboto;
+  src: url(../assets/RobotoMono-VariableFont_wght.ttf);
 }
 
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: roboto;
-}
-
-.body {
-    width: 70%;
-    margin: 0px auto;
-}
-
-.light{
-  color: var(--sekx-black);
-}
-
-@media screen and (max-width: 600px) {
-  .body {
-    width: 85%;
-  }
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: roboto;
 }

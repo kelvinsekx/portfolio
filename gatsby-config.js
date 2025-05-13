@@ -3,31 +3,33 @@ module.exports = {
     title: `<kelvinsekx-codes/>`,
     description: `Ukuejubola Kelvin, software engineer in Lagos, Nigeria. Who strives to build neat, small and decomposable web. He is open for awesome people to work with.`,
     author: `kelvinsekx`,
-    articles:{
+    articles: {
       articles: "Article and Blog",
-      shortnote: " Welcome love, I write about my works and findings on React js, Node.js, Web payment and all other emerging and contemporary web technologies I fall in love with",
-      description: "Written by Kelvin Ukuejubola who lives in Nigeria building awesome things for awesome people.",
-      twitter:"utdkelvin"
-    }
+      shortnote:
+        " Welcome love, I write about my works and findings on React js, Node.js, Web payment and all other emerging and contemporary web technologies I fall in love with",
+      description:
+        "Written by Kelvin Ukuejubola who lives in Nigeria building awesome things for awesome people.",
+      twitter: "utdkelvin",
+    },
   },
-  pathPrefix: '/',
+  pathPrefix: "/",
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
-      options:{
-
+      options: {
         // replace "UA-xxxxxxxx-x" with your Tracking ID
-        trackingId: "UA-149884944-1"
-      }
+        trackingId: "UA-149884944-1",
+      },
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets`,
       },
     },
     {
@@ -70,20 +72,19 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#444`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /icon/ // See below to configure properly
-        }
-      }
-    }
+          include: /icon/, // See below to configure properly
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
 }
-
