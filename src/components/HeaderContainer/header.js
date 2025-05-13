@@ -42,7 +42,7 @@ function HeaderSummary() {
       <h1 className="font-bold text-2xl lg:text-4xl">Ukuejubola Kelvin</h1>
       <div>
         <p className="font-medium text-gray-900  text-lg">
-          Developer, product manager and founder
+          Developer & product manager
         </p>
         <p className="tracking-tighter text-gray-400 text-sm">
           Normal normal, I am just a street boi
@@ -95,7 +95,7 @@ const interests = [
   },
 
   {
-    link: "blog",
+    link: "my writings",
     href: "/articles",
   },
 
