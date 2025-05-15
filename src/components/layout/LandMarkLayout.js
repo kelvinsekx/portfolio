@@ -5,8 +5,9 @@ export const LandMarkLayout = ({ children }) => {
     <div>
       {children}
       <footer>
-        <p className="text-gray-500">
-          This website is built with React, GraphQL and Gatsby build
+        <p className="text-gray-500 px-2">
+          This website is built by me together with React, GraphQL, Gatsby build
+          & Vercel
         </p>
       </footer>
     </div>

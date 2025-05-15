@@ -95,7 +95,7 @@ const HeaderLink = (props) => {
 
 export function Socials() {
   return (
-    <div className="absolute top-5 right-5">
+    <div className="absolute top-5 right-3 md:right-5">
       <div className="flex flex-col gap-1 items-center">
         {socials.map((each, i) => (
           <HeaderLink key={i} {...each} index={i} />
