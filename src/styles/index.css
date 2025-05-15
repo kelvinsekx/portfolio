@@ -1,0 +1,23 @@
+@font-face {
+  font-family: roboto;
+  src: url(../assets/RobotoMono-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: agbalumo;
+  src: url(../assets/Agbalumo-Regular.ttf);
+}
+@font-face {
+  font-family: jakarta;
+  src: url(../assets/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: jakarta;
+}
+
+.agbalumo-font {
+  font-family: agbalumo;
+}

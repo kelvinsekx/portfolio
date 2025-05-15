@@ -8,9 +8,6 @@ import "./../headerSum/headersum.scss"
 import * as React from "react"
 import * as styles from "./header.module.css"
 
-import { colors } from "../utils"
-import { randColor } from "../utils/hooks"
-
 import img1 from "../../assets/kelvin-ugly.png"
 import img2 from "../../assets/kelvinsmilling.png"
 import img3 from "../../assets/yeye.png"
@@ -18,11 +15,10 @@ import img3 from "../../assets/yeye.png"
 export default function headerContainer() {
   return (
     <div className="space-y-10">
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-12">
-        <HeaderSummary />
+      <div className="flex flex-col md:flex-row md:items-end gap-6">
         <ImageContainer />
+        <HeaderSummary />
       </div>
-      <InterestBtn />
     </div>
   )
 }
@@ -38,15 +34,14 @@ function HeaderSummary() {
   // }, [])
 
   return (
-    <div className="md:text-left text-center">
-      <h1 className="font-bold text-2xl lg:text-4xl">Ukuejubola Kelvin</h1>
-      <div>
-        <p className="font-medium text-gray-900  text-lg">
-          Developer & product manager
-        </p>
-        <p className="tracking-tighter text-gray-400 text-sm">
-          Normal normal, I am just a street boi
-        </p>
+    <div className="text-left">
+      <h1 className="font-medium text-4xl lg:text-5xl mb-0 agbalumo-font tracking-wider">
+        Ukuejubola Kelvin
+      </h1>
+      <div className="tracking-tighter font-medium text-gray-500 text-sm mt-3 leading-5">
+        <p>Developer. Product manager. Engineering Manager</p>
+        <p>Entrepreneur. Founder of Ibadan Techies Club.</p>
+        <p className="mt-1">Normal normal, I am just a street boi.</p>
       </div>
       {/* <div className="details grey">
         <TypingDiv>
@@ -61,16 +56,14 @@ const imgsrc = [img1, img2, img3]
 function ImageContainer() {
   const [i, setImg] = React.useState(1)
 
-  console.log(i)
   React.useEffect(() => {
     const timeID = setInterval(() => {
       if (i == imgsrc.length - 1) {
         setImg(0)
       } else {
-        console.log(i)
         setImg((prev) => prev + 1)
       }
-    }, 4550)
+    }, 7000)
     return () => clearInterval(timeID)
   }, [i])
   return (
@@ -83,61 +76,6 @@ function ImageContainer() {
             className="rounded-md w-full h-full object-cover object-center border border-gray-300"
           />
         </div>
-      </div>
-    </>
-  )
-}
-
-const interests = [
-  {
-    link: "twitter",
-    href: "https://www.twitter.com/kelvinsekx",
-  },
-
-  {
-    link: "my writings",
-    href: "/articles",
-  },
-
-  {
-    link: "github",
-    href: "https://www.github.com/kelvinsekx",
-  },
-
-  {
-    link: "linkedin",
-    href: "https://www.linkedin.com/in/kelvin-ukuejubola-oritsetimeyin-b38858174",
-  },
-
-  {
-    link: "gmail",
-    href: "mailto:kelvinsekx@gmail.com",
-  },
-]
-
-const HeaderLink = (props) => {
-  const r = randColor()
-  return (
-    <a
-      className="border-b border-[colors[r]] text-[colors[r]] font-semibold text-lg lg:text-xl"
-      href={props.href}
-      style={{
-        borderBottom: `3px solid ${colors[r]}`,
-        color: `${colors[r]}`,
-      }}
-    >
-      <div>{props.link}</div>
-    </a>
-  )
-}
-
-function InterestBtn() {
-  return (
-    <>
-      <div className={styles.enquiryBtns}>
-        {interests.map((each, i) => (
-          <HeaderLink key={i} {...each} index={i} />
-        ))}
       </div>
     </>
   )

@@ -6,6 +6,7 @@ import { randColor } from "../utils/hooks"
 import clsx from "clsx"
 
 import { CV } from "../CV/cv"
+import { Socials } from "../Socials"
 
 const { useState } = React
 
@@ -26,9 +27,14 @@ export const AboutKelvinsekx = () => {
     }
   }
   return (
-    <div className="space-y-4 my-4">
-      <FloatingWrapper show={show} setShow={setShow} />
-      <div>{showIf()}</div>
+    <div className="space-y-4">
+      <h2 className="m-0 p-0 border-0 agbalumo-font mt-4 relative tracking-wide">
+        About me <Socials />
+      </h2>
+      <div className="space-y-4">
+        <FloatingWrapper show={show} setShow={setShow} />
+        <div className="w-5/6">{showIf()}</div>
+      </div>
     </div>
   )
 }
