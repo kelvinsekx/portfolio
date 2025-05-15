@@ -33,7 +33,7 @@ export const AboutKelvinsekx = () => {
       </h2>
       <div className="space-y-4">
         <FloatingWrapper show={show} setShow={setShow} />
-        <div className="w-11/12 md:w-5/6">{showIf()}</div>
+        <div className="w-11/12 md:w-5/6 z-50">{showIf()}</div>
       </div>
     </div>
   )

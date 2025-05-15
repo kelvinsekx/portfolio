@@ -16,7 +16,7 @@ const HomePage = () => {
     <LandMarkLayout>
       <div
         className={
-          "w-full px-4 md:px-1 md:w-4/6 mx-auto text-[#232b2b] py-5 md:py-10"
+          "w-full px-3 md:px-1 md:w-4/6 mx-auto text-[#232b2b] py-5 md:py-10"
         }
       >
         <HeaderContainer />
