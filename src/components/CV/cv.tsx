@@ -12,8 +12,10 @@ const data = [
   {
     header: "Experience",
     stems: [
+      "<b>Product Engineer and Manager</b>, Liinae - A traveltech startup in London/Lagos ( May 2025 - Present)",
+      "<b>Senior Frontend Developer</b>, Sproutly - An Ed/Fintech company in Lagos, Nigeria ( January, 2024 - April, 2024)",
       "<b>Lead</b>, Ibadan Techies Club ( October 2022 - Present)",
-      "<b>Frontend Engineer</b>, Envoi - a logistic startup in Portharcourt, Nigeria (October 2021 - 2022).",
+      "<b>Frontend Engineer</b>, Envoi - a defunct logistic startup in Portharcourt, Nigeria (October 2021 - 2022).",
       "<b>Web Developer</b>, Concrete Communications, a local software agency, Lagos (Dec, 2020 - October 2021)",
     ],
   },

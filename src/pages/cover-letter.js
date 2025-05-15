@@ -1,10 +1,19 @@
 import React from "react"
+import { Link } from "gatsby"
+
 import CollapsibleSection from "./../components/CollapsibleSection"
 import { UserTimeInfo } from "./../components/UserTimeInfo"
+
+import kelvinPhoto from "./../assets/my-photo.jpg"
+import ibtcPhoto from "./../assets/ibtc-group.jpg"
+import { HomeIcon } from "lucide-react"
 
 export default function Home() {
   return (
     <div className="w-full px-2 md:px-1 md:w-4/6 mx-auto text-[#232b2b] py-10">
+      <Link to="/">
+        <HomeIcon />
+      </Link>
       <div className="md:w-5/7 px-5 md:px-0 mx-auto">
         <header className="my-8 space-y-0">
           <h1 className="text-4xl leading-12 font-black text-[#222] tracking-wide">
@@ -40,10 +49,7 @@ export default function Home() {
 
         <main>
           <p className="text-3xl font-semibold my-4">Hi </p>
-          <p>
-            Thank you for the opportunity to be considered for the Frontend
-            Developer role at Payecards.
-          </p>
+          <p>Thank you for the opportunity to be considered.</p>
 
           <CollapsibleSection header="Who am I?">
             <>
@@ -69,7 +75,7 @@ export default function Home() {
                 difference—totally understandable! Here&apos;s a quick look:
               </p>
               <UserTimeInfo />
-              <p>
+              {/* <p>
                 I&apos;m especially drawn to this role because the job posting
                 sounded like a dream come true. One of those rare,
                 once-in-a-lifetime opportunities. I was intrigued about the
@@ -79,10 +85,10 @@ export default function Home() {
                 What better way to live by that than being part of the solution?
                 That being said, let&apos;s get to my story and why I think we
                 are are a great fit for each other.
-              </p>
+              </p> */}
               <div className=" w-full rounded-2xl relative overflow-hidden">
                 <img
-                  src={"/IMG_9781.jpg"}
+                  src={kelvinPhoto}
                   alt="a good picture of me, kelvinsekx"
                   className="object-cover object-center"
                   fill
@@ -92,9 +98,13 @@ export default function Home() {
           </CollapsibleSection>
           <CollapsibleSection header="My Story">
             <>
-              <p>I am a 27 year old living in Ibadan, Nigeria with my mum. </p>
               <p>
-                For my title, I am a software engineer & product manager.
+                I am a 27 year old living in Ibadan, Nigeria with my mum, a
+                single mother of 3.{" "}
+              </p>
+              <p>
+                For my title, I am a software engineer & product manager. I have
+                strong experience in web technologies and backend's like Node.
                 Sometimes it is just difficult to box my specific role to being
                 a developer only or product manager only. As I have led
                 positions both as an engineer and manager. Plus I actively still
@@ -119,13 +129,13 @@ export default function Home() {
                 In 2021, I founded Ibadan Techies Club with the help of my
                 mentor, Jason Palmer, where I went on to raise over $10K and
                 held dozens of physical meetups between 2022 and 2024. There I
-                was able to gather Jason, IJe, Mark and Zakk to raise funds and
-                shape the future of Tech in Ibadan.
+                was able to convince Jason, IJe, Mark and Zakk as backers to
+                raise funds and shape the future of Tech in Ibadan.
               </p>
 
               <div className="w-full rounded-2xl relative overflow-hidden">
                 <img
-                  src={"/IMG_9925.jpg"}
+                  src={ibtcPhoto}
                   alt="a group photo from one of the meetups at Ibadan Techies Club"
                   className="object-cover"
                   fill
@@ -184,6 +194,23 @@ export default function Home() {
                 </p>
               </section>
               <section>
+                <header className="font-semibold">Backend, NodeJS</header>
+                <p>
+                  Most of my roles although frontend, have forced me to dabble
+                  in Node. From the early days of freelance up untl, I have
+                  shown to have an excellent understanding of node and how to
+                  scae scalable softwares with them.
+                </p>
+              </section>
+              <section>
+                <header className="font-semibold">Mobile, Flutter</header>
+                <p>
+                  At liinae, I was responsible for the entire design for our app
+                  written in dart and flutter. Aside this, I implemented
+                  designs, debugged issues and troubleshoot difficult bugs.
+                </p>
+              </section>
+              <section>
                 <header className="font-semibold">Product Management</header>
                 <p>
                   At liinae, my role was not limited to managing the engineers.
@@ -201,10 +228,12 @@ export default function Home() {
                 </p>
               </section>
               <section>
-                <header className="font-semibold">Soft skills</header>
+                <header className="font-semibold">Hardworking</header>
                 <p>
                   I am an excellent communicator and have a great eye for
-                  details.
+                  details. All of these combined with my untiring hardwork and
+                  desire to learn, I am sure I will be a good bet and return on
+                  investment.
                 </p>
               </section>
             </>
