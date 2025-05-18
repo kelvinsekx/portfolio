@@ -79,10 +79,11 @@ export function Short() {
     <div className="space-y-3">
       <p>Hi there!</p>
       <p>
-        My name is Kelvin. But most people know me as <b>Kelvinsekx</b>. For 5+
-        years, I have been helping businesses build and scale high-performing
-        teams, communities, mobile and web applications. Presently, I do product
-        and engineering management at{" "}
+        It's great to meet you. I'm Kelvin, though many online know me as{" "}
+        <b>Kelvinsekx</b>. For over five years, I've helped businesses thrive by
+        building and scaling high-performing teams, communities, robust mobile
+        and web applications. Right now, I do product and engineering management
+        at{" "}
         <a
           style={{ color: colors[r], fontWeight: 500 }}
           href="https://www.liinae.com"
@@ -92,14 +93,16 @@ export function Short() {
         .
       </p>
       <p>
-        Outside code, if I am not talking engineering, product or ranting about
-        Nigeria, I am bantering and throwing some unserious takes on the
-        internet usually X (formerly Twitter).
+        Beyond the realm of code, my conversations often orbit around
+        engineering, product strategies or passionate commentary on Nigeria. You
+        can find my less serious thoughts and banter over on X (formerly
+        Twitter).
       </p>
       <p>
-        I enjoy listening to good music and playing with oil and acrylic paints
-        (that I do seldomly now). Half the time if you see me, I am trekking in
-        my usual homeless style.
+        I enjoy the rythm of good music and the occasional creative escape with
+        oil and acrylic paints. And if you spot someone strolling by in a too
+        comfortable, shall we say, "homeless style," there's a good chance it's
+        me enjoying a walk.
       </p>
     </div>
   )

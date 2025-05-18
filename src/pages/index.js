@@ -35,7 +35,7 @@ HomePage.Footer = () => {
     <p className="mt-5 font-medium hover:underline text-gray-600 cursor-pointer">
       <span>
         <Link to="/cover-letter">
-          Considering working with me? Read more about my background
+          Thinking of working with me? Read more about my background here
         </Link>
       </span>{" "}
       <Apple
