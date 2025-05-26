@@ -2,12 +2,19 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import SEO from "../components/seo"
 
-import { MediaQueryBtn, Smalled, NAV, FooterDiv, Spanner1, Spanner2 } from "./article-post.styled"
+import {
+  MediaQueryBtn,
+  Smalled,
+  NAV,
+  FooterDiv,
+  Spanner1,
+  Spanner2,
+} from "./article-post.styled"
 
 import Layout from "../components/layout/layout"
 import BackIcon from "../components/icon/back.svg"
 
-import "./article-post.css"
+// import styles from "./article-post.module.css"
 
 const BlogTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark

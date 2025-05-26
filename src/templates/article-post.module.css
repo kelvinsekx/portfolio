@@ -6,7 +6,7 @@ h1 {
   margin: 1rem 0;
 }
 
-article>h2{
+article > h2 {
   font-size: 180%;
   letter-spacing: -2px;
 }
@@ -27,14 +27,6 @@ article>h2{
     height: 100vh !important;
     z-index: 2 !important;
   }
-}
-
-h2 {
-  margin-top: 10rem;
-  font-size: 2rem;
-  border-top: 1px solid #8de4ce;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .introduction,
@@ -59,9 +51,8 @@ blockquote {
   padding: 2em 0;
 }
 
-.erX_n23ndFEJNFKJ{
+.erX_n23ndFEJNFKJ {
   transform: translate(30px, 20px) rotate(20deg);
   -moz-transform: translate(30px, 20px) rotate(20deg);
-  color:red;
+  color: red;
 }
-

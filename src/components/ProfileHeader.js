@@ -2,17 +2,15 @@
 // import ImageContainer from "../imageContainer/index"
 // import InterestBtn from "../interestBtn/interestBtn"
 
-import "./../headerSum/headersum.scss"
 // import { TypingP, TypingDiv } from "../typing/typing.styled.js"
 // import Typing from "../typing/typing"
 import * as React from "react"
-import * as styles from "./header.module.css"
 
-import img1 from "../../assets/kelvin-ugly.png"
-import img2 from "../../assets/kelvinsmilling.png"
-import img3 from "../../assets/yeye.png"
+import img1 from "../assets/kelvin-ugly.png"
+import img2 from "../assets/kelvinsmilling.png"
+import img3 from "../assets/yeye.png"
 
-export default function headerContainer() {
+export function ProfileHeader() {
   return (
     <div className="space-y-10">
       <div className="flex flex-col md:flex-row md:items-end gap-6">
@@ -58,7 +56,7 @@ function ImageContainer() {
 
   React.useEffect(() => {
     const timeID = setInterval(() => {
-      if (i == imgsrc.length - 1) {
+      if (i === imgsrc.length - 1) {
         setImg(0)
       } else {
         setImg((prev) => prev + 1)
@@ -67,16 +65,12 @@ function ImageContainer() {
     return () => clearInterval(timeID)
   }, [i])
   return (
-    <>
-      <div className={styles.imgContainer}>
-        <div className={styles.img}>
-          <img
-            src={imgsrc[i]}
-            alt="Kelvinsekx Ugly face"
-            className="rounded-md w-full h-full object-cover object-center border border-gray-300"
-          />
-        </div>
-      </div>
-    </>
+    <div className={"h-[22rem] w-[20rem]"}>
+      <img
+        src={imgsrc[i]}
+        alt="Kelvinsekx Ugly face"
+        className="rounded-md w-full h-full object-cover object-center border border-gray-300"
+      />
+    </div>
   )
 }

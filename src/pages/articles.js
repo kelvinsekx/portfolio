@@ -30,27 +30,30 @@ const ArticlesPage = ({ data }) => (
 
           <div style={{ display: "flex", flexWrap: "wrap", marginTop: "2rem" }}>
             {data.allMarkdownRemark.edges.map(({ node }) => (
-                <StyledLink key={node.id} className="col-lg-4 col-md-6 col-sm-6 col-xm-6">
-                  <div>
-                    <StyledH3 ftSize={'1.7rem'}>
-                      <Link className="to" to={node.fields.slug}>
-                        {node.frontmatter.title}
-                      </Link>
-                    </StyledH3>
-                  </div>
-
-                  <div>
-                    <StyledSmall ftSize={'1rem'}>
-                      Kelvinsekx on {node.frontmatter.date}
-                    </StyledSmall>
-                  </div>
-
-                  <StyledSmall ftSize={'0.99rem'}>
-                    <Link className="link" to={node.fields.slug}>
-                      read details &#187;&#187;&#187;
+              <StyledLink
+                key={node.id}
+                className="col-lg-4 col-md-6 col-sm-6 col-xm-6"
+              >
+                <div>
+                  <StyledH3 ftSize={"1.7rem"}>
+                    <Link className="to" to={node.fields.slug}>
+                      {node.frontmatter.title}
                     </Link>
+                  </StyledH3>
+                </div>
+
+                <div>
+                  <StyledSmall ftSize={"1rem"}>
+                    Kelvinsekx on {node.frontmatter.date}
                   </StyledSmall>
-                </StyledLink>
+                </div>
+
+                <StyledSmall ftSize={"0.99rem"}>
+                  <Link className="link" to={node.fields.slug}>
+                    read details &#187;&#187;&#187;
+                  </Link>
+                </StyledSmall>
+              </StyledLink>
             ))}
           </div>
         </main>
