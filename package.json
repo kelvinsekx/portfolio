@@ -6,16 +6,15 @@
   "author": "Kelvinsekx <utdkelvin@gmail.com>",
   "type": "commonjs",
   "scripts": {
-    "dev": "vite",
     "start": "gatsby develop",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
     "babel-plugin-styled-components": "^2.1.4",
     "clsx": "^2.1.1",
     "gatsby": "^5.14.3",
@@ -33,20 +32,20 @@
     "gatsby-transformer-sharp": "^5.14.0",
     "letterloading": "^2.0.0",
     "lucide-react": "^0.509.0",
+    "postcss": "^8.5.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
-    "styled-components": "^6.1.18"
+    "styled-components": "^6.1.18",
+    "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.21",
     "gatsby-plugin-postcss": "^6.14.0",
-    "postcss": "^8.5.3",
     "sass": "^1.88.0",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.8"
+    "typescript": "^5.0.2"
   }
 }

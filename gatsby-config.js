@@ -6,7 +6,7 @@ module.exports = {
     articles: {
       articles: "Article and Blog",
       shortnote:
-        " Welcome love, I write about my works and findings on React js, Node.js, Web payment and all other emerging and contemporary web technologies I fall in love with",
+        " Welcome, I write about my works and findings on React js, Node.js, Web payment and all other emerging and contemporary web technologies I fall in love with",
       description:
         "Written by Kelvin Ukuejubola who lives in Nigeria building awesome things for awesome people.",
       twitter: "utdkelvin",
@@ -24,7 +24,15 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require("@tailwindcss/postcss"),
+          require("@tailwindcss/typography"),
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

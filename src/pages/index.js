@@ -2,8 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import { Apple } from "lucide-react"
 
-import "../styles/index.css"
-
 import { colors } from "../components/utils"
 import { randColor } from "../components/utils/hooks"
 

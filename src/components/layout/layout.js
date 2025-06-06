@@ -12,7 +12,7 @@ import { StyledLogo } from "../articles.styled"
 import setFlickerAnimation from "../flickering"
 //:::component parts:::
 import Header from "../header/header"
-import Footer from "../footer/footer"
+import Footer from "../footer"
 
 import "./layout.css"
 //)):::::::i m p o r t a t i o n   e n d s   h e r e

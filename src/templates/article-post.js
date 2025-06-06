@@ -2,19 +2,10 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import SEO from "../components/seo"
 
-import {
-  MediaQueryBtn,
-  Smalled,
-  NAV,
-  FooterDiv,
-  Spanner1,
-  Spanner2,
-} from "./article-post.styled"
+import { MediaQueryBtn, Spanner1, Spanner2 } from "./article-post.styled"
 
 import Layout from "../components/layout/layout"
-import BackIcon from "../components/icon/back.svg"
-
-// import styles from "./article-post.module.css"
+import { ArrowLeft, ArrowLeftCircle, ArrowRight } from "lucide-react"
 
 const BlogTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -37,7 +28,7 @@ const BlogTemplate = ({ data, pageContext }) => {
         <Spanner2 st={state}>{`>`}</Spanner2>
       </MediaQueryBtn>
       <div>
-        <div className="row">
+        <div className="row text-base ">
           {/* // sidebar for table of content */}
           <div
             className={`col-lg-3 py-3 sideContent ${state ? "css-x" : null}`}
@@ -49,29 +40,32 @@ const BlogTemplate = ({ data, pageContext }) => {
             />
           </div>
 
-          <div
-            className="col-lg-9 col-sm-12"
-            style={state ? { opacity: 0 } : { opacity: 1 }}
-          >
-            <div className="row">
-              <div className="col-lg-9">
+          <div style={state ? { opacity: 0 } : { opacity: 1 }}>
+            <div>
+              <div className="space-y-5">
                 <ReturnLink />
                 <ArticleHeader post={post} />
-                <article dangerouslySetInnerHTML={{ __html: post.html }} />
-                <Navigator previous={previous} next={next} />
-                <div className="borderTop" />
+                <div className="[&>xxcontent]:prose">
+                  <div
+                    className="prose"
+                    dangerouslySetInnerHTML={{ __html: post.html.toString() }}
+                  />
+                </div>
 
-                <FooterDiv
-                  className="to"
-                  href={`https://github.com/kelvinsekx/gatsbyblog/blob/master/src/content${post.fields.slug}index.md`}
-                >
-                  Edit this page
-                </FooterDiv>
-              </div>
-              <div className="col-lg-3">
-                <ul>
-                  <ol></ol>
-                </ul>
+                <ArticleExtras
+                  lastupdated={post.frontmatter.lastupdated}
+                  sourcecode={post.frontmatter.sourcecode}
+                  date={post.frontmatter.date}
+                />
+                <Navigator previous={previous} next={next} post={post} />
+
+                <div className="flex justify-end">
+                  <a
+                    href={`https://github.com/kelvinsekx/gatsbyblog/blob/master/src/content${post.fields.slug}index.md`}
+                  >
+                    Edit this page
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -84,39 +78,61 @@ const BlogTemplate = ({ data, pageContext }) => {
 export default BlogTemplate
 
 const Navigator = ({ previous, next }) => (
-  <NAV className="borderTop">
-    <div style={{ width: "42%", alignItem: "left" }}>
-      {previous && (
-        <div>
-          <div>Previous</div>
-          <Link className="link" to={previous.fields.slug} rel="prev">
-            ← {previous.frontmatter.title}
-          </Link>
-        </div>
-      )}
-    </div>
-    <div
-      style={{
-        width: "40%",
-        alignItem: "right",
-        marginTop: "3.5rem",
-      }}
-    >
+  <nav className="text-base space-y-5">
+    <div>
       {next && (
-        <div>
-          <div>Next</div>
-          <Link className="link" to={next.fields.slug} rel="next">
-            {next.frontmatter.title} →
-          </Link>
-        </div>
+        <Link
+          className="flex justify-end border border-gray-400 py-5 px-3 rounded-md gap-3"
+          to={next.fields.slug}
+          rel="next"
+        >
+          <div>
+            <div className="text-gray-500 text-sm">UP NEXT</div>
+            <div>{next.frontmatter.title}</div>
+          </div>
+
+          <ArrowRight />
+        </Link>
       )}
     </div>
-  </NAV>
+    <div>
+      {previous && (
+        <Link
+          className="flex border border-gray-400 py-5 px-3 rounded-md gap-3"
+          to={previous.fields.slug}
+          rel="prev"
+        >
+          <div>
+            <ArrowLeft />
+          </div>
+          <div>
+            <div className="text-gray-500 text-sm">PREVIOUSLY</div>
+            <div>{previous.frontmatter.title}</div>
+          </div>
+        </Link>
+      )}
+    </div>
+  </nav>
+)
+
+const ArticleExtras = ({ lastupdated, date, sourcecode }) => (
+  <div className="text-gray-400">
+    <div>
+      <span className="text-gray-500">Last modified on</span>{" "}
+      {lastupdated || date}
+    </div>
+    <div>
+      {!!sourcecode ? <a href={sourcecode}>Source code on Github</a> : null}
+    </div>
+  </div>
 )
 
 const ReturnLink = () => (
-  <Link to="/articles" className="link returnLink">
-    <BackIcon style={{ height: "auto", width: "1.5rem" }} /> RETURN TO ARTICLES
+  <Link to="/articles" className="flex space-x-4">
+    <span>
+      <ArrowLeftCircle />
+    </span>{" "}
+    <span>RETURN TO ARTICLES</span>
   </Link>
 )
 
@@ -125,21 +141,9 @@ const ArticleHeader = ({ post }) => {
   ${post.timeToRead > 1 ? "minutes" : "minute"}`
   const posts = post.frontmatter
   return (
-    <div className="mt-2 artHeader">
-      <h1>{posts.title}</h1>
-      <Smalled>
-        <div>
-          {"^(* ! *)^"} {minutes} read
-        </div>
-        <div>Last modified on {posts.lastupdated || posts.date}</div>
-        <div>
-          {posts.sourcecode ? (
-            <a href={posts.sourcecode}>Source code on Github</a>
-          ) : (
-            `loading...`
-          )}
-        </div>
-      </Smalled>
+    <div>
+      <h1 className="text-3xl tracking-tight font-semibold">{posts.title}</h1>
+      <p className="text-sm text-gray-400">{minutes} read</p>
     </div>
   )
 }
