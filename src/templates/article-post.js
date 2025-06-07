@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import { MediaQueryBtn, Spanner1, Spanner2 } from "./article-post.styled"
 
@@ -14,7 +14,7 @@ const BlogTemplate = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO
+      <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description}
       />
@@ -82,7 +82,7 @@ const Navigator = ({ previous, next }) => (
     <div>
       {next && (
         <Link
-          className="flex justify-end border border-gray-400 py-5 px-3 rounded-md gap-3"
+          className="flex justify-end border border-gray-400 py-5 px-3 rounded-md gap-3 text-gray-700"
           to={next.fields.slug}
           rel="next"
         >
@@ -98,7 +98,7 @@ const Navigator = ({ previous, next }) => (
     <div>
       {previous && (
         <Link
-          className="flex border border-gray-400 py-5 px-3 rounded-md gap-3"
+          className="flex border border-gray-400 py-5 px-3 rounded-md gap-3 text-gray-700"
           to={previous.fields.slug}
           rel="prev"
         >
