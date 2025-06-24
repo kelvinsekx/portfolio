@@ -99,8 +99,7 @@ export default function Home() {
           <CollapsibleSection header="My Story">
             <>
               <p>
-                I am a 27 year old living in Ibadan, Nigeria with my mum, a
-                single mother of 3.{" "}
+                I am a 27 year old living in Ibadan.{" "}
               </p>
               <p>
                 For my title, I am a software engineer & product manager. I have
