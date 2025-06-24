@@ -1,0 +1,8 @@
+{
+  "mission": {
+    "2020": "My mission is to continuously learn, share and use technology to solve my
+      people's problem. Building clean, reusable, fun and decomposable web along
+      the way. I have mastered achieving this via community, & open dialogue.",
+    "2025": ""
+  }
+}

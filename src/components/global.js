@@ -13,9 +13,9 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   color: ${({ theme }) => theme.text};
-   background: ${({ theme }) => theme.body};
-  font-weight: ${({ theme }) => theme.weight};
+   color: ${({ theme: { styles } }) => styles.text};
+   background: ${({ theme: { styles } }) => styles.body};
+  font-weight: ${({ theme: { styles } }) => styles.weight};
   font-family: 'Roboto' sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -23,28 +23,28 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   main{
-    font-size: ${({ theme }) => theme.size};
+    font-size: ${({ theme: { styles } }) => styles.size};
   }
 
 
   a{
-    color: ${({ theme }) => theme.linkText};
+    color: ${({ theme: { styles } }) => styles.linkText};
   }
   .to{
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme: { styles } }) => styles.text};
     text-decoration: none;
   }
 
   .floatingInt{
-    background-color: ${({theme})=> theme.floatingIntBG};
+    background-color: ${({ theme: { styles } }) => styles.floatingIntBG};
   }
 
   .artHeader{
-    color: ${({theme})=> theme.artHeader};
+    color: ${({ theme: { styles } }) => styles.artHeader};
   }
 
   .sideContent{
-    background-color: ${({theme})=> theme.sideContent};
+    background-color: ${({ theme: { styles } }) => styles.sideContent};
     border-right:0.1px solid rgba(59, 58, 58, 0.2);;
     @media (max-width: 500px) {
      width:0px;
@@ -55,7 +55,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   strong{
-    background-color: ${({theme})=> theme.strong};
+    background-color: ${({ theme: { styles } }) => styles.strong};
     font-weight: 500;
   }
 `

@@ -5,10 +5,10 @@ export default function CollapsibleSection({ header, children, reverse }) {
   const [isCollapsed, setIsCollapsed] = React.useState(false)
 
   return (
-    <section className="space-y-3 my-6 text-[#444]">
+    <section className="space-y-3 my-6">
       <header
         className={clsx(
-          "text-2xl tracking-tight leading-7 font-semibold text-[#222] cursor-pointer flex items-center gap-3 group",
+          "text-2xl tracking-tight leading-7 font-semibold cursor-pointer flex items-center gap-3 group",
           {
             "flex flex-row-reverse justify-end": !!reverse,
           }

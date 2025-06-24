@@ -1,11 +1,21 @@
 const React = require("react")
 
+const Layout = require("./src/components/layouts/layout").default
+
+// Wraps every page in a component
+exports.wrapPageElement = ({ element, props }) => {
+  return <Layout {...props}>{element}</Layout>
+}
+
 exports.onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
   setHeadComponents([
-    <script data-ad-client="ca-pub-1149332608171839" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+    <script
+      data-ad-client="ca-pub-1149332608171839"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    />,
   ])
-  
-  
+
   setPreBodyComponents([
     React.createElement("script", {
       dangerouslySetInnerHTML: {
@@ -25,8 +35,8 @@ exports.onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
     
                 r.parentNode.insertBefore(s, r);
     
-        }(document, 'script'));`
-      }
+        }(document, 'script'));`,
+      },
     }),
     React.createElement("script", {
       dangerouslySetInnerHTML: {

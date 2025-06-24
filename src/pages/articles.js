@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { graphql, Link } from "gatsby"
 import {
   //WrapperContainer,
@@ -9,19 +9,16 @@ import {
 } from "../components/articles.styled"
 
 //import other components here
-import BIO from "../components/articlesComponent/bio"
+import Bio from "../components/articlesComponent/bio"
 //this should come last
-import Layout from "../components/layout/layout"
+import Layout from "../components/layouts/blog-layout"
 
 const ArticlesPage = ({ data }) => (
   <Layout>
-    <SEO title="All posts" />
+    <Seo title="All posts" />
     <div className="container">
-      <div className="row">
-        <BIO
-          data={data.site.siteMetadata.articles.articles}
-          description={data.site.siteMetadata.articles.shortnote}
-        />
+      <div className="row mt-5">
+        <Bio description={data.site.siteMetadata.articles.shortnote} />
         <main>
           <p>
             {data.allMarkdownRemark.totalCount} Recent Article
@@ -67,7 +64,6 @@ export const query = graphql`
     site {
       siteMetadata {
         articles {
-          articles
           description
           twitter
           shortnote

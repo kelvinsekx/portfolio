@@ -1,16 +1,20 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { useTheme } from "styled-components"
+import { ArrowLeft, ArrowLeftCircle, ArrowRight } from "lucide-react"
+import cn from "clsx"
+
 import Seo from "../components/seo"
+import Layout from "../components/layouts/blog-layout"
 
 import { MediaQueryBtn, Spanner1, Spanner2 } from "./article-post.styled"
 
-import Layout from "../components/layout/layout"
-import { ArrowLeft, ArrowLeftCircle, ArrowRight } from "lucide-react"
-
 const BlogTemplate = ({ data, pageContext }) => {
+  const [state, setState] = React.useState(false)
+  const { theme } = useTheme()
+
   const post = data.markdownRemark
   const { next, previous } = pageContext
-  const [state, setState] = React.useState(false)
 
   return (
     <Layout>
@@ -30,13 +34,11 @@ const BlogTemplate = ({ data, pageContext }) => {
       <div>
         <div className="row text-base ">
           {/* // sidebar for table of content */}
-          <div
-            className={`col-lg-3 py-3 sideContent ${state ? "css-x" : null}`}
-          >
-            <h5 style={{ padding: "2rem 0 0 2.4rem" }}>CONTENT</h5>
+          <div className={`col-lg-3 py-3 mb-5 ${state ? "css-x" : null}`}>
+            <h5 className="mt-5 pb-2 text-lg">Table of Contents</h5>
             <div
               dangerouslySetInnerHTML={{ __html: post.tableOfContents }}
-              style={{ fontSize: "1.1rem" }}
+              className="text-base text-gray-500"
             />
           </div>
 
@@ -47,7 +49,9 @@ const BlogTemplate = ({ data, pageContext }) => {
                 <ArticleHeader post={post} />
                 <div className="[&>xxcontent]:prose">
                   <div
-                    className="prose"
+                    className={cn("prose", {
+                      "prose-invert": theme == "dark",
+                    })}
                     dangerouslySetInnerHTML={{ __html: post.html.toString() }}
                   />
                 </div>
@@ -142,7 +146,9 @@ const ArticleHeader = ({ post }) => {
   const posts = post.frontmatter
   return (
     <div>
-      <h1 className="text-3xl tracking-tight font-semibold">{posts.title}</h1>
+      <h1 className="text-3xl md:text-4xl tracking-tight font-semibold">
+        {posts.title}
+      </h1>
       <p className="text-sm text-gray-400">{minutes} read</p>
     </div>
   )

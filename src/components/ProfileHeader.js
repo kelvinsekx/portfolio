@@ -5,10 +5,14 @@
 // import { TypingP, TypingDiv } from "../typing/typing.styled.js"
 // import Typing from "../typing/typing"
 import * as React from "react"
+import { useTheme } from "styled-components"
 
 import img1 from "../assets/kelvin-ugly.png"
 import img2 from "../assets/kelvinsmilling.png"
 import img3 from "../assets/yeye.png"
+
+import { StyledLogo } from "./../components/articles.styled"
+import setFlickerAnimation from "./../components/flickering"
 
 export function ProfileHeader() {
   return (
@@ -22,19 +26,26 @@ export function ProfileHeader() {
 }
 
 function HeaderSummary() {
-  // const [ready, setReady] = React.useState(false)
+  const { theme } = useTheme()
 
-  // React.useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setReady(true)
-  //   }, 1000)
-  //   return () => clearTimeout(timer)
-  // }, [])
+  const color = {
+    dark: "white",
+    light: "black",
+  }
+
+  React.useEffect(() => {
+    setFlickerAnimation()
+    return () => {
+      ""
+    }
+  }, [])
 
   return (
     <div className="text-left">
       <h1 className="font-medium text-4xl lg:text-5xl mb-0 agbalumo-font tracking-wider">
-        Ukuejubola Kelvin
+        <StyledLogo color={color} className="el_flicker" theme={theme}>
+          Ukuejubola Kelvin
+        </StyledLogo>
       </h1>
       <div className="tracking-tighter font-medium text-gray-500 text-sm mt-3 leading-5">
         <p>Developer. Product manager. Engineering Manager</p>

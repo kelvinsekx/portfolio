@@ -4,12 +4,11 @@ module.exports = {
     description: `Ukuejubola Kelvin, software engineer in Lagos, Nigeria. Who strives to build neat, small and decomposable web. He is open for awesome people to work with.`,
     author: `kelvinsekx`,
     articles: {
-      articles: "Article and Blog",
       shortnote:
-        " Welcome, I write about my works and findings on React js, Node.js, Web payment and all other emerging and contemporary web technologies I fall in love with",
+        "Formerly where I write about my works and findings on React js, Node.js, Web payment and all other emerging and contemporary web technologies.Now an archive for my thoughts",
       description:
         "Written by Kelvin Ukuejubola who lives in Nigeria building awesome things for awesome people.",
-      twitter: "utdkelvin",
+      twitter: "kelvinsekx",
     },
   },
   pathPrefix: "/",

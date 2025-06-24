@@ -1,10 +1,10 @@
 import React from "react"
 
-import Layout from "../components/layout/layout"
+import Layout from "../components/layouts/land-mark-layout"
 import SEO from "../components/seo"
 // <link rel="stylesheet" href="https://get.mavo.io/mavo.css">
 // <script src="https://get.mavo.io/mavo.js"></script>
-import PepperDem from "../components/pepperdem";
+import PepperDem from "../components/pepperdem"
 
 const NotFoundPage = () => (
   <Layout>

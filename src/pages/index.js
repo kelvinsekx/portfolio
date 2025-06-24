@@ -1,23 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Apple } from "lucide-react"
+import { LandMarkLayout } from "../components/layouts/land-mark-layout"
+import { ListRecentArticles } from "../components/ListRecentArticles"
+import { ProfileHeader } from "../components/ProfileHeader"
+import { AboutKelvinsekx } from "../components/AboutMe"
 
 import { colors } from "../components/utils"
 import { randColor } from "../components/utils/hooks"
 
-import { LandMarkLayout } from "./../components/layout/LandMarkLayout"
-import { AboutKelvinsekx } from "../components/AboutMe"
-import { ProfileHeader } from "../components/ProfileHeader"
-import { ListRecentArticles } from "../components/ListRecentArticles"
-
 const HomePage = () => {
   return (
     <LandMarkLayout>
-      <div
-        className={
-          "w-full px-3 md:px-1 md:w-4/6 mx-auto text-[#232b2b] py-5 md:py-10"
-        }
-      >
+      <div className={"w-full px-3 md:px-1 md:w-4/6 mx-auto py-5 md:py-10"}>
         <ProfileHeader />
         <AboutKelvinsekx />
         <HomePage.Footer />

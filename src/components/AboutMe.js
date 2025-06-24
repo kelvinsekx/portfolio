@@ -7,6 +7,7 @@ import clsx from "clsx"
 import { CV } from "./CV/cv"
 import { Socials } from "./Socials"
 import CollapsibleSection from "./CollapsibleSection"
+import { useTheme } from "styled-components"
 
 const { useState } = React
 
@@ -40,12 +41,20 @@ export const AboutKelvinsekx = () => {
 }
 
 const FloatingWrapper = ({ show, setShow }) => {
+  const { theme } = useTheme()
   const btnLabels = ["mission", "short", "long", "resume"]
+
+  const styles = {
+    dark: "bg-white !text-black rounded-[inherit]",
+    light: "bg-gray-300",
+  }
+
+  const s = styles[theme]
   const buttons = btnLabels.map((each, index) => (
     <div key={each} className="flex">
       <button
-        className={clsx("text-gray-600 px-2 py-1", {
-          "!text-black !border-black font-medium": show === each,
+        className={clsx("px-2 py-1", {
+          ["font-semibold " + s]: show === each,
         })}
         onClick={() => setShow(each)}
       >
@@ -57,7 +66,7 @@ const FloatingWrapper = ({ show, setShow }) => {
     </div>
   ))
   return (
-    <div className="flex rounded-l-md rounded-r-md border border-gray-600 w-fit">
+    <div className="flex rounded-l-md rounded-r-md border border-gray-600 w-fit overflow-clip">
       {buttons}
     </div>
   )
@@ -65,11 +74,17 @@ const FloatingWrapper = ({ show, setShow }) => {
 
 export function Mission() {
   return (
-    <p>
-      My mission is to continuously learn, share and use technology to solve my
-      people's problem. Building clean, reusable, fun and decomposable web along
-      the way. I have mastered achieving this via community, & open dialogue.
-    </p>
+    <div>
+      <p>
+        I believe strongly in the future of Africa, and that we can indeed shape
+        it for us and many outside the continent. My goal is to polarize genuine
+        knowledge for each opposite sides by building products that foster this.
+      </p>
+      <p>
+        We can not trust the future that is given to us. We have to see them now
+        and extend them by ourselves.
+      </p>
+    </div>
   )
 }
 
@@ -187,7 +202,7 @@ export function Long() {
         </p>
         <p>
           Here's a little something for your time 🤣:{" "}
-          <span className="text-black font-medium">
+          <span className="font-medium">
             Did you know that tall children are not taller than their parents?
             Well, if you didn't, now you do! If you still find that hard to
             believe, you'd have to be taller than the tallest tree in your
