@@ -10,13 +10,13 @@ import { HomeIcon } from "lucide-react"
 
 export default function Home() {
   return (
-    <div className="w-full px-2 md:px-1 md:w-4/6 mx-auto text-[#232b2b] py-10">
+    <div className="w-full px-2 md:px-1 md:w-4/6 mx-auto py-10">
       <Link to="/">
         <HomeIcon />
       </Link>
       <div className="md:w-5/7 px-5 md:px-0 mx-auto">
         <header className="my-8 space-y-0">
-          <h1 className="text-4xl leading-12 font-black text-[#222] tracking-wide">
+          <h1 className="text-4xl leading-12 font-black tracking-wide">
             Kelvinsekx&apos;s Cover Letter
           </h1>
           <p className="font-medium text-base text-gray-600 tracking-tight">
