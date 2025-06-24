@@ -9,8 +9,6 @@ import SunIcon from "../icon/sun.svg"
 
 const Toggle = ({ theme, toggleTheme }) => {
   const isLight = theme === "light"
-  console.log({ togglet: theme })
-  console.log(toggleTheme)
   return theme !== null ? (
     <ToggleContainer
       lightTheme={isLight}

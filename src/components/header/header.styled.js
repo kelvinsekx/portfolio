@@ -15,4 +15,8 @@ export const Head = styled.header`
   left: 0;
   border-bottom: ${({ theme, plain }) =>
     plain ? "" : theme === "light" ? "3px solid #f4f4f4" : "3px solid #222"};
+
+  @media (max-width: 768px) {
+    padding: 0.8rem 1.5rem;
+  }
 `
