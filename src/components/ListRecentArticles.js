@@ -38,7 +38,11 @@ export const ListRecentArticles = () => {
         </h2>
         <div className="grid grid-cols-1 gap-2">
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Link to={node.fields.slug} className="md:w-8/12 group">
+            <Link
+              key={node.fields.slug}
+              to={node.fields.slug}
+              className="md:w-8/12 group"
+            >
               <div
                 key={node.id}
                 className={cn(

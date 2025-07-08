@@ -49,9 +49,12 @@ const BlogTemplate = ({ data, pageContext }) => {
                 <ArticleHeader post={post} />
                 <div className="[&>xxcontent]:prose">
                   <div
-                    className={cn("prose", {
-                      "prose-invert": theme == "dark",
-                    })}
+                    className={cn(
+                      "prose prose-h2:tracking-tighter prose-h3:tracking-tight prose-h3:text-base prose-h3:font-medium prose-h2:font-semibold prose-h2:text-2xl",
+                      {
+                        "prose-invert": theme == "dark",
+                      }
+                    )}
                     dangerouslySetInnerHTML={{ __html: post.html.toString() }}
                   />
                 </div>
