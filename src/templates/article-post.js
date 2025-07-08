@@ -125,8 +125,10 @@ const Navigator = ({ previous, next }) => (
 const ArticleExtras = ({ lastupdated, date, sourcecode }) => (
   <div className="text-gray-400">
     <div>
+      <span className="text-gray-500">Published on</span>{" "}
+      { date },
       <span className="text-gray-500">Last modified on</span>{" "}
-      {lastupdated || date}
+      {lastupdated }.
     </div>
     <div>
       {!!sourcecode ? <a href={sourcecode}>Source code on Github</a> : null}
