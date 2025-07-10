@@ -77,8 +77,8 @@ export function Mission() {
     <div>
       <p>
         I believe strongly in the future of Africa, and that we can indeed shape
-        it for us and many outside the continent. My goal is to polarize genuine
-        knowledge for each opposite sides by building products that foster this.
+        it for us and many outside it. My goal is to polarize genuine knowledge
+        for each opposite sides by building products that foster this.
       </p>
       <p>
         We can not trust the future that is given to us. We have to see them now
@@ -89,24 +89,12 @@ export function Mission() {
 }
 
 export function Short() {
-  const r = randColor()
-
   return (
     <div className="space-y-3">
-      <p>Hi there!</p>
       <p>
-        It's great to meet you. I'm Kelvin, though many online know me as{" "}
-        <b>Kelvinsekx</b>. For over five years, I've helped businesses thrive by
-        building and scaling high-performing teams, communities, robust mobile
-        and web applications. Right now, I do product and engineering management
-        at{" "}
-        <a
-          style={{ color: colors[r], fontWeight: 500 }}
-          href="https://www.liinae.com"
-        >
-          Liinae
-        </a>
-        .
+        Many online know me as <b>Kelvinsekx</b>. For the past past five years,
+        I've focused on helping businesses thrive by building and scaling
+        high-performing teams, communities, robust mobile and web applications.
       </p>
       <p>
         Beyond the realm of code, my conversations often orbit around
@@ -136,11 +124,9 @@ export function Long() {
       <CollapsibleSection reverse header={"Early life"}>
         <p>
           Born in Delta State, Nigeria, I moved to Ibadan at age three and have
-          lived there since. I am the first of three siblings, and we were
-          raised by our dedicated single mother, with significant support from
-          her family. My secondary education was at Rochas Foundation College,
-          NTC Road, Ibadan, followed by my tertiary studies at the University of
-          Ibadan.
+          lived there since. I am the first of three siblings. My secondary
+          education was at Rochas Foundation College, NTC Road, Ibadan, followed
+          by my tertiary studies at the University of Ibadan.
         </p>
         <p>
           While stories from my childhood suggest I was a talented dancer, this
@@ -148,7 +134,7 @@ export function Long() {
           throughout secondary school, I was known for my exceptional abilities
           with numbers. This innate quantitative aptitude may well have been the
           seed for my later passion for computer science. Before fully immersing
-          myself in programming in 2020, I also explored my artistic side,
+          myself in programming in 2020, I explored my artistic side,
           particularly through drawing and painting, demonstrating an early
           appreciation for both analytical and creative disciplines.
         </p>

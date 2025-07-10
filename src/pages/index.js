@@ -27,11 +27,18 @@ export default HomePage
 HomePage.Footer = () => {
   const r = randColor()
   return (
-    <p className="mt-10 font-medium hover:underline text-gray-600 cursor-pointer">
+    <p className="mt-10 font-medium hover:underline text-gray-600 cursor-pointer [&>span]:underline">
+      <b>Thinking of working with me?</b> See{" "}
       <span>
-        <Link to="/cover-letter">
-          Thinking of working with me? Read more about my background here
-        </Link>
+        <Link to="/cover-letter">cover letter</Link>
+      </span>
+      {", "}
+      <span>
+        <Link to="/cover-letter">works</Link>
+      </span>
+      {", "}
+      <span>
+        <Link to="/articles">writing</Link>
       </span>{" "}
       <Apple
         fill

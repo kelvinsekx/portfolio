@@ -48,9 +48,9 @@ function HeaderSummary() {
         </StyledLogo>
       </h1>
       <div className="tracking-tighter font-medium text-gray-500 text-sm mt-3 leading-5">
-        <p>Developer. Product manager. Engineering Manager</p>
-        <p>Entrepreneur. Founder, Ibadan Techies Club.</p>
-        <p className="mt-1">Normal normal, I am just a street boi.</p>
+        <p>Software engineer. Product manager.</p>
+        <p>Entrepreneur. Dwindling optimist in Nigeria.</p>
+        <p className="mt-1">Normal normal, I am just a boi.</p>
       </div>
       {/* <div className="details grey">
         <TypingDiv>
