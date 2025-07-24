@@ -27,7 +27,7 @@ export default HomePage
 HomePage.Footer = () => {
   const r = randColor()
   return (
-    <p className="mt-10 font-medium hover:underline text-gray-600 cursor-pointer [&>span]:underline">
+    <p className="mt-10 font-medium text-gray-600 cursor-pointer [&>span]:underline [&>span]:hover:text-black">
       <b>Thinking of working with me?</b> See{" "}
       <span>
         <Link to="/cover-letter">cover letter</Link>

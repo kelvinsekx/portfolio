@@ -1,10 +1,18 @@
-import React from "react";
+import React from "react"
 
-export default function setFlickerAnimation() {
+/**
+ *
+ * @param {number} num
+ * @returns
+ */
+export default function setFlickerAnimation(num) {
   // get all elements that should be animated
-  const animatedElements = typeof document !== `undefined` ? Array.from(
-    document.querySelectorAll(".el_flicker")
-  ) : <div />
+  const animatedElements =
+    typeof document !== `undefined` ? (
+      Array.from(document.querySelectorAll(".el_flicker"))
+    ) : (
+      <div />
+    )
 
   if (!animatedElements.length) {
     return false
@@ -35,11 +43,9 @@ export default function setFlickerAnimation() {
   }
 
   // replace the plain text content in each element
-  animatedElements.forEach(el => {
+  animatedElements.forEach((el) => {
     const text = el.textContent.trim()
-    const count = el.dataset.flickerChars
-      ? parseInt(el.dataset.flickerChars)
-      : undefined
+    const count = num ? parseInt(num) : undefined
     el.innerHTML = wrapRandomChars(text, count)
   })
 }

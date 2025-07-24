@@ -53,8 +53,8 @@ export const ListRecentArticles = () => {
                   }
                 )}
               >
-                <h3 className="text-base font-medium group-hover:text-black text-[#555] capitalize">
-                  {node.frontmatter.title}
+                <h3 className="text-base font-medium group-hover:text-black text-[#555] [&::first-letter]:uppercase">
+                  {node.frontmatter.title.toLowerCase()}
                 </h3>
                 <p className="text-gray-500 text-xs">
                   Published on {node.frontmatter.date}

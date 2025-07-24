@@ -94,7 +94,7 @@ const Navigator = ({ previous, next }) => (
           rel="next"
         >
           <div>
-            <div className="text-gray-500 text-sm">UP NEXT</div>
+            <div className="text-gray-500 text-sm ml-auto w-fit">UP NEXT</div>
             <div>{next.frontmatter.title}</div>
           </div>
 
@@ -125,10 +125,8 @@ const Navigator = ({ previous, next }) => (
 const ArticleExtras = ({ lastupdated, date, sourcecode }) => (
   <div className="text-gray-400">
     <div>
-      <span className="text-gray-500">Published on</span>{" "}
-      { date },
-      <span className="text-gray-500">Last modified on</span>{" "}
-      {lastupdated }.
+      <span className="text-gray-500">Published on</span> {date},
+      <span className="text-gray-500">Last modified on</span> {lastupdated}.
     </div>
     <div>
       {!!sourcecode ? <a href={sourcecode}>Source code on Github</a> : null}
@@ -171,6 +169,7 @@ export const pageQuery = graphql`
         title
         lastupdated(formatString: "ddd, MMMM DD,YYYY")
         sourcecode
+        date(formatString: "ddd, MMMM DD,YYYY")
       }
       fields {
         slug
