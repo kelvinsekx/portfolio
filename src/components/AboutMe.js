@@ -29,7 +29,7 @@ export const AboutKelvinsekx = () => {
   }
   return (
     <div className="space-y-4">
-      <h2 className="agbalumo-font mt-4 relative tracking-wide text-4xl py-2">
+      <h2 className="agbalumo-font mt-4 relative tracking-wide text-2xl lg:text-3xl pt-2">
         About me <Socials />
       </h2>
       <div className="space-y-4">

@@ -20,11 +20,6 @@ export const WrapperContainer = styled.div`
 `
 
 export const StyledLogo = styled.span`
-  font-size: 2rem;
-  font-weight: 500;
-  @media (max-width: 720px) {
-    font-size: 1.5rem;
-  }
   font-family: agbalumo;
   ${(props) =>
     props.theme === "dark" &&

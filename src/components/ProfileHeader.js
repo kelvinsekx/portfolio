@@ -42,7 +42,7 @@ function HeaderSummary() {
 
   return (
     <div className="text-left">
-      <h1 className="font-medium text-4xl lg:text-5xl mb-0 agbalumo-font tracking-wider">
+      <h1 className="font-medium text-3xl lg:text-4xl mb-0 tracking-wider">
         <StyledLogo color={color} className="el_flicker" theme={theme}>
           Ukuejubola Kelvin
         </StyledLogo>
