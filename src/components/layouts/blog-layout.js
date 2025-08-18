@@ -39,7 +39,11 @@ const Layout = ({ children, variant = "blog" }) => {
     <div>
       <Header toggleTheme={toggleTheme} theme={theme} plain={false}>
         <Link to="/" style={{ textDecoration: "none" }}>
-          <StyledLogo color={color} className="el_flicker" theme={theme}>
+          <StyledLogo
+            color={color}
+            className="el_flicker text-3xl md:text-5xl"
+            theme={theme}
+          >
             kelvinsekx
           </StyledLogo>
         </Link>
