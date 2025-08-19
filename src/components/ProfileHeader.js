@@ -50,6 +50,10 @@ function HeaderSummary() {
       <div className="tracking-tighter font-medium text-gray-500 text-sm mt-3 leading-5">
         <p>Software engineer. Product manager.</p>
         <p>Entrepreneur. Dwindling optimist in Nigeria.</p>
+        <p className="mt-2 text-balance">
+          Serving founders and solving their problems via product, engineering
+          and people.
+        </p>
       </div>
       {/* <div className="details grey">
         <TypingDiv>

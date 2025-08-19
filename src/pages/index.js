@@ -34,7 +34,7 @@ HomePage.Footer = () => {
       </span>
       {", "}
       <span>
-        <Link to="/cover-letter">works</Link>
+        <Link to="/works">works</Link>
       </span>
       {", "}
       <span>

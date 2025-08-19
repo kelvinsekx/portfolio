@@ -74,11 +74,11 @@ const FloatingWrapper = ({ show, setShow }) => {
 
 export function Mission() {
   return (
-    <div>
+    <div className="space-y-3">
       <p>
         I believe strongly in the future of Africa, and that we can indeed shape
         it for us and many outside it. My goal is to polarize genuine knowledge
-        for each opposite sides by building products that foster this.
+        for all sides by building products that foster this.
       </p>
       <p>
         We can not trust the future that is given to us. We have to see them now
@@ -92,21 +92,18 @@ export function Short() {
   return (
     <div className="space-y-3">
       <p>
-        Many online know me as <b>Kelvinsekx</b>. For the past past five years,
-        I've focused on helping businesses thrive by building and scaling
-        high-performing teams, communities, robust mobile and web applications.
+        For the past past five years, I've focused on helping businesses thrive
+        by building and scaling high-performing teams, communities, robust
+        mobile and web applications.
       </p>
       <p>
-        Beyond the realm of code, my conversations often orbit around
-        engineering, product strategies or passionate commentary on Nigeria. You
-        can find my less serious thoughts and banter over on X (formerly
-        Twitter).
+        I orbit around engineering, product strategies or passionate commentary
+        on Nigeria. You can find my less serious thoughts and banter over on X
+        (formerly Twitter).
       </p>
       <p>
         I enjoy the rythm of good music and the occasional creative escape with
-        oil and acrylic paints. And if you spot someone strolling by in a too
-        comfortable, shall we say, "homeless style," there's a good chance it's
-        me enjoying a walk.
+        oil and acrylic paints.
       </p>
     </div>
   )
@@ -116,10 +113,10 @@ export function Long() {
   return (
     <div className="space-y-3">
       <p>
-        I am Nigerian software engineer, product manager, economist and yabber.
-        I founded Ibadan Techies Club, a community that organized dozens of tech
-        meetups in Ibadan. Presently, I help ambitious company build software
-        and teams.
+        I am a Nigerian software engineer, product manager, economist and yabber
+        who is popular with the alias Kelvinsekx. I co-founded Ibadan Techies
+        Club, a community that organized dozens of tech meetups in Ibadan.
+        Presently, I help ambitious company build softwares and teams.
       </p>
       <CollapsibleSection reverse header={"Early life"}>
         <p>
@@ -141,8 +138,8 @@ export function Long() {
       </CollapsibleSection>
       <CollapsibleSection reverse header={"Career"}>
         <p>
-          Over the past 5 years and counting, I have gained valuable experiences
-          from working with{" "}
+          Over the past 5 years, I have gained valuable experiences from working
+          with{" "}
           <UnderlinedLink href={"https://www.liinae.com"}>
             Liinae
           </UnderlinedLink>
