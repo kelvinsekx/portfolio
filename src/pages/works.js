@@ -5,9 +5,9 @@ import Sample1 from "../assets/sample_from_ibtc_meetup.jpg"
 
 const Works = () => {
   return (
-    <div className="p-20 [&_figcaption]:text-center [&_a]:text-blue-600 [&_a]:font-semibold space-y-32">
-      <div className="grid grid-cols-2 items-center gap-4">
-        <div className="space-y-3">
+    <div className="p-8 md:p-20 [&_figcaption]:text-center [&_a]:text-blue-600 [&_a]:font-semibold space-y-32">
+      <div className="flex flex-col md:flex-row items-center justify-between px-10 gap-y-5">
+        <div className="space-y-3 md:w-2/4">
           <p>
             Since 2024, I have been actively involved in building{" "}
             <strong>Liinae</strong> alongside three co-founders ({" "}
@@ -39,8 +39,10 @@ const Works = () => {
           <figure>
             <img
               src={LiinaeLogo}
+              width={400}
+              height={400}
               alt="Liinae Logo"
-              className="rounded-md w-full h-full object-cover object-center border border-gray-300"
+              className="rounded-md object-cover object-center border border-gray-300"
             />
             <figcaption className="text-blue-600 font-semibold">
               Liinae, A venture-backed startup initiative
@@ -86,38 +88,46 @@ const Works = () => {
           </figure>
         </div>
       </div>
-      <div className="flex items-center justify-between">
-        <div className="space-y-3 w-[40rem]">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-y-5">
+        <div className="space-y-3 md:w-[40rem]">
           <p className="text-lg">
-            <span className="text-4xl">
+            <span className="text-2xl md:text-4xl">
               I can help you build your next product.
             </span>{" "}
             Why choose me over others with fancy venture titles:
           </p>
-          <p>
-            As an individual, I can help move your product idea faster. No
-            bureaucracy, no internal approvals, no layers of management. I can
-            make decision and act immediately alongside you, which is crucial
-            for a fast-paced startup.
-          </p>
-          <p>
-            You'll have direct access to me and my team, how we work and all our
-            assets.
-          </p>
-          <p>
-            Working with an individual is more cost-effective. You're not paying
-            for a company overhead, office space or admin staff. You are going
-            to pay directly for the work we do and the results we deliver.
-          </p>
-          <p className="font-medium">
-            I have done it with Liinae and I can do it again
-          </p>
+          <ul className="space-y-3">
+            <li className="space-x-2">
+              <span>
+                {" "}
+                As an individual, I can help move your product idea faster. No
+                bureaucracy, no internal approvals, no layers of management. I
+                can make decision and act immediately alongside you, which is
+                crucial for a fast-paced startup.
+              </span>
+            </li>
+            <li>
+              Working with an individual is more cost-effective. You're not
+              paying for a company overhead, office space or admin staff. You
+              are going to pay directly for the work we do and the results we
+              deliver.
+            </li>
+            <li>
+              We only trigger payments per milestone. My team works with
+              milestones ( agreed upon list of tasks/features to be covered per
+              phase), this means we get to spread pay along our number of
+              milestones. No hassle, no worries.
+            </li>
+            <li className="font-medium">
+              I have done it with Liinae and I can do it better with you.
+            </li>
+          </ul>
         </div>
         <div className="flex">
           <figure>
             <span className="text-9xl font-black">?</span>
             <figcaption className="text-blue-600 font-semibold">
-              Be the next
+              Be next
             </figcaption>
           </figure>
         </div>
