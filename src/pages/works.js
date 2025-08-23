@@ -10,14 +10,14 @@ const Works = () => {
         <div className="space-y-3 md:w-2/4">
           <p>
             Since 2024, I have been actively involved in building{" "}
-            <strong>Liinae</strong> alongside three co-founders ({" "}
+            <strong>Liinae</strong> alongside 
             <a href="https://www.linkedin.com/in/ireayomide-o-1578a287/">
               Ireayo
             </a>
             ,{" "}
             <a href="https://www.linkedin.com/in/lynn-agoye-99b20319/">Lynn </a>{" "}
             and <a href="https://www.linkedin.com/in/ijenwokolo/">Ije</a>
-            ). Combining responsibilities as a product manager, technical lead,
+            . Combining responsibilities as a product manager, technical lead,
             and developer.
           </p>
           <p>
