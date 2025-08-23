@@ -10,7 +10,7 @@ const Works = () => {
         <div className="space-y-3 md:w-2/4">
           <p>
             Since 2024, I have been actively involved in building{" "}
-            <strong>Liinae</strong> alongside 
+            <strong>Liinae</strong> alongside {" "}
             <a href="https://www.linkedin.com/in/ireayomide-o-1578a287/">
               Ireayo
             </a>
